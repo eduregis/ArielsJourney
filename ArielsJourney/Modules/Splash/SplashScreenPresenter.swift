@@ -21,7 +21,7 @@ class SplashScreenPresenter {
         self.router = router
     }
     func didLoad() {
-        navigateToCardList()
+        navigateToHome()
     }
     
     func willAppear() {
@@ -30,7 +30,7 @@ class SplashScreenPresenter {
     func didAppear() {
     }
     
-    func navigateToCardList() {
-        self.router.navigateToCardList()
+    func navigateToHome() {
+        self.router.navigateToHome()
     }
 }

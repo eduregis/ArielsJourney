@@ -21,7 +21,8 @@ class SplashScreenRouter: BaseRouter {
         return navigation
     }
     
-    func navigateToCardList() {
-//        self.push(TabBarRouter.makeModule(), animated: true)
+    func navigateToHome() {
+        presentOverContext(HomeScreenRouter.makeModule(), animated: true, modalPresentation: false)
+//        self.push(HomeScreenRouter.makeModule(), animated: true)
     }
 }

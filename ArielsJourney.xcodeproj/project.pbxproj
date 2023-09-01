@@ -21,6 +21,10 @@
 		2E737FBF2AA24928001F4EB4 /* SplashScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E737FBE2AA24928001F4EB4 /* SplashScreenPresenter.swift */; };
 		2E737FC12AA249A5001F4EB4 /* SplashScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E737FC02AA249A5001F4EB4 /* SplashScreenViewController.xib */; };
 		2E737FC32AA249E1001F4EB4 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E737FC22AA249E1001F4EB4 /* SplashScreenViewController.swift */; };
+		2EB169572AA2766900615060 /* HomeScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB169562AA2766900615060 /* HomeScreenRouter.swift */; };
+		2EB169592AA2773600615060 /* HomeScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB169582AA2773600615060 /* HomeScreenPresenter.swift */; };
+		2EB1695B2AA2781800615060 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB1695A2AA2781800615060 /* HomeScreenViewController.swift */; };
+		2EB1695D2AA278AC00615060 /* HomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EB1695C2AA278AC00615060 /* HomeScreenViewController.xib */; };
 		2FA13BF89C9F4289D43A1CA2 /* Pods_ArielsJourneyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF4E32BF96B409B84703B49 /* Pods_ArielsJourneyTests.framework */; };
 		B9BEA4BED5CEFF252C1DC90E /* Pods_ArielsJourney_ArielsJourneyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 334888D2E0D69E3EE22615CE /* Pods_ArielsJourney_ArielsJourneyUITests.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +65,10 @@
 		2E737FBE2AA24928001F4EB4 /* SplashScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenPresenter.swift; sourceTree = "<group>"; };
 		2E737FC02AA249A5001F4EB4 /* SplashScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenViewController.xib; sourceTree = "<group>"; };
 		2E737FC22AA249E1001F4EB4 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		2EB169562AA2766900615060 /* HomeScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenRouter.swift; sourceTree = "<group>"; };
+		2EB169582AA2773600615060 /* HomeScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenPresenter.swift; sourceTree = "<group>"; };
+		2EB1695A2AA2781800615060 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		2EB1695C2AA278AC00615060 /* HomeScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenViewController.xib; sourceTree = "<group>"; };
 		2F48B1E409AF8E12E9C77714 /* Pods-ArielsJourney.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArielsJourney.release.xcconfig"; path = "Target Support Files/Pods-ArielsJourney/Pods-ArielsJourney.release.xcconfig"; sourceTree = "<group>"; };
 		334888D2E0D69E3EE22615CE /* Pods_ArielsJourney_ArielsJourneyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArielsJourney_ArielsJourneyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B82745CC2ECA9191FCEB262 /* Pods-ArielsJourneyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArielsJourneyTests.debug.xcconfig"; path = "Target Support Files/Pods-ArielsJourneyTests/Pods-ArielsJourneyTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -150,7 +158,7 @@
 			path = ArielsJourneyUITests;
 			sourceTree = "<group>";
 		};
-		2E737FB12AA246F2001F4EB4 /* SplashScreen */ = {
+		2E737FB12AA246F2001F4EB4 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
 				2E737FB22AA2472A001F4EB4 /* SplashScreenRouter.swift */,
@@ -158,7 +166,7 @@
 				2E737FC02AA249A5001F4EB4 /* SplashScreenViewController.xib */,
 				2E737FC22AA249E1001F4EB4 /* SplashScreenViewController.swift */,
 			);
-			path = SplashScreen;
+			path = Splash;
 			sourceTree = "<group>";
 		};
 		2E737FB42AA247E5001F4EB4 /* Application */ = {
@@ -173,7 +181,8 @@
 		2E737FB52AA247FB001F4EB4 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				2E737FB12AA246F2001F4EB4 /* SplashScreen */,
+				2EB169552AA275EA00615060 /* Home */,
+				2E737FB12AA246F2001F4EB4 /* Splash */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -194,6 +203,17 @@
 				2E737FBC2AA248F7001F4EB4 /* BasePresenterDelegate.swift */,
 			);
 			path = Bases;
+			sourceTree = "<group>";
+		};
+		2EB169552AA275EA00615060 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2EB169562AA2766900615060 /* HomeScreenRouter.swift */,
+				2EB169582AA2773600615060 /* HomeScreenPresenter.swift */,
+				2EB1695A2AA2781800615060 /* HomeScreenViewController.swift */,
+				2EB1695C2AA278AC00615060 /* HomeScreenViewController.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		62E0B182D2C4BF5A0821EC89 /* Pods */ = {
@@ -327,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E737FC12AA249A5001F4EB4 /* SplashScreenViewController.xib in Resources */,
+				2EB1695D2AA278AC00615060 /* HomeScreenViewController.xib in Resources */,
 				2E737F8E2AA2455F001F4EB4 /* LaunchScreen.storyboard in Resources */,
 				2E737F8B2AA2455F001F4EB4 /* Assets.xcassets in Resources */,
 			);
@@ -425,10 +446,13 @@
 				2E737F822AA2455D001F4EB4 /* AppDelegate.swift in Sources */,
 				2E737FBB2AA24894001F4EB4 /* BaseViewController.swift in Sources */,
 				2E737FC32AA249E1001F4EB4 /* SplashScreenViewController.swift in Sources */,
+				2EB169572AA2766900615060 /* HomeScreenRouter.swift in Sources */,
 				2E737FB92AA2486E001F4EB4 /* BaseRouter.swift in Sources */,
 				2E737FBD2AA248F7001F4EB4 /* BasePresenterDelegate.swift in Sources */,
 				2E737FB32AA2472A001F4EB4 /* SplashScreenRouter.swift in Sources */,
+				2EB169592AA2773600615060 /* HomeScreenPresenter.swift in Sources */,
 				2E737FBF2AA24928001F4EB4 /* SplashScreenPresenter.swift in Sources */,
+				2EB1695B2AA2781800615060 /* HomeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
