@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04EBAE7901D631420C125B9E /* Pods_ArielsJourney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2511782EB8F98B19C8ABAAB /* Pods_ArielsJourney.framework */; };
 		2E737F822AA2455D001F4EB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E737F812AA2455D001F4EB4 /* AppDelegate.swift */; };
 		2E737F8B2AA2455F001F4EB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E737F8A2AA2455F001F4EB4 /* Assets.xcassets */; };
 		2E737F8E2AA2455F001F4EB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E737F8C2AA2455F001F4EB4 /* LaunchScreen.storyboard */; };
@@ -20,6 +21,8 @@
 		2E737FBF2AA24928001F4EB4 /* SplashScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E737FBE2AA24928001F4EB4 /* SplashScreenPresenter.swift */; };
 		2E737FC12AA249A5001F4EB4 /* SplashScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E737FC02AA249A5001F4EB4 /* SplashScreenViewController.xib */; };
 		2E737FC32AA249E1001F4EB4 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E737FC22AA249E1001F4EB4 /* SplashScreenViewController.swift */; };
+		2FA13BF89C9F4289D43A1CA2 /* Pods_ArielsJourneyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF4E32BF96B409B84703B49 /* Pods_ArielsJourneyTests.framework */; };
+		B9BEA4BED5CEFF252C1DC90E /* Pods_ArielsJourney_ArielsJourneyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 334888D2E0D69E3EE22615CE /* Pods_ArielsJourney_ArielsJourneyUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CF4E32BF96B409B84703B49 /* Pods_ArielsJourneyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArielsJourneyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E737F7E2AA2455D001F4EB4 /* ArielsJourney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArielsJourney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E737F812AA2455D001F4EB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E737F8A2AA2455F001F4EB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +61,14 @@
 		2E737FBE2AA24928001F4EB4 /* SplashScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenPresenter.swift; sourceTree = "<group>"; };
 		2E737FC02AA249A5001F4EB4 /* SplashScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenViewController.xib; sourceTree = "<group>"; };
 		2E737FC22AA249E1001F4EB4 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		2F48B1E409AF8E12E9C77714 /* Pods-ArielsJourney.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArielsJourney.release.xcconfig"; path = "Target Support Files/Pods-ArielsJourney/Pods-ArielsJourney.release.xcconfig"; sourceTree = "<group>"; };
+		334888D2E0D69E3EE22615CE /* Pods_ArielsJourney_ArielsJourneyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArielsJourney_ArielsJourneyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B82745CC2ECA9191FCEB262 /* Pods-ArielsJourneyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArielsJourneyTests.debug.xcconfig"; path = "Target Support Files/Pods-ArielsJourneyTests/Pods-ArielsJourneyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		751C73FE44BD46F16D547769 /* Pods-ArielsJourneyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArielsJourneyTests.release.xcconfig"; path = "Target Support Files/Pods-ArielsJourneyTests/Pods-ArielsJourneyTests.release.xcconfig"; sourceTree = "<group>"; };
+		88A4C7E411A30B82DDC1058B /* Pods-ArielsJourney-ArielsJourneyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArielsJourney-ArielsJourneyUITests.debug.xcconfig"; path = "Target Support Files/Pods-ArielsJourney-ArielsJourneyUITests/Pods-ArielsJourney-ArielsJourneyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8CA94DA5B7BAADED7B8AECBC /* Pods-ArielsJourney-ArielsJourneyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArielsJourney-ArielsJourneyUITests.release.xcconfig"; path = "Target Support Files/Pods-ArielsJourney-ArielsJourneyUITests/Pods-ArielsJourney-ArielsJourneyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B2511782EB8F98B19C8ABAAB /* Pods_ArielsJourney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArielsJourney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD9894A80624EB1BD580928E /* Pods-ArielsJourney.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArielsJourney.debug.xcconfig"; path = "Target Support Files/Pods-ArielsJourney/Pods-ArielsJourney.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04EBAE7901D631420C125B9E /* Pods_ArielsJourney.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FA13BF89C9F4289D43A1CA2 /* Pods_ArielsJourneyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9BEA4BED5CEFF252C1DC90E /* Pods_ArielsJourney_ArielsJourneyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +106,8 @@
 				2E737F972AA2455F001F4EB4 /* ArielsJourneyTests */,
 				2E737FA12AA2455F001F4EB4 /* ArielsJourneyUITests */,
 				2E737F7F2AA2455D001F4EB4 /* Products */,
+				62E0B182D2C4BF5A0821EC89 /* Pods */,
+				E094D1672B4BC8173A210A3D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -179,6 +196,29 @@
 			path = Bases;
 			sourceTree = "<group>";
 		};
+		62E0B182D2C4BF5A0821EC89 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD9894A80624EB1BD580928E /* Pods-ArielsJourney.debug.xcconfig */,
+				2F48B1E409AF8E12E9C77714 /* Pods-ArielsJourney.release.xcconfig */,
+				88A4C7E411A30B82DDC1058B /* Pods-ArielsJourney-ArielsJourneyUITests.debug.xcconfig */,
+				8CA94DA5B7BAADED7B8AECBC /* Pods-ArielsJourney-ArielsJourneyUITests.release.xcconfig */,
+				5B82745CC2ECA9191FCEB262 /* Pods-ArielsJourneyTests.debug.xcconfig */,
+				751C73FE44BD46F16D547769 /* Pods-ArielsJourneyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E094D1672B4BC8173A210A3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2511782EB8F98B19C8ABAAB /* Pods_ArielsJourney.framework */,
+				334888D2E0D69E3EE22615CE /* Pods_ArielsJourney_ArielsJourneyUITests.framework */,
+				0CF4E32BF96B409B84703B49 /* Pods_ArielsJourneyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -186,6 +226,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E737FA82AA2455F001F4EB4 /* Build configuration list for PBXNativeTarget "ArielsJourney" */;
 			buildPhases = (
+				938D7693EB5490059AE702B5 /* [CP] Check Pods Manifest.lock */,
 				2E737F7A2AA2455D001F4EB4 /* Sources */,
 				2E737F7B2AA2455D001F4EB4 /* Frameworks */,
 				2E737F7C2AA2455D001F4EB4 /* Resources */,
@@ -203,6 +244,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E737FAB2AA2455F001F4EB4 /* Build configuration list for PBXNativeTarget "ArielsJourneyTests" */;
 			buildPhases = (
+				51053F36D004746221A9803E /* [CP] Check Pods Manifest.lock */,
 				2E737F902AA2455F001F4EB4 /* Sources */,
 				2E737F912AA2455F001F4EB4 /* Frameworks */,
 				2E737F922AA2455F001F4EB4 /* Resources */,
@@ -221,6 +263,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E737FAE2AA2455F001F4EB4 /* Build configuration list for PBXNativeTarget "ArielsJourneyUITests" */;
 			buildPhases = (
+				1260799AB80B0FB8DF2071EB /* [CP] Check Pods Manifest.lock */,
 				2E737F9A2AA2455F001F4EB4 /* Sources */,
 				2E737F9B2AA2455F001F4EB4 /* Frameworks */,
 				2E737F9C2AA2455F001F4EB4 /* Resources */,
@@ -259,7 +302,7 @@
 				};
 			};
 			buildConfigurationList = 2E737F792AA2455D001F4EB4 /* Build configuration list for PBXProject "ArielsJourney" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -304,6 +347,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1260799AB80B0FB8DF2071EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArielsJourney-ArielsJourneyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51053F36D004746221A9803E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArielsJourneyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		938D7693EB5490059AE702B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArielsJourney-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2E737F7A2AA2455D001F4EB4 /* Sources */ = {
@@ -480,6 +592,7 @@
 		};
 		2E737FA92AA2455F001F4EB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD9894A80624EB1BD580928E /* Pods-ArielsJourney.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -507,6 +620,7 @@
 		};
 		2E737FAA2AA2455F001F4EB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F48B1E409AF8E12E9C77714 /* Pods-ArielsJourney.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -534,6 +648,7 @@
 		};
 		2E737FAC2AA2455F001F4EB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B82745CC2ECA9191FCEB262 /* Pods-ArielsJourneyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -554,6 +669,7 @@
 		};
 		2E737FAD2AA2455F001F4EB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 751C73FE44BD46F16D547769 /* Pods-ArielsJourneyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -574,6 +690,7 @@
 		};
 		2E737FAF2AA2455F001F4EB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88A4C7E411A30B82DDC1058B /* Pods-ArielsJourney-ArielsJourneyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -592,6 +709,7 @@
 		};
 		2E737FB02AA2455F001F4EB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CA94DA5B7BAADED7B8AECBC /* Pods-ArielsJourney-ArielsJourneyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
