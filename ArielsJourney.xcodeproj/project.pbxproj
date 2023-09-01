@@ -8,14 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		2E737F822AA2455D001F4EB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E737F812AA2455D001F4EB4 /* AppDelegate.swift */; };
-		2E737F842AA2455D001F4EB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E737F832AA2455D001F4EB4 /* SceneDelegate.swift */; };
-		2E737F862AA2455D001F4EB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E737F852AA2455D001F4EB4 /* ViewController.swift */; };
-		2E737F892AA2455D001F4EB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E737F872AA2455D001F4EB4 /* Main.storyboard */; };
 		2E737F8B2AA2455F001F4EB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E737F8A2AA2455F001F4EB4 /* Assets.xcassets */; };
 		2E737F8E2AA2455F001F4EB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E737F8C2AA2455F001F4EB4 /* LaunchScreen.storyboard */; };
 		2E737F992AA2455F001F4EB4 /* ArielsJourneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E737F982AA2455F001F4EB4 /* ArielsJourneyTests.swift */; };
 		2E737FA32AA2455F001F4EB4 /* ArielsJourneyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E737FA22AA2455F001F4EB4 /* ArielsJourneyUITests.swift */; };
 		2E737FA52AA2455F001F4EB4 /* ArielsJourneyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E737FA42AA2455F001F4EB4 /* ArielsJourneyUITestsLaunchTests.swift */; };
+		2E737FB32AA2472A001F4EB4 /* SplashScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E737FB22AA2472A001F4EB4 /* SplashScreenRouter.swift */; };
+		2E737FB92AA2486E001F4EB4 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E737FB82AA2486E001F4EB4 /* BaseRouter.swift */; };
+		2E737FBB2AA24894001F4EB4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E737FBA2AA24894001F4EB4 /* BaseViewController.swift */; };
+		2E737FBD2AA248F7001F4EB4 /* BasePresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E737FBC2AA248F7001F4EB4 /* BasePresenterDelegate.swift */; };
+		2E737FBF2AA24928001F4EB4 /* SplashScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E737FBE2AA24928001F4EB4 /* SplashScreenPresenter.swift */; };
+		2E737FC12AA249A5001F4EB4 /* SplashScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E737FC02AA249A5001F4EB4 /* SplashScreenViewController.xib */; };
+		2E737FC32AA249E1001F4EB4 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E737FC22AA249E1001F4EB4 /* SplashScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +42,6 @@
 /* Begin PBXFileReference section */
 		2E737F7E2AA2455D001F4EB4 /* ArielsJourney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArielsJourney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E737F812AA2455D001F4EB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2E737F832AA2455D001F4EB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2E737F852AA2455D001F4EB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2E737F882AA2455D001F4EB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E737F8A2AA2455F001F4EB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E737F8D2AA2455F001F4EB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E737F8F2AA2455F001F4EB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +50,13 @@
 		2E737F9E2AA2455F001F4EB4 /* ArielsJourneyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArielsJourneyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E737FA22AA2455F001F4EB4 /* ArielsJourneyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArielsJourneyUITests.swift; sourceTree = "<group>"; };
 		2E737FA42AA2455F001F4EB4 /* ArielsJourneyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArielsJourneyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2E737FB22AA2472A001F4EB4 /* SplashScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenRouter.swift; sourceTree = "<group>"; };
+		2E737FB82AA2486E001F4EB4 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		2E737FBA2AA24894001F4EB4 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		2E737FBC2AA248F7001F4EB4 /* BasePresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenterDelegate.swift; sourceTree = "<group>"; };
+		2E737FBE2AA24928001F4EB4 /* SplashScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenPresenter.swift; sourceTree = "<group>"; };
+		2E737FC02AA249A5001F4EB4 /* SplashScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenViewController.xib; sourceTree = "<group>"; };
+		2E737FC22AA249E1001F4EB4 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +107,10 @@
 		2E737F802AA2455D001F4EB4 /* ArielsJourney */ = {
 			isa = PBXGroup;
 			children = (
-				2E737F812AA2455D001F4EB4 /* AppDelegate.swift */,
-				2E737F832AA2455D001F4EB4 /* SceneDelegate.swift */,
-				2E737F852AA2455D001F4EB4 /* ViewController.swift */,
-				2E737F872AA2455D001F4EB4 /* Main.storyboard */,
+				2E737FB42AA247E5001F4EB4 /* Application */,
+				2E737FB52AA247FB001F4EB4 /* Modules */,
+				2E737FB62AA2481A001F4EB4 /* Utils */,
 				2E737F8A2AA2455F001F4EB4 /* Assets.xcassets */,
-				2E737F8C2AA2455F001F4EB4 /* LaunchScreen.storyboard */,
 				2E737F8F2AA2455F001F4EB4 /* Info.plist */,
 			);
 			path = ArielsJourney;
@@ -125,6 +131,52 @@
 				2E737FA42AA2455F001F4EB4 /* ArielsJourneyUITestsLaunchTests.swift */,
 			);
 			path = ArielsJourneyUITests;
+			sourceTree = "<group>";
+		};
+		2E737FB12AA246F2001F4EB4 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2E737FB22AA2472A001F4EB4 /* SplashScreenRouter.swift */,
+				2E737FBE2AA24928001F4EB4 /* SplashScreenPresenter.swift */,
+				2E737FC02AA249A5001F4EB4 /* SplashScreenViewController.xib */,
+				2E737FC22AA249E1001F4EB4 /* SplashScreenViewController.swift */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		2E737FB42AA247E5001F4EB4 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2E737F812AA2455D001F4EB4 /* AppDelegate.swift */,
+				2E737F8C2AA2455F001F4EB4 /* LaunchScreen.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		2E737FB52AA247FB001F4EB4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				2E737FB12AA246F2001F4EB4 /* SplashScreen */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		2E737FB62AA2481A001F4EB4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2E737FB72AA24825001F4EB4 /* Bases */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2E737FB72AA24825001F4EB4 /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+				2E737FB82AA2486E001F4EB4 /* BaseRouter.swift */,
+				2E737FBA2AA24894001F4EB4 /* BaseViewController.swift */,
+				2E737FBC2AA248F7001F4EB4 /* BasePresenterDelegate.swift */,
+			);
+			path = Bases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +283,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E737FC12AA249A5001F4EB4 /* SplashScreenViewController.xib in Resources */,
 				2E737F8E2AA2455F001F4EB4 /* LaunchScreen.storyboard in Resources */,
 				2E737F8B2AA2455F001F4EB4 /* Assets.xcassets in Resources */,
-				2E737F892AA2455D001F4EB4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +310,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E737F862AA2455D001F4EB4 /* ViewController.swift in Sources */,
 				2E737F822AA2455D001F4EB4 /* AppDelegate.swift in Sources */,
-				2E737F842AA2455D001F4EB4 /* SceneDelegate.swift in Sources */,
+				2E737FBB2AA24894001F4EB4 /* BaseViewController.swift in Sources */,
+				2E737FC32AA249E1001F4EB4 /* SplashScreenViewController.swift in Sources */,
+				2E737FB92AA2486E001F4EB4 /* BaseRouter.swift in Sources */,
+				2E737FBD2AA248F7001F4EB4 /* BasePresenterDelegate.swift in Sources */,
+				2E737FB32AA2472A001F4EB4 /* SplashScreenRouter.swift in Sources */,
+				2E737FBF2AA24928001F4EB4 /* SplashScreenPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +353,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2E737F872AA2455D001F4EB4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2E737F882AA2455D001F4EB4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2E737F8C2AA2455F001F4EB4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -441,8 +489,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ArielsJourney/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -469,8 +517,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ArielsJourney/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
