@@ -13,11 +13,9 @@ class HomeScreenRouter: BaseRouter {
         let viewController = HomeScreenViewController()
         let router = HomeScreenRouter(viewController: viewController)
         let presenter = HomeScreenPresenter(delegate: viewController, router: router)
-        let navigation = UINavigationController(rootViewController: viewController)
-        navigation.isNavigationBarHidden = false
         viewController.presenter = presenter
         
-        return navigation
+        return viewController
     }
     
     func navigateToGameplay() {
