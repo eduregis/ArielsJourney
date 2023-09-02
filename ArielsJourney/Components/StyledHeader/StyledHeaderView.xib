@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StyledHeaderView" customModule="ArielsJourney" customModuleProvider="target">
             <connections>
                 <outlet property="backButton" destination="k87-Ey-cWn" id="8Tb-kg-di6"/>
+                <outlet property="centerIcon" destination="K0w-Ur-irX" id="ApQ-Vk-9sT"/>
                 <outlet property="configButton" destination="9xH-Bm-mYs" id="A9L-ZS-yEC"/>
                 <outlet property="contentView" destination="BPG-ZI-Mob" id="9e5-1Q-1eR"/>
                 <outlet property="titleLabel" destination="Ve4-b7-RtI" id="hIa-3L-u2C"/>
@@ -64,6 +65,13 @@
                         <action selector="configButtonAction:" destination="-1" eventType="touchUpInside" id="z62-Pa-yFy"/>
                     </connections>
                 </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arielIcon" translatesAutoresizingMaskIntoConstraints="NO" id="K0w-Ur-irX" userLabel="ArielIcon">
+                    <rect key="frame" x="412.66666666666669" y="7" width="27" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="jdc-Wf-M4j"/>
+                        <constraint firstAttribute="width" constant="27" id="ppr-cB-ojb"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
@@ -71,11 +79,13 @@
                 <constraint firstItem="lXD-gN-EZW" firstAttribute="centerY" secondItem="BPG-ZI-Mob" secondAttribute="centerY" id="5fo-y7-Mmt"/>
                 <constraint firstItem="FPr-qQ-9tF" firstAttribute="leading" secondItem="k87-Ey-cWn" secondAttribute="trailing" constant="32" id="7o9-Fg-5rE"/>
                 <constraint firstItem="k87-Ey-cWn" firstAttribute="leading" secondItem="BPG-ZI-Mob" secondAttribute="leading" constant="32" id="AGe-eX-Dum"/>
+                <constraint firstItem="K0w-Ur-irX" firstAttribute="centerX" secondItem="BPG-ZI-Mob" secondAttribute="centerX" id="B9D-ee-fK0"/>
                 <constraint firstItem="Ve4-b7-RtI" firstAttribute="centerY" secondItem="BPG-ZI-Mob" secondAttribute="centerY" id="P6b-qY-3DH"/>
                 <constraint firstAttribute="trailing" secondItem="9xH-Bm-mYs" secondAttribute="trailing" constant="32" id="Uab-So-ebt"/>
                 <constraint firstItem="9xH-Bm-mYs" firstAttribute="leading" secondItem="lXD-gN-EZW" secondAttribute="trailing" constant="32" id="Xj7-av-tgg"/>
                 <constraint firstItem="Ve4-b7-RtI" firstAttribute="centerX" secondItem="BPG-ZI-Mob" secondAttribute="centerX" id="bQ3-Nf-toE"/>
                 <constraint firstItem="9xH-Bm-mYs" firstAttribute="centerY" secondItem="BPG-ZI-Mob" secondAttribute="centerY" id="fcl-3w-zpi"/>
+                <constraint firstItem="K0w-Ur-irX" firstAttribute="centerY" secondItem="BPG-ZI-Mob" secondAttribute="centerY" id="olh-I7-ojt"/>
                 <constraint firstItem="FPr-qQ-9tF" firstAttribute="centerY" secondItem="BPG-ZI-Mob" secondAttribute="centerY" id="wtq-gO-3x5"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -84,6 +94,7 @@
     </objects>
     <resources>
         <image name="adornments" width="191" height="24"/>
+        <image name="arielIcon" width="28.333333969116211" height="55.333332061767578"/>
         <image name="backButton" width="37.333332061767578" height="35.333332061767578"/>
         <image name="configButton" width="35.333332061767578" height="35.333332061767578"/>
         <systemColor name="systemBackgroundColor">

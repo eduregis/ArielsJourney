@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04EBAE7901D631420C125B9E /* Pods_ArielsJourney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2511782EB8F98B19C8ABAAB /* Pods_ArielsJourney.framework */; };
+		2E1CD4DE2AA2B53B00D90276 /* Macondo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E1CD4DD2AA2B53B00D90276 /* Macondo-Regular.ttf */; };
 		2E6DEFD02AA2A2A000C02153 /* StyledHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6DEFCF2AA2A2A000C02153 /* StyledHeaderView.swift */; };
 		2E6DEFD22AA2A50C00C02153 /* StyledHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6DEFD12AA2A50C00C02153 /* StyledHeaderView.xib */; };
 		2E737F822AA2455D001F4EB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E737F812AA2455D001F4EB4 /* AppDelegate.swift */; };
@@ -50,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		0CF4E32BF96B409B84703B49 /* Pods_ArielsJourneyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArielsJourneyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E1CD4DD2AA2B53B00D90276 /* Macondo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Macondo-Regular.ttf"; sourceTree = "<group>"; };
 		2E6DEFCF2AA2A2A000C02153 /* StyledHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledHeaderView.swift; sourceTree = "<group>"; };
 		2E6DEFD12AA2A50C00C02153 /* StyledHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StyledHeaderView.xib; sourceTree = "<group>"; };
 		2E737F7E2AA2455D001F4EB4 /* ArielsJourney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArielsJourney.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +113,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E1CD4DB2AA2B50E00D90276 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2E1CD4DC2AA2B52700D90276 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2E1CD4DC2AA2B52700D90276 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2E1CD4DD2AA2B53B00D90276 /* Macondo-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		2E6DEFCD2AA2A0DA00C02153 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,7 +172,9 @@
 			isa = PBXGroup;
 			children = (
 				2E737FB42AA247E5001F4EB4 /* Application */,
+				2E6DEFCD2AA2A0DA00C02153 /* Components */,
 				2E737FB52AA247FB001F4EB4 /* Modules */,
+				2E1CD4DB2AA2B50E00D90276 /* Resources */,
 				2E737FB62AA2481A001F4EB4 /* Utils */,
 				2E737F8A2AA2455F001F4EB4 /* Assets.xcassets */,
 				2E737F8F2AA2455F001F4EB4 /* Info.plist */,
@@ -202,7 +222,6 @@
 		2E737FB52AA247FB001F4EB4 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				2E6DEFCD2AA2A0DA00C02153 /* Components */,
 				2EB169552AA275EA00615060 /* Home */,
 				2E737FB12AA246F2001F4EB4 /* Splash */,
 			);
@@ -373,6 +392,7 @@
 				2E737F8E2AA2455F001F4EB4 /* LaunchScreen.storyboard in Resources */,
 				2E6DEFD22AA2A50C00C02153 /* StyledHeaderView.xib in Resources */,
 				2E737F8B2AA2455F001F4EB4 /* Assets.xcassets in Resources */,
+				2E1CD4DE2AA2B53B00D90276 /* Macondo-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,7 +672,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -680,7 +700,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
