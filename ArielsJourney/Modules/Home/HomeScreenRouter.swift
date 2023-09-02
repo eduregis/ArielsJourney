@@ -27,4 +27,9 @@ class HomeScreenRouter: BaseRouter {
         print("Home -> Gameplay (Continue)")
         self.push(GameplayScreenRouter.makeModule(), animated: true)
     }
+    
+    func navigateToHerosJourney() {
+        print("Home -> Jornada do Herói")
+        self.push(HerosJourneyScreenRouter.makeModule(), animated: true)
+    }
 }

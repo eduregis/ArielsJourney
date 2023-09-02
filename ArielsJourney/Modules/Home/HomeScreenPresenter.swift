@@ -55,13 +55,11 @@ class HomeScreenPresenter {
         case .gameplayContinue:
             self.router.navigateToContinue()
         case .herosJourney:
-            self.router.navigateToGameplay()
+            self.router.navigateToHerosJourney()
         case .archetypes:
             self.router.navigateToGameplay()
         case .achievements:
             self.router.navigateToGameplay()
-        default:
-            break
         }
     }
 }
