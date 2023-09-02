@@ -5,7 +5,7 @@
 //  Created by Eduardo Oliveira on 02/09/23.
 //
 
-import SwiftUI
+import Foundation
 
 protocol HerosJourneyScreenPresenterDelegate: BasePresenterDelegate {
 }

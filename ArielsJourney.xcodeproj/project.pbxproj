@@ -42,6 +42,11 @@
 		2E7FAC6A2AA3B6F700E1AF20 /* AchievementsScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7FAC692AA3B6F700E1AF20 /* AchievementsScreenViewController.xib */; };
 		2E883D1B2AA2D5C70009909D /* HomeStainedGlassButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E883D1A2AA2D5C70009909D /* HomeStainedGlassButtonView.swift */; };
 		2E883D1D2AA2D6790009909D /* HomeStainedGlassButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E883D1C2AA2D6790009909D /* HomeStainedGlassButtonView.xib */; };
+		2EAF95742AA3EABF00B3FAC2 /* OverlayPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF95732AA3EABF00B3FAC2 /* OverlayPresentation.swift */; };
+		2EAF95792AA3EBE300B3FAC2 /* ConfigurationsSheetRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF95782AA3EBE300B3FAC2 /* ConfigurationsSheetRouter.swift */; };
+		2EAF957B2AA3EC3800B3FAC2 /* ConfigurationsSheetPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF957A2AA3EC3800B3FAC2 /* ConfigurationsSheetPresenter.swift */; };
+		2EAF957D2AA3EC9C00B3FAC2 /* ConfigurationsSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF957C2AA3EC9C00B3FAC2 /* ConfigurationsSheetViewController.swift */; };
+		2EAF957F2AA3ED7100B3FAC2 /* ConfigurationsSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EAF957E2AA3ED7100B3FAC2 /* ConfigurationsSheetViewController.xib */; };
 		2EB169572AA2766900615060 /* HomeScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB169562AA2766900615060 /* HomeScreenRouter.swift */; };
 		2EB169592AA2773600615060 /* HomeScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB169582AA2773600615060 /* HomeScreenPresenter.swift */; };
 		2EB1695B2AA2781800615060 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB1695A2AA2781800615060 /* HomeScreenViewController.swift */; };
@@ -107,6 +112,11 @@
 		2E7FAC692AA3B6F700E1AF20 /* AchievementsScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AchievementsScreenViewController.xib; sourceTree = "<group>"; };
 		2E883D1A2AA2D5C70009909D /* HomeStainedGlassButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStainedGlassButtonView.swift; sourceTree = "<group>"; };
 		2E883D1C2AA2D6790009909D /* HomeStainedGlassButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeStainedGlassButtonView.xib; sourceTree = "<group>"; };
+		2EAF95732AA3EABF00B3FAC2 /* OverlayPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayPresentation.swift; sourceTree = "<group>"; };
+		2EAF95782AA3EBE300B3FAC2 /* ConfigurationsSheetRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationsSheetRouter.swift; sourceTree = "<group>"; };
+		2EAF957A2AA3EC3800B3FAC2 /* ConfigurationsSheetPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationsSheetPresenter.swift; sourceTree = "<group>"; };
+		2EAF957C2AA3EC9C00B3FAC2 /* ConfigurationsSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationsSheetViewController.swift; sourceTree = "<group>"; };
+		2EAF957E2AA3ED7100B3FAC2 /* ConfigurationsSheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfigurationsSheetViewController.xib; sourceTree = "<group>"; };
 		2EB169562AA2766900615060 /* HomeScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenRouter.swift; sourceTree = "<group>"; };
 		2EB169582AA2773600615060 /* HomeScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenPresenter.swift; sourceTree = "<group>"; };
 		2EB1695A2AA2781800615060 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
@@ -241,8 +251,8 @@
 			children = (
 				2E737FB22AA2472A001F4EB4 /* SplashScreenRouter.swift */,
 				2E737FBE2AA24928001F4EB4 /* SplashScreenPresenter.swift */,
-				2E737FC02AA249A5001F4EB4 /* SplashScreenViewController.xib */,
 				2E737FC22AA249E1001F4EB4 /* SplashScreenViewController.swift */,
+				2E737FC02AA249A5001F4EB4 /* SplashScreenViewController.xib */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -259,12 +269,8 @@
 		2E737FB52AA247FB001F4EB4 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				2E7FAC622AA3B63F00E1AF20 /* Achievements */,
-				2E7FAC592AA3B43F00E1AF20 /* Archetypes */,
-				2E7FAC502AA3B15600E1AF20 /* HerosJourney */,
-				2E7FAC472AA3A89400E1AF20 /* Gameplay */,
-				2EB169552AA275EA00615060 /* Home */,
-				2E737FB12AA246F2001F4EB4 /* Splash */,
+				2EAF95752AA3EB0A00B3FAC2 /* Screens */,
+				2EAF95762AA3EB2400B3FAC2 /* Sheets */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -272,6 +278,7 @@
 		2E737FB62AA2481A001F4EB4 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2EAF95722AA3EA9300B3FAC2 /* Helpers */,
 				2E737FB72AA24825001F4EB4 /* Bases */,
 			);
 			path = Utils;
@@ -338,6 +345,46 @@
 				2E883D1C2AA2D6790009909D /* HomeStainedGlassButtonView.xib */,
 			);
 			path = HomeStainedGlassButton;
+			sourceTree = "<group>";
+		};
+		2EAF95722AA3EA9300B3FAC2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2EAF95732AA3EABF00B3FAC2 /* OverlayPresentation.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2EAF95752AA3EB0A00B3FAC2 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				2E7FAC622AA3B63F00E1AF20 /* Achievements */,
+				2E7FAC592AA3B43F00E1AF20 /* Archetypes */,
+				2E7FAC502AA3B15600E1AF20 /* HerosJourney */,
+				2E7FAC472AA3A89400E1AF20 /* Gameplay */,
+				2EB169552AA275EA00615060 /* Home */,
+				2E737FB12AA246F2001F4EB4 /* Splash */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		2EAF95762AA3EB2400B3FAC2 /* Sheets */ = {
+			isa = PBXGroup;
+			children = (
+				2EAF95772AA3EB8B00B3FAC2 /* Configurations */,
+			);
+			path = Sheets;
+			sourceTree = "<group>";
+		};
+		2EAF95772AA3EB8B00B3FAC2 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				2EAF95782AA3EBE300B3FAC2 /* ConfigurationsSheetRouter.swift */,
+				2EAF957A2AA3EC3800B3FAC2 /* ConfigurationsSheetPresenter.swift */,
+				2EAF957C2AA3EC9C00B3FAC2 /* ConfigurationsSheetViewController.swift */,
+				2EAF957E2AA3ED7100B3FAC2 /* ConfigurationsSheetViewController.xib */,
+			);
+			path = Configurations;
 			sourceTree = "<group>";
 		};
 		2EB169552AA275EA00615060 /* Home */ = {
@@ -486,6 +533,7 @@
 				2E7FAC612AA3B53900E1AF20 /* ArchetypesScreenViewController.xib in Resources */,
 				2EB1695D2AA278AC00615060 /* HomeScreenViewController.xib in Resources */,
 				2E7FAC6A2AA3B6F700E1AF20 /* AchievementsScreenViewController.xib in Resources */,
+				2EAF957F2AA3ED7100B3FAC2 /* ConfigurationsSheetViewController.xib in Resources */,
 				2E737F8E2AA2455F001F4EB4 /* LaunchScreen.storyboard in Resources */,
 				2E6DEFD22AA2A50C00C02153 /* StyledHeaderView.xib in Resources */,
 				2E737F8B2AA2455F001F4EB4 /* Assets.xcassets in Resources */,
@@ -588,17 +636,21 @@
 				2E7FAC492AA3A8AD00E1AF20 /* GameplayScreenRouter.swift in Sources */,
 				2E737F822AA2455D001F4EB4 /* AppDelegate.swift in Sources */,
 				2E7FAC642AA3B66300E1AF20 /* AchievementsScreenRouter.swift in Sources */,
+				2EAF957B2AA3EC3800B3FAC2 /* ConfigurationsSheetPresenter.swift in Sources */,
 				2E7FAC4B2AA3A91F00E1AF20 /* GameplayScreenPresenter.swift in Sources */,
 				2E737FBB2AA24894001F4EB4 /* BaseViewController.swift in Sources */,
 				2E737FC32AA249E1001F4EB4 /* SplashScreenViewController.swift in Sources */,
 				2EB169572AA2766900615060 /* HomeScreenRouter.swift in Sources */,
 				2E737FB92AA2486E001F4EB4 /* BaseRouter.swift in Sources */,
+				2EAF957D2AA3EC9C00B3FAC2 /* ConfigurationsSheetViewController.swift in Sources */,
 				2E7FAC5F2AA3B4FE00E1AF20 /* ArchetypesScreenViewController.swift in Sources */,
 				2E7FAC522AA3B18A00E1AF20 /* HerosJourneyScreenRouter.swift in Sources */,
+				2EAF95742AA3EABF00B3FAC2 /* OverlayPresentation.swift in Sources */,
 				2E737FBD2AA248F7001F4EB4 /* BasePresenterDelegate.swift in Sources */,
 				2E883D1B2AA2D5C70009909D /* HomeStainedGlassButtonView.swift in Sources */,
 				2E6DEFD02AA2A2A000C02153 /* StyledHeaderView.swift in Sources */,
 				2E7FAC562AA3B22300E1AF20 /* HerosJourneyScreenViewController.swift in Sources */,
+				2EAF95792AA3EBE300B3FAC2 /* ConfigurationsSheetRouter.swift in Sources */,
 				2E7FAC5B2AA3B49700E1AF20 /* ArchetypesScreenRouter.swift in Sources */,
 				2E7FAC542AA3B1CC00E1AF20 /* HerosJourneyScreenPresenter.swift in Sources */,
 				2E737FB32AA2472A001F4EB4 /* SplashScreenRouter.swift in Sources */,

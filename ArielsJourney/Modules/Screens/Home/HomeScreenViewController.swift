@@ -62,12 +62,11 @@ extension HomeScreenViewController: HomeScreenPresenterDelegate {
 }
 
 extension HomeScreenViewController: StyledHeaderViewDelegate {
-    func didTapBackButton() {
-        print("voltar")
-    }
+    
+    func didTapBackButton() {}
     
     func didTapConfigButton() {
-        print("configurações")
+        presenter.showConfigurations()
     }
 }
 

@@ -10,6 +10,7 @@ import UIKit
 class BaseRouter {
     
     weak var viewController: UIViewController?
+    let overlayTransitioningDelegate = OverlayTransitioningDelegate()
     
     required init(viewController: UIViewController) {
         self.viewController = viewController
