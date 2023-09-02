@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		04EBAE7901D631420C125B9E /* Pods_ArielsJourney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2511782EB8F98B19C8ABAAB /* Pods_ArielsJourney.framework */; };
+		2E1CD4DE2AA2B53B00D90276 /* Macondo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E1CD4DD2AA2B53B00D90276 /* Macondo-Regular.ttf */; };
+		2E6DEFD02AA2A2A000C02153 /* StyledHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6DEFCF2AA2A2A000C02153 /* StyledHeaderView.swift */; };
+		2E6DEFD22AA2A50C00C02153 /* StyledHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6DEFD12AA2A50C00C02153 /* StyledHeaderView.xib */; };
 		2E737F822AA2455D001F4EB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E737F812AA2455D001F4EB4 /* AppDelegate.swift */; };
 		2E737F8B2AA2455F001F4EB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E737F8A2AA2455F001F4EB4 /* Assets.xcassets */; };
 		2E737F8E2AA2455F001F4EB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E737F8C2AA2455F001F4EB4 /* LaunchScreen.storyboard */; };
@@ -48,6 +51,9 @@
 
 /* Begin PBXFileReference section */
 		0CF4E32BF96B409B84703B49 /* Pods_ArielsJourneyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArielsJourneyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E1CD4DD2AA2B53B00D90276 /* Macondo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Macondo-Regular.ttf"; sourceTree = "<group>"; };
+		2E6DEFCF2AA2A2A000C02153 /* StyledHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledHeaderView.swift; sourceTree = "<group>"; };
+		2E6DEFD12AA2A50C00C02153 /* StyledHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StyledHeaderView.xib; sourceTree = "<group>"; };
 		2E737F7E2AA2455D001F4EB4 /* ArielsJourney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArielsJourney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E737F812AA2455D001F4EB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E737F8A2AA2455F001F4EB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -107,6 +113,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E1CD4DB2AA2B50E00D90276 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2E1CD4DC2AA2B52700D90276 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2E1CD4DC2AA2B52700D90276 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2E1CD4DD2AA2B53B00D90276 /* Macondo-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		2E6DEFCD2AA2A0DA00C02153 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2E6DEFCE2AA2A0E700C02153 /* StyledHeader */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2E6DEFCE2AA2A0E700C02153 /* StyledHeader */ = {
+			isa = PBXGroup;
+			children = (
+				2E6DEFCF2AA2A2A000C02153 /* StyledHeaderView.swift */,
+				2E6DEFD12AA2A50C00C02153 /* StyledHeaderView.xib */,
+			);
+			path = StyledHeader;
+			sourceTree = "<group>";
+		};
 		2E737F752AA2455D001F4EB4 = {
 			isa = PBXGroup;
 			children = (
@@ -133,7 +172,9 @@
 			isa = PBXGroup;
 			children = (
 				2E737FB42AA247E5001F4EB4 /* Application */,
+				2E6DEFCD2AA2A0DA00C02153 /* Components */,
 				2E737FB52AA247FB001F4EB4 /* Modules */,
+				2E1CD4DB2AA2B50E00D90276 /* Resources */,
 				2E737FB62AA2481A001F4EB4 /* Utils */,
 				2E737F8A2AA2455F001F4EB4 /* Assets.xcassets */,
 				2E737F8F2AA2455F001F4EB4 /* Info.plist */,
@@ -349,7 +390,9 @@
 				2E737FC12AA249A5001F4EB4 /* SplashScreenViewController.xib in Resources */,
 				2EB1695D2AA278AC00615060 /* HomeScreenViewController.xib in Resources */,
 				2E737F8E2AA2455F001F4EB4 /* LaunchScreen.storyboard in Resources */,
+				2E6DEFD22AA2A50C00C02153 /* StyledHeaderView.xib in Resources */,
 				2E737F8B2AA2455F001F4EB4 /* Assets.xcassets in Resources */,
+				2E1CD4DE2AA2B53B00D90276 /* Macondo-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +492,7 @@
 				2EB169572AA2766900615060 /* HomeScreenRouter.swift in Sources */,
 				2E737FB92AA2486E001F4EB4 /* BaseRouter.swift in Sources */,
 				2E737FBD2AA248F7001F4EB4 /* BasePresenterDelegate.swift in Sources */,
+				2E6DEFD02AA2A2A000C02153 /* StyledHeaderView.swift in Sources */,
 				2E737FB32AA2472A001F4EB4 /* SplashScreenRouter.swift in Sources */,
 				2EB169592AA2773600615060 /* HomeScreenPresenter.swift in Sources */,
 				2E737FBF2AA24928001F4EB4 /* SplashScreenPresenter.swift in Sources */,

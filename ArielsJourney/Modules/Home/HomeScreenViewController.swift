@@ -12,7 +12,7 @@ import UIKit
 class HomeScreenViewController: BaseViewController {
 
     // MARK: - Outlets
-    
+    @IBOutlet weak var headerView: StyledHeaderView!
     
     // MARK: - Properties
     var presenter: HomeScreenPresenter!
@@ -30,7 +30,10 @@ class HomeScreenViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.didLoad()
-        self.title = "Teste"
+        self.headerView.delegate = self
+        self.view.backgroundColor = UIColor(named: "ArielBackground")
+        self.headerView.showCenterIcon()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -56,5 +59,15 @@ class HomeScreenViewController: BaseViewController {
 extension HomeScreenViewController: HomeScreenPresenterDelegate {
     
     func didLoadRemoteConfig() {
+    }
+}
+
+extension HomeScreenViewController: StyledHeaderViewDelegate {
+    func didTapBackButton() {
+        print("voltar")
+    }
+    
+    func didTapConfigButton() {
+        print("configurações")
     }
 }

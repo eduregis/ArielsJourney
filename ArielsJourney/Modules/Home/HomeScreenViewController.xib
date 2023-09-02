@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_12" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeScreenViewController" customModule="ArielsJourney" customModuleProvider="target">
             <connections>
+                <outlet property="headerView" destination="LDW-GP-gTr" id="63S-cL-H3O"/>
                 <outlet property="view" destination="Itb-RH-fVE" id="bJ5-s1-Gcw"/>
             </connections>
         </placeholder>
@@ -19,17 +19,26 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Nl-kM-f6w">
-                    <rect key="frame" x="403" y="198.66666666666666" width="46" height="21"/>
+                    <rect key="frame" x="403" y="186" width="46" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LDW-GP-gTr" userLabel="StyledHeaderView" customClass="StyledHeaderView" customModule="ArielsJourney" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="852" height="68"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="68" id="AtH-Gy-SiT"/>
+                    </constraints>
+                </view>
             </subviews>
-            <viewLayoutGuide key="safeArea" id="xob-wE-4Yw"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="1Nl-kM-f6w" firstAttribute="centerY" secondItem="xob-wE-4Yw" secondAttribute="centerY" id="m3y-rR-NFz"/>
-                <constraint firstItem="1Nl-kM-f6w" firstAttribute="centerX" secondItem="xob-wE-4Yw" secondAttribute="centerX" id="ngS-AZ-lx3"/>
+                <constraint firstItem="LDW-GP-gTr" firstAttribute="centerX" secondItem="Itb-RH-fVE" secondAttribute="centerX" id="DhL-OE-QSx"/>
+                <constraint firstItem="1Nl-kM-f6w" firstAttribute="centerY" secondItem="Itb-RH-fVE" secondAttribute="centerY" id="m3y-rR-NFz"/>
+                <constraint firstItem="1Nl-kM-f6w" firstAttribute="centerX" secondItem="Itb-RH-fVE" secondAttribute="centerX" id="ngS-AZ-lx3"/>
+                <constraint firstAttribute="top" secondItem="LDW-GP-gTr" secondAttribute="top" id="sFV-lW-0Ue"/>
+                <constraint firstItem="LDW-GP-gTr" firstAttribute="width" secondItem="Itb-RH-fVE" secondAttribute="width" id="yKq-ts-dq4"/>
             </constraints>
             <point key="canvasLocation" x="196" y="-19"/>
         </view>

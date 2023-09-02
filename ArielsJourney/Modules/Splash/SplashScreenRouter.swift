@@ -22,7 +22,7 @@ class SplashScreenRouter: BaseRouter {
     }
     
     func navigateToHome() {
-        presentOverContext(HomeScreenRouter.makeModule(), animated: true, modalPresentation: false)
-//        self.push(HomeScreenRouter.makeModule(), animated: true)
+//        presentOverContext(HomeScreenRouter.makeModule(), animated: true, modalPresentation: false)
+        self.push(HomeScreenRouter.makeModule(), animated: true)
     }
 }
