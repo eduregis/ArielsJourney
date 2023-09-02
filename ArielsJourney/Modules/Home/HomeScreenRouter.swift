@@ -32,4 +32,9 @@ class HomeScreenRouter: BaseRouter {
         print("Home -> Jornada do Herói")
         self.push(HerosJourneyScreenRouter.makeModule(), animated: true)
     }
+    
+    func navigateToArchetypes() {
+        print("Home -> Arquétipos")
+        self.push(ArchetypesScreenRouter.makeModule(), animated: true)
+    }
 }

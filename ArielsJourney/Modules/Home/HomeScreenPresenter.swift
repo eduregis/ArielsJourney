@@ -57,7 +57,7 @@ class HomeScreenPresenter {
         case .herosJourney:
             self.router.navigateToHerosJourney()
         case .archetypes:
-            self.router.navigateToGameplay()
+            self.router.navigateToArchetypes()
         case .achievements:
             self.router.navigateToGameplay()
         }
