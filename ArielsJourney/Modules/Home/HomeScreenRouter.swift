@@ -37,4 +37,9 @@ class HomeScreenRouter: BaseRouter {
         print("Home -> Arquétipos")
         self.push(ArchetypesScreenRouter.makeModule(), animated: true)
     }
+    
+    func navigateToAchievements() {
+        print("Home -> Conquistas")
+        self.push(AchievementsScreenRouter.makeModule(), animated: true)
+    }
 }

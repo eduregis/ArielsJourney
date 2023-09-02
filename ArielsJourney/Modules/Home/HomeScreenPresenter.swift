@@ -59,7 +59,7 @@ class HomeScreenPresenter {
         case .archetypes:
             self.router.navigateToArchetypes()
         case .achievements:
-            self.router.navigateToGameplay()
+            self.router.navigateToAchievements()
         }
     }
 }

@@ -36,6 +36,10 @@
 		2E7FAC5D2AA3B4C700E1AF20 /* ArchetypesScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7FAC5C2AA3B4C700E1AF20 /* ArchetypesScreenPresenter.swift */; };
 		2E7FAC5F2AA3B4FE00E1AF20 /* ArchetypesScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7FAC5E2AA3B4FE00E1AF20 /* ArchetypesScreenViewController.swift */; };
 		2E7FAC612AA3B53900E1AF20 /* ArchetypesScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7FAC602AA3B53900E1AF20 /* ArchetypesScreenViewController.xib */; };
+		2E7FAC642AA3B66300E1AF20 /* AchievementsScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7FAC632AA3B66300E1AF20 /* AchievementsScreenRouter.swift */; };
+		2E7FAC662AA3B68B00E1AF20 /* AchievementsScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7FAC652AA3B68B00E1AF20 /* AchievementsScreenPresenter.swift */; };
+		2E7FAC682AA3B6BC00E1AF20 /* AchievementsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7FAC672AA3B6BC00E1AF20 /* AchievementsScreenViewController.swift */; };
+		2E7FAC6A2AA3B6F700E1AF20 /* AchievementsScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7FAC692AA3B6F700E1AF20 /* AchievementsScreenViewController.xib */; };
 		2E883D1B2AA2D5C70009909D /* HomeStainedGlassButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E883D1A2AA2D5C70009909D /* HomeStainedGlassButtonView.swift */; };
 		2E883D1D2AA2D6790009909D /* HomeStainedGlassButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E883D1C2AA2D6790009909D /* HomeStainedGlassButtonView.xib */; };
 		2EB169572AA2766900615060 /* HomeScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB169562AA2766900615060 /* HomeScreenRouter.swift */; };
@@ -97,6 +101,10 @@
 		2E7FAC5C2AA3B4C700E1AF20 /* ArchetypesScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchetypesScreenPresenter.swift; sourceTree = "<group>"; };
 		2E7FAC5E2AA3B4FE00E1AF20 /* ArchetypesScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchetypesScreenViewController.swift; sourceTree = "<group>"; };
 		2E7FAC602AA3B53900E1AF20 /* ArchetypesScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArchetypesScreenViewController.xib; sourceTree = "<group>"; };
+		2E7FAC632AA3B66300E1AF20 /* AchievementsScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsScreenRouter.swift; sourceTree = "<group>"; };
+		2E7FAC652AA3B68B00E1AF20 /* AchievementsScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsScreenPresenter.swift; sourceTree = "<group>"; };
+		2E7FAC672AA3B6BC00E1AF20 /* AchievementsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsScreenViewController.swift; sourceTree = "<group>"; };
+		2E7FAC692AA3B6F700E1AF20 /* AchievementsScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AchievementsScreenViewController.xib; sourceTree = "<group>"; };
 		2E883D1A2AA2D5C70009909D /* HomeStainedGlassButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStainedGlassButtonView.swift; sourceTree = "<group>"; };
 		2E883D1C2AA2D6790009909D /* HomeStainedGlassButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeStainedGlassButtonView.xib; sourceTree = "<group>"; };
 		2EB169562AA2766900615060 /* HomeScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenRouter.swift; sourceTree = "<group>"; };
@@ -251,6 +259,7 @@
 		2E737FB52AA247FB001F4EB4 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				2E7FAC622AA3B63F00E1AF20 /* Achievements */,
 				2E7FAC592AA3B43F00E1AF20 /* Archetypes */,
 				2E7FAC502AA3B15600E1AF20 /* HerosJourney */,
 				2E7FAC472AA3A89400E1AF20 /* Gameplay */,
@@ -309,6 +318,17 @@
 				2E7FAC602AA3B53900E1AF20 /* ArchetypesScreenViewController.xib */,
 			);
 			path = Archetypes;
+			sourceTree = "<group>";
+		};
+		2E7FAC622AA3B63F00E1AF20 /* Achievements */ = {
+			isa = PBXGroup;
+			children = (
+				2E7FAC632AA3B66300E1AF20 /* AchievementsScreenRouter.swift */,
+				2E7FAC652AA3B68B00E1AF20 /* AchievementsScreenPresenter.swift */,
+				2E7FAC672AA3B6BC00E1AF20 /* AchievementsScreenViewController.swift */,
+				2E7FAC692AA3B6F700E1AF20 /* AchievementsScreenViewController.xib */,
+			);
+			path = Achievements;
 			sourceTree = "<group>";
 		};
 		2E883D192AA2D5740009909D /* HomeStainedGlassButton */ = {
@@ -465,6 +485,7 @@
 				2E737FC12AA249A5001F4EB4 /* SplashScreenViewController.xib in Resources */,
 				2E7FAC612AA3B53900E1AF20 /* ArchetypesScreenViewController.xib in Resources */,
 				2EB1695D2AA278AC00615060 /* HomeScreenViewController.xib in Resources */,
+				2E7FAC6A2AA3B6F700E1AF20 /* AchievementsScreenViewController.xib in Resources */,
 				2E737F8E2AA2455F001F4EB4 /* LaunchScreen.storyboard in Resources */,
 				2E6DEFD22AA2A50C00C02153 /* StyledHeaderView.xib in Resources */,
 				2E737F8B2AA2455F001F4EB4 /* Assets.xcassets in Resources */,
@@ -566,6 +587,7 @@
 			files = (
 				2E7FAC492AA3A8AD00E1AF20 /* GameplayScreenRouter.swift in Sources */,
 				2E737F822AA2455D001F4EB4 /* AppDelegate.swift in Sources */,
+				2E7FAC642AA3B66300E1AF20 /* AchievementsScreenRouter.swift in Sources */,
 				2E7FAC4B2AA3A91F00E1AF20 /* GameplayScreenPresenter.swift in Sources */,
 				2E737FBB2AA24894001F4EB4 /* BaseViewController.swift in Sources */,
 				2E737FC32AA249E1001F4EB4 /* SplashScreenViewController.swift in Sources */,
@@ -581,7 +603,9 @@
 				2E7FAC542AA3B1CC00E1AF20 /* HerosJourneyScreenPresenter.swift in Sources */,
 				2E737FB32AA2472A001F4EB4 /* SplashScreenRouter.swift in Sources */,
 				2E7FAC4D2AA3A9F800E1AF20 /* GameplayScreenViewController.swift in Sources */,
+				2E7FAC662AA3B68B00E1AF20 /* AchievementsScreenPresenter.swift in Sources */,
 				2EB169592AA2773600615060 /* HomeScreenPresenter.swift in Sources */,
+				2E7FAC682AA3B6BC00E1AF20 /* AchievementsScreenViewController.swift in Sources */,
 				2E737FBF2AA24928001F4EB4 /* SplashScreenPresenter.swift in Sources */,
 				2E7FAC5D2AA3B4C700E1AF20 /* ArchetypesScreenPresenter.swift in Sources */,
 				2EB1695B2AA2781800615060 /* HomeScreenViewController.swift in Sources */,
