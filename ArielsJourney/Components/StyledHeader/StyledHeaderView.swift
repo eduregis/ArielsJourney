@@ -17,6 +17,7 @@ class StyledHeaderView: UIView {
     // MARK: - Outlets
     @IBOutlet weak var centerIcon: UIImageView!
     @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var overlayView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var configButton: UIButton!
@@ -61,8 +62,9 @@ class StyledHeaderView: UIView {
     }
     
     // MARK: - Methods
-    func hideBackButton() {
-        self.backButton.isHidden = true
+    func hideBackground() {
+        self.contentView.backgroundColor = .clear
+        self.overlayView.isHidden = true
     }
     
     func showCenterIcon() {

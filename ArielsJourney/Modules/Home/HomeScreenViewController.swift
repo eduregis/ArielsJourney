@@ -5,8 +5,6 @@
 //  Created by Eduardo Oliveira on 01/09/23.
 //
 
-import Foundation
-
 import UIKit
 
 class HomeScreenViewController: BaseViewController {
@@ -56,7 +54,7 @@ class HomeScreenViewController: BaseViewController {
     }
 }
 
-// MARK: - SplashScreenPresenterDelegate
+// MARK: - HomeScreenPresenterDelegate
 extension HomeScreenViewController: HomeScreenPresenterDelegate {
     
     func didLoadRemoteConfig() {

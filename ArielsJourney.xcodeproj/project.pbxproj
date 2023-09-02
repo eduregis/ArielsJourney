@@ -24,6 +24,10 @@
 		2E737FBF2AA24928001F4EB4 /* SplashScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E737FBE2AA24928001F4EB4 /* SplashScreenPresenter.swift */; };
 		2E737FC12AA249A5001F4EB4 /* SplashScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E737FC02AA249A5001F4EB4 /* SplashScreenViewController.xib */; };
 		2E737FC32AA249E1001F4EB4 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E737FC22AA249E1001F4EB4 /* SplashScreenViewController.swift */; };
+		2E7FAC492AA3A8AD00E1AF20 /* GameplayScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7FAC482AA3A8AD00E1AF20 /* GameplayScreenRouter.swift */; };
+		2E7FAC4B2AA3A91F00E1AF20 /* GameplayScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7FAC4A2AA3A91F00E1AF20 /* GameplayScreenPresenter.swift */; };
+		2E7FAC4D2AA3A9F800E1AF20 /* GameplayScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7FAC4C2AA3A9F800E1AF20 /* GameplayScreenViewController.swift */; };
+		2E7FAC4F2AA3AA0700E1AF20 /* GameplayScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7FAC4E2AA3AA0700E1AF20 /* GameplayScreenViewController.xib */; };
 		2E883D1B2AA2D5C70009909D /* HomeStainedGlassButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E883D1A2AA2D5C70009909D /* HomeStainedGlassButtonView.swift */; };
 		2E883D1D2AA2D6790009909D /* HomeStainedGlassButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E883D1C2AA2D6790009909D /* HomeStainedGlassButtonView.xib */; };
 		2EB169572AA2766900615060 /* HomeScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB169562AA2766900615060 /* HomeScreenRouter.swift */; };
@@ -73,6 +77,10 @@
 		2E737FBE2AA24928001F4EB4 /* SplashScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenPresenter.swift; sourceTree = "<group>"; };
 		2E737FC02AA249A5001F4EB4 /* SplashScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenViewController.xib; sourceTree = "<group>"; };
 		2E737FC22AA249E1001F4EB4 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		2E7FAC482AA3A8AD00E1AF20 /* GameplayScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayScreenRouter.swift; sourceTree = "<group>"; };
+		2E7FAC4A2AA3A91F00E1AF20 /* GameplayScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayScreenPresenter.swift; sourceTree = "<group>"; };
+		2E7FAC4C2AA3A9F800E1AF20 /* GameplayScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayScreenViewController.swift; sourceTree = "<group>"; };
+		2E7FAC4E2AA3AA0700E1AF20 /* GameplayScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameplayScreenViewController.xib; sourceTree = "<group>"; };
 		2E883D1A2AA2D5C70009909D /* HomeStainedGlassButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStainedGlassButtonView.swift; sourceTree = "<group>"; };
 		2E883D1C2AA2D6790009909D /* HomeStainedGlassButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeStainedGlassButtonView.xib; sourceTree = "<group>"; };
 		2EB169562AA2766900615060 /* HomeScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenRouter.swift; sourceTree = "<group>"; };
@@ -227,6 +235,7 @@
 		2E737FB52AA247FB001F4EB4 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				2E7FAC472AA3A89400E1AF20 /* Gameplay */,
 				2EB169552AA275EA00615060 /* Home */,
 				2E737FB12AA246F2001F4EB4 /* Splash */,
 			);
@@ -249,6 +258,17 @@
 				2E737FBC2AA248F7001F4EB4 /* BasePresenterDelegate.swift */,
 			);
 			path = Bases;
+			sourceTree = "<group>";
+		};
+		2E7FAC472AA3A89400E1AF20 /* Gameplay */ = {
+			isa = PBXGroup;
+			children = (
+				2E7FAC482AA3A8AD00E1AF20 /* GameplayScreenRouter.swift */,
+				2E7FAC4A2AA3A91F00E1AF20 /* GameplayScreenPresenter.swift */,
+				2E7FAC4C2AA3A9F800E1AF20 /* GameplayScreenViewController.swift */,
+				2E7FAC4E2AA3AA0700E1AF20 /* GameplayScreenViewController.xib */,
+			);
+			path = Gameplay;
 			sourceTree = "<group>";
 		};
 		2E883D192AA2D5740009909D /* HomeStainedGlassButton */ = {
@@ -401,6 +421,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E7FAC4F2AA3AA0700E1AF20 /* GameplayScreenViewController.xib in Resources */,
 				2E737FC12AA249A5001F4EB4 /* SplashScreenViewController.xib in Resources */,
 				2EB1695D2AA278AC00615060 /* HomeScreenViewController.xib in Resources */,
 				2E737F8E2AA2455F001F4EB4 /* LaunchScreen.storyboard in Resources */,
@@ -501,7 +522,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E7FAC492AA3A8AD00E1AF20 /* GameplayScreenRouter.swift in Sources */,
 				2E737F822AA2455D001F4EB4 /* AppDelegate.swift in Sources */,
+				2E7FAC4B2AA3A91F00E1AF20 /* GameplayScreenPresenter.swift in Sources */,
 				2E737FBB2AA24894001F4EB4 /* BaseViewController.swift in Sources */,
 				2E737FC32AA249E1001F4EB4 /* SplashScreenViewController.swift in Sources */,
 				2EB169572AA2766900615060 /* HomeScreenRouter.swift in Sources */,
@@ -510,6 +533,7 @@
 				2E883D1B2AA2D5C70009909D /* HomeStainedGlassButtonView.swift in Sources */,
 				2E6DEFD02AA2A2A000C02153 /* StyledHeaderView.swift in Sources */,
 				2E737FB32AA2472A001F4EB4 /* SplashScreenRouter.swift in Sources */,
+				2E7FAC4D2AA3A9F800E1AF20 /* GameplayScreenViewController.swift in Sources */,
 				2EB169592AA2773600615060 /* HomeScreenPresenter.swift in Sources */,
 				2E737FBF2AA24928001F4EB4 /* SplashScreenPresenter.swift in Sources */,
 				2EB1695B2AA2781800615060 /* HomeScreenViewController.swift in Sources */,
