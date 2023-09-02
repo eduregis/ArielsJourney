@@ -13,7 +13,9 @@
                 <outlet property="centerIcon" destination="K0w-Ur-irX" id="ApQ-Vk-9sT"/>
                 <outlet property="configButton" destination="9xH-Bm-mYs" id="A9L-ZS-yEC"/>
                 <outlet property="contentView" destination="BPG-ZI-Mob" id="9e5-1Q-1eR"/>
+                <outlet property="firstAdornment" destination="FPr-qQ-9tF" id="pPo-pM-Y6J"/>
                 <outlet property="overlayView" destination="6PM-LX-Be0" id="m8c-BI-WZO"/>
+                <outlet property="secondAdornment" destination="lXD-gN-EZW" id="suM-fZ-1k2"/>
                 <outlet property="titleLabel" destination="Ve4-b7-RtI" id="hIa-3L-u2C"/>
             </connections>
         </placeholder>

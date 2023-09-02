@@ -19,6 +19,8 @@ class StyledHeaderView: UIView {
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var overlayView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var firstAdornment: UIImageView!
+    @IBOutlet weak var secondAdornment: UIImageView!
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var configButton: UIButton!
     
@@ -62,6 +64,12 @@ class StyledHeaderView: UIView {
     }
     
     // MARK: - Methods
+    
+    func hideAdornments() {
+        self.firstAdornment.isHidden = true
+        self.secondAdornment.isHidden = true
+    }
+    
     func hideBackground() {
         self.contentView.backgroundColor = .clear
         self.overlayView.isHidden = true

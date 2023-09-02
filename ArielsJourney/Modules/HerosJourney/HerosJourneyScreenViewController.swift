@@ -30,6 +30,7 @@ class HerosJourneyScreenViewController: BaseViewController {
         presenter.didLoad()
         self.headerView.delegate = self
         self.headerView.titleLabel.text = "Jornada do Herói"
+        self.headerView.hideAdornments()
         self.view.backgroundColor = UIColor(named: "ArielBackground")
     }
     
