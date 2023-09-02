@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21507"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HerosJourneyScreenViewController" customModule="ArielsJourney" customModuleProvider="target">
+            <connections>
+                <outlet property="headerView" destination="YJt-dY-kev" id="9RM-cD-yoA"/>
+                <outlet property="view" destination="JIO-A2-Ept" id="KA3-f3-X3z"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="JIO-A2-Ept">
+            <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJt-dY-kev" customClass="StyledHeaderView" customModule="ArielsJourney" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="852" height="68"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="68" id="Ost-R3-VrJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="YJt-dY-kev" firstAttribute="leading" secondItem="JIO-A2-Ept" secondAttribute="leading" id="3Pr-EH-6hF"/>
+                <constraint firstItem="YJt-dY-kev" firstAttribute="top" secondItem="JIO-A2-Ept" secondAttribute="top" id="sja-dE-6qM"/>
+                <constraint firstAttribute="trailing" secondItem="YJt-dY-kev" secondAttribute="trailing" id="yHw-7R-bWn"/>
+            </constraints>
+            <point key="canvasLocation" x="216" y="10"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

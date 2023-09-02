@@ -5,14 +5,14 @@
 //  Created by Eduardo Oliveira on 01/09/23.
 //
 
-import Foundation
-
 import UIKit
 
 class HomeScreenViewController: BaseViewController {
 
     // MARK: - Outlets
     @IBOutlet weak var headerView: StyledHeaderView!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet var collectionOfButtons: Array<HomeStainedGlassButtonView>?
     
     // MARK: - Properties
     var presenter: HomeScreenPresenter!
@@ -31,10 +31,16 @@ class HomeScreenViewController: BaseViewController {
         super.viewDidLoad()
         presenter.didLoad()
         self.headerView.delegate = self
+        if let collectionOfButtons = collectionOfButtons {
+            for (index, button) in collectionOfButtons.enumerated() {
+                button.delegate = self
+                button.tagButton = HomeScreenTags(rawValue: index) 
+                button.title = HomeScreenTags(rawValue: index)?.description
+            }
+        }
         self.view.backgroundColor = UIColor(named: "ArielBackground")
+        self.scrollView.showsHorizontalScrollIndicator = false
         self.headerView.showCenterIcon()
-        
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -46,16 +52,9 @@ class HomeScreenViewController: BaseViewController {
         super.viewDidAppear(animated)
         presenter.didAppear()
     }
-    
-    // MARK: - Methods
-
-    // MARK: - Actions
-    func navigateToGameplay() {
-        self.presenter.navigateToGameplay()
-    }
 }
 
-// MARK: - SplashScreenPresenterDelegate
+// MARK: - HomeScreenPresenterDelegate
 extension HomeScreenViewController: HomeScreenPresenterDelegate {
     
     func didLoadRemoteConfig() {
@@ -69,5 +68,11 @@ extension HomeScreenViewController: StyledHeaderViewDelegate {
     
     func didTapConfigButton() {
         print("configurações")
+    }
+}
+
+extension HomeScreenViewController: HomeStainedGlassButtonViewDelegate {
+    func didTapButton(tag: HomeScreenTags) {
+        self.presenter.didTapButton(tag: tag)
     }
 }

@@ -19,6 +19,27 @@ class HomeScreenRouter: BaseRouter {
     }
     
     func navigateToGameplay() {
-//        self.push(GameplayScreenRouter.makeModule(), animated: true)
+        print("Home -> Gameplay")
+        self.push(GameplayScreenRouter.makeModule(), animated: true)
+    }
+    
+    func navigateToContinue() {
+        print("Home -> Gameplay (Continue)")
+        self.push(GameplayScreenRouter.makeModule(), animated: true)
+    }
+    
+    func navigateToHerosJourney() {
+        print("Home -> Jornada do Herói")
+        self.push(HerosJourneyScreenRouter.makeModule(), animated: true)
+    }
+    
+    func navigateToArchetypes() {
+        print("Home -> Arquétipos")
+        self.push(ArchetypesScreenRouter.makeModule(), animated: true)
+    }
+    
+    func navigateToAchievements() {
+        print("Home -> Conquistas")
+        self.push(AchievementsScreenRouter.makeModule(), animated: true)
     }
 }

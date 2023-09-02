@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Macondo-Regular.ttf">
+            <string>Macondo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeStainedGlassButtonView" customModule="ArielsJourney" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="2OT-6j-PJh" id="DEP-8b-YDT"/>
+                <outlet property="stainedGlassImage" destination="Sn2-NA-DWc" id="L3H-PA-ycG"/>
+                <outlet property="titleLabel" destination="y2G-Qr-yvj" id="qOC-sH-5kU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2OT-6j-PJh">
+            <rect key="frame" x="0.0" y="0.0" width="119" height="275"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sn2-NA-DWc" userLabel="StainedGlassImage">
+                    <rect key="frame" x="0.0" y="0.0" width="119" height="275"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SZB-ow-Xi0" userLabel="TitleContainer">
+                    <rect key="frame" x="9.6666666666666643" y="233" width="100" height="37"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeButtonTitleContainer" translatesAutoresizingMaskIntoConstraints="NO" id="aI6-Du-4pM" userLabel="ImageButton">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="37"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2G-Qr-yvj">
+                            <rect key="frame" x="8" y="0.0" width="84" height="37"/>
+                            <fontDescription key="fontDescription" name="Macondo-Regular" family="Macondo" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="38Y-E4-vuj"/>
+                        <constraint firstItem="aI6-Du-4pM" firstAttribute="leading" secondItem="SZB-ow-Xi0" secondAttribute="leading" id="7mh-J7-tib"/>
+                        <constraint firstItem="y2G-Qr-yvj" firstAttribute="top" secondItem="SZB-ow-Xi0" secondAttribute="top" id="8Fu-Ba-o6j"/>
+                        <constraint firstAttribute="width" constant="100" id="Emt-ce-AD6"/>
+                        <constraint firstItem="aI6-Du-4pM" firstAttribute="top" secondItem="SZB-ow-Xi0" secondAttribute="top" id="M4W-jl-ETf"/>
+                        <constraint firstAttribute="trailing" secondItem="aI6-Du-4pM" secondAttribute="trailing" id="ShB-Mn-q14"/>
+                        <constraint firstAttribute="bottom" secondItem="y2G-Qr-yvj" secondAttribute="bottom" id="YB4-uo-Nji"/>
+                        <constraint firstItem="y2G-Qr-yvj" firstAttribute="leading" secondItem="SZB-ow-Xi0" secondAttribute="leading" constant="8" id="ce4-wU-guR"/>
+                        <constraint firstAttribute="bottom" secondItem="aI6-Du-4pM" secondAttribute="bottom" id="r9F-Qe-om0"/>
+                        <constraint firstAttribute="trailing" secondItem="y2G-Qr-yvj" secondAttribute="trailing" constant="8" id="tOS-Y0-Ice"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Sn2-NA-DWc" secondAttribute="bottom" id="IKH-kI-qqh"/>
+                <constraint firstItem="Sn2-NA-DWc" firstAttribute="top" secondItem="2OT-6j-PJh" secondAttribute="top" id="PjL-dd-6xE"/>
+                <constraint firstItem="SZB-ow-Xi0" firstAttribute="centerX" secondItem="2OT-6j-PJh" secondAttribute="centerX" id="R8r-5U-1MW"/>
+                <constraint firstItem="Sn2-NA-DWc" firstAttribute="bottom" secondItem="SZB-ow-Xi0" secondAttribute="bottom" constant="5" id="aj3-Nd-sAI"/>
+                <constraint firstAttribute="trailing" secondItem="Sn2-NA-DWc" secondAttribute="trailing" id="sdI-8j-C0N"/>
+                <constraint firstItem="Sn2-NA-DWc" firstAttribute="leading" secondItem="2OT-6j-PJh" secondAttribute="leading" id="yZV-dP-I8M"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="372" y="13"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="homeButtonTitleContainer" width="100" height="37"/>
+    </resources>
+</document>
