@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		04EBAE7901D631420C125B9E /* Pods_ArielsJourney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2511782EB8F98B19C8ABAAB /* Pods_ArielsJourney.framework */; };
 		2E1CD4DE2AA2B53B00D90276 /* Macondo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E1CD4DD2AA2B53B00D90276 /* Macondo-Regular.ttf */; };
-		2E6DEFD02AA2A2A000C02153 /* StyledHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6DEFCF2AA2A2A000C02153 /* StyledHeaderView.swift */; };
-		2E6DEFD22AA2A50C00C02153 /* StyledHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6DEFD12AA2A50C00C02153 /* StyledHeaderView.xib */; };
+		2E6DEFD02AA2A2A000C02153 /* StyledHeaderScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6DEFCF2AA2A2A000C02153 /* StyledHeaderScreenView.swift */; };
+		2E6DEFD22AA2A50C00C02153 /* StyledHeaderScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6DEFD12AA2A50C00C02153 /* StyledHeaderScreenView.xib */; };
 		2E737F822AA2455D001F4EB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E737F812AA2455D001F4EB4 /* AppDelegate.swift */; };
 		2E737F8B2AA2455F001F4EB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E737F8A2AA2455F001F4EB4 /* Assets.xcassets */; };
 		2E737F8E2AA2455F001F4EB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E737F8C2AA2455F001F4EB4 /* LaunchScreen.storyboard */; };
@@ -47,6 +47,8 @@
 		2EAF957B2AA3EC3800B3FAC2 /* ConfigurationsSheetPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF957A2AA3EC3800B3FAC2 /* ConfigurationsSheetPresenter.swift */; };
 		2EAF957D2AA3EC9C00B3FAC2 /* ConfigurationsSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF957C2AA3EC9C00B3FAC2 /* ConfigurationsSheetViewController.swift */; };
 		2EAF957F2AA3ED7100B3FAC2 /* ConfigurationsSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EAF957E2AA3ED7100B3FAC2 /* ConfigurationsSheetViewController.xib */; };
+		2EAF95822AA3F12000B3FAC2 /* StyledHeaderSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF95812AA3F12000B3FAC2 /* StyledHeaderSheetView.swift */; };
+		2EAF95842AA3F1D000B3FAC2 /* StyledHeaderSheetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EAF95832AA3F1D000B3FAC2 /* StyledHeaderSheetView.xib */; };
 		2EB169572AA2766900615060 /* HomeScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB169562AA2766900615060 /* HomeScreenRouter.swift */; };
 		2EB169592AA2773600615060 /* HomeScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB169582AA2773600615060 /* HomeScreenPresenter.swift */; };
 		2EB1695B2AA2781800615060 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB1695A2AA2781800615060 /* HomeScreenViewController.swift */; };
@@ -75,8 +77,8 @@
 /* Begin PBXFileReference section */
 		0CF4E32BF96B409B84703B49 /* Pods_ArielsJourneyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArielsJourneyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E1CD4DD2AA2B53B00D90276 /* Macondo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Macondo-Regular.ttf"; sourceTree = "<group>"; };
-		2E6DEFCF2AA2A2A000C02153 /* StyledHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledHeaderView.swift; sourceTree = "<group>"; };
-		2E6DEFD12AA2A50C00C02153 /* StyledHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StyledHeaderView.xib; sourceTree = "<group>"; };
+		2E6DEFCF2AA2A2A000C02153 /* StyledHeaderScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledHeaderScreenView.swift; sourceTree = "<group>"; };
+		2E6DEFD12AA2A50C00C02153 /* StyledHeaderScreenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StyledHeaderScreenView.xib; sourceTree = "<group>"; };
 		2E737F7E2AA2455D001F4EB4 /* ArielsJourney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArielsJourney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E737F812AA2455D001F4EB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E737F8A2AA2455F001F4EB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,6 +119,8 @@
 		2EAF957A2AA3EC3800B3FAC2 /* ConfigurationsSheetPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationsSheetPresenter.swift; sourceTree = "<group>"; };
 		2EAF957C2AA3EC9C00B3FAC2 /* ConfigurationsSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationsSheetViewController.swift; sourceTree = "<group>"; };
 		2EAF957E2AA3ED7100B3FAC2 /* ConfigurationsSheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfigurationsSheetViewController.xib; sourceTree = "<group>"; };
+		2EAF95812AA3F12000B3FAC2 /* StyledHeaderSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledHeaderSheetView.swift; sourceTree = "<group>"; };
+		2EAF95832AA3F1D000B3FAC2 /* StyledHeaderSheetView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StyledHeaderSheetView.xib; sourceTree = "<group>"; };
 		2EB169562AA2766900615060 /* HomeScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenRouter.swift; sourceTree = "<group>"; };
 		2EB169582AA2773600615060 /* HomeScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenPresenter.swift; sourceTree = "<group>"; };
 		2EB1695A2AA2781800615060 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
@@ -179,18 +183,19 @@
 			isa = PBXGroup;
 			children = (
 				2E883D192AA2D5740009909D /* HomeStainedGlassButton */,
-				2E6DEFCE2AA2A0E700C02153 /* StyledHeader */,
+				2E6DEFCE2AA2A0E700C02153 /* StyledHeaderScreen */,
+				2EAF95802AA3F08B00B3FAC2 /* StyledHeaderSheet */,
 			);
 			path = Components;
 			sourceTree = "<group>";
 		};
-		2E6DEFCE2AA2A0E700C02153 /* StyledHeader */ = {
+		2E6DEFCE2AA2A0E700C02153 /* StyledHeaderScreen */ = {
 			isa = PBXGroup;
 			children = (
-				2E6DEFCF2AA2A2A000C02153 /* StyledHeaderView.swift */,
-				2E6DEFD12AA2A50C00C02153 /* StyledHeaderView.xib */,
+				2E6DEFCF2AA2A2A000C02153 /* StyledHeaderScreenView.swift */,
+				2E6DEFD12AA2A50C00C02153 /* StyledHeaderScreenView.xib */,
 			);
-			path = StyledHeader;
+			path = StyledHeaderScreen;
 			sourceTree = "<group>";
 		};
 		2E737F752AA2455D001F4EB4 = {
@@ -387,6 +392,15 @@
 			path = Configurations;
 			sourceTree = "<group>";
 		};
+		2EAF95802AA3F08B00B3FAC2 /* StyledHeaderSheet */ = {
+			isa = PBXGroup;
+			children = (
+				2EAF95812AA3F12000B3FAC2 /* StyledHeaderSheetView.swift */,
+				2EAF95832AA3F1D000B3FAC2 /* StyledHeaderSheetView.xib */,
+			);
+			path = StyledHeaderSheet;
+			sourceTree = "<group>";
+		};
 		2EB169552AA275EA00615060 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -535,8 +549,9 @@
 				2E7FAC6A2AA3B6F700E1AF20 /* AchievementsScreenViewController.xib in Resources */,
 				2EAF957F2AA3ED7100B3FAC2 /* ConfigurationsSheetViewController.xib in Resources */,
 				2E737F8E2AA2455F001F4EB4 /* LaunchScreen.storyboard in Resources */,
-				2E6DEFD22AA2A50C00C02153 /* StyledHeaderView.xib in Resources */,
+				2E6DEFD22AA2A50C00C02153 /* StyledHeaderScreenView.xib in Resources */,
 				2E737F8B2AA2455F001F4EB4 /* Assets.xcassets in Resources */,
+				2EAF95842AA3F1D000B3FAC2 /* StyledHeaderSheetView.xib in Resources */,
 				2E883D1D2AA2D6790009909D /* HomeStainedGlassButtonView.xib in Resources */,
 				2E1CD4DE2AA2B53B00D90276 /* Macondo-Regular.ttf in Resources */,
 				2E7FAC582AA3B22D00E1AF20 /* HerosJourneyScreenViewController.xib in Resources */,
@@ -646,9 +661,10 @@
 				2E7FAC5F2AA3B4FE00E1AF20 /* ArchetypesScreenViewController.swift in Sources */,
 				2E7FAC522AA3B18A00E1AF20 /* HerosJourneyScreenRouter.swift in Sources */,
 				2EAF95742AA3EABF00B3FAC2 /* OverlayPresentation.swift in Sources */,
+				2EAF95822AA3F12000B3FAC2 /* StyledHeaderSheetView.swift in Sources */,
 				2E737FBD2AA248F7001F4EB4 /* BasePresenterDelegate.swift in Sources */,
 				2E883D1B2AA2D5C70009909D /* HomeStainedGlassButtonView.swift in Sources */,
-				2E6DEFD02AA2A2A000C02153 /* StyledHeaderView.swift in Sources */,
+				2E6DEFD02AA2A2A000C02153 /* StyledHeaderScreenView.swift in Sources */,
 				2E7FAC562AA3B22300E1AF20 /* HerosJourneyScreenViewController.swift in Sources */,
 				2EAF95792AA3EBE300B3FAC2 /* ConfigurationsSheetRouter.swift in Sources */,
 				2E7FAC5B2AA3B49700E1AF20 /* ArchetypesScreenRouter.swift in Sources */,

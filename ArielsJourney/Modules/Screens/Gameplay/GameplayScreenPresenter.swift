@@ -30,6 +30,10 @@ class GameplayScreenPresenter {
     func didAppear() {
     }
     
+    func showConfigurations() {
+        self.router.showConfigurations()
+    }
+    
     func navigateToHome() {
         print("Home <- Gameplay")
         self.router.pop(animated: true)

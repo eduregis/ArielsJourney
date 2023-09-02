@@ -30,6 +30,10 @@ class AchievementsScreenPresenter {
     func didAppear() {
     }
     
+    func showConfigurations() {
+        self.router.showConfigurations()
+    }
+    
     func navigateToHome() {
         print("Home <- Conquistas")
         self.router.pop(animated: true)

@@ -30,6 +30,10 @@ class HerosJourneyScreenPresenter {
     func didAppear() {
     }
     
+    func showConfigurations() {
+        self.router.showConfigurations()
+    }
+    
     func navigateToHome() {
         print("Home <- Jornada do Herói")
         self.router.pop(animated: true)

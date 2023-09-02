@@ -10,7 +10,7 @@ import UIKit
 class HerosJourneyScreenViewController: BaseViewController {
     
     // MARK: - Outlets
-    @IBOutlet weak var headerView: StyledHeaderView!
+    @IBOutlet weak var headerView: StyledHeaderScreenView!
     
     // MARK: - Properties
     var presenter: HerosJourneyScreenPresenter!
@@ -52,12 +52,12 @@ extension HerosJourneyScreenViewController: HerosJourneyScreenPresenterDelegate 
     }
 }
 
-extension HerosJourneyScreenViewController: StyledHeaderViewDelegate {
+extension HerosJourneyScreenViewController: StyledHeaderScreenViewDelegate {
     func didTapBackButton() {
         self.presenter.navigateToHome()
     }
     
     func didTapConfigButton() {
-        print("configurações")
+        self.presenter.showConfigurations()
     }
 }

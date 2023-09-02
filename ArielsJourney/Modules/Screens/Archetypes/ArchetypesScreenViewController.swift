@@ -10,7 +10,7 @@ import UIKit
 class ArchetypesScreenViewController: BaseViewController {
     
     // MARK: - Outlets
-    @IBOutlet weak var headerView: StyledHeaderView!
+    @IBOutlet weak var headerView: StyledHeaderScreenView!
     
     // MARK: - Properties
     var presenter: ArchetypesScreenPresenter!
@@ -52,12 +52,12 @@ extension ArchetypesScreenViewController: ArchetypesScreenPresenterDelegate {
     }
 }
 
-extension ArchetypesScreenViewController: StyledHeaderViewDelegate {
+extension ArchetypesScreenViewController: StyledHeaderScreenViewDelegate {
     func didTapBackButton() {
         self.presenter.navigateToHome()
     }
     
     func didTapConfigButton() {
-        print("configurações")
+        self.presenter.showConfigurations()
     }
 }

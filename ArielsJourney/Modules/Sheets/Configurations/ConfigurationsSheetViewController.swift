@@ -10,7 +10,7 @@ import UIKit
 class ConfigurationsSheetViewController: BaseViewController {
     
     // MARK: - Outlets
-    
+    @IBOutlet weak var headerView: StyledHeaderSheetView!
     
     // MARK: - Properties
     var presenter: ConfigurationsSheetPresenter!
@@ -28,8 +28,8 @@ class ConfigurationsSheetViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.didLoad()
-//        self.headerView.delegate = self
-//        self.headerView.titleLabel.text = "Configurações"
+        self.headerView.delegate = self
+        self.headerView.titleLabel.text = "Configurações"
         self.view.backgroundColor = UIColor(named: "ArielBackground")
     }
     
@@ -51,12 +51,6 @@ extension ConfigurationsSheetViewController: ConfigurationsSheetPresenterDelegat
     }
 }
 
-extension ConfigurationsSheetViewController: StyledHeaderViewDelegate {
-    func didTapBackButton() {
-        print("voltar (remover)")
-    }
+extension ConfigurationsSheetViewController: StyledHeaderSheetViewDelegate {
     
-    func didTapConfigButton() {
-        print("configurações (remover)")
-    }
 }

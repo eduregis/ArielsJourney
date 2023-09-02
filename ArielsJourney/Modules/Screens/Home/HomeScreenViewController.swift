@@ -10,7 +10,7 @@ import UIKit
 class HomeScreenViewController: BaseViewController {
 
     // MARK: - Outlets
-    @IBOutlet weak var headerView: StyledHeaderView!
+    @IBOutlet weak var headerView: StyledHeaderScreenView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet var collectionOfButtons: Array<HomeStainedGlassButtonView>?
     
@@ -61,12 +61,12 @@ extension HomeScreenViewController: HomeScreenPresenterDelegate {
     }
 }
 
-extension HomeScreenViewController: StyledHeaderViewDelegate {
+extension HomeScreenViewController: StyledHeaderScreenViewDelegate {
     
     func didTapBackButton() {}
     
     func didTapConfigButton() {
-        presenter.showConfigurations()
+        self.presenter.showConfigurations()
     }
 }
 

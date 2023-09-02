@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfigurationsSheetViewController" customModule="ArielsJourney" customModuleProvider="target">
             <connections>
+                <outlet property="headerView" destination="tpN-ik-2aC" id="gin-ga-h0H"/>
                 <outlet property="view" destination="LiE-1L-QeB" id="RDI-hv-5XQ"/>
             </connections>
         </placeholder>
@@ -23,10 +24,20 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tpN-ik-2aC" customClass="StyledHeaderSheetView" customModule="ArielsJourney" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="454" height="83"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="83" id="pv2-j3-lPO"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="isM-gY-fYt" firstAttribute="centerX" secondItem="LiE-1L-QeB" secondAttribute="centerX" id="LmY-qf-Y9A"/>
+                <constraint firstItem="tpN-ik-2aC" firstAttribute="leading" secondItem="LiE-1L-QeB" secondAttribute="leading" id="UqG-na-pwc"/>
+                <constraint firstAttribute="trailing" secondItem="tpN-ik-2aC" secondAttribute="trailing" id="e9E-pp-8Id"/>
+                <constraint firstItem="tpN-ik-2aC" firstAttribute="top" secondItem="LiE-1L-QeB" secondAttribute="top" id="uT3-7Y-15h"/>
                 <constraint firstItem="isM-gY-fYt" firstAttribute="centerY" secondItem="LiE-1L-QeB" secondAttribute="centerY" id="yQS-GR-OI8"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

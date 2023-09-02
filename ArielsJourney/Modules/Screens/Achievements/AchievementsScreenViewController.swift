@@ -12,7 +12,7 @@ import UIKit
 class AchievementsScreenViewController: BaseViewController {
     
     // MARK: - Outlets
-    @IBOutlet weak var headerView: StyledHeaderView!
+    @IBOutlet weak var headerView: StyledHeaderScreenView!
     
     // MARK: - Properties
     var presenter: AchievementsScreenPresenter!
@@ -54,12 +54,12 @@ extension AchievementsScreenViewController: AchievementsScreenPresenterDelegate 
     }
 }
 
-extension AchievementsScreenViewController: StyledHeaderViewDelegate {
+extension AchievementsScreenViewController: StyledHeaderScreenViewDelegate {
     func didTapBackButton() {
         self.presenter.navigateToHome()
     }
     
     func didTapConfigButton() {
-        print("configurações")
+        self.presenter.showConfigurations()
     }
 }

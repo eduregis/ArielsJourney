@@ -30,6 +30,10 @@ class ArchetypesScreenPresenter {
     func didAppear() {
     }
     
+    func showConfigurations() {
+        self.router.showConfigurations()
+    }
+    
     func navigateToHome() {
         print("Home <- Arquétipos")
         self.router.pop(animated: true)

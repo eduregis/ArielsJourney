@@ -57,4 +57,16 @@ class BaseRouter {
         viewController.tabBarItem.title = title
         viewController.tabBarItem.accessibilityLabel = title
     }
+    
+    
+}
+
+// MARK: - Common Routers
+extension BaseRouter {
+    func showConfigurations() {
+        let overlayVC = ConfigurationsSheetRouter.makeModule()
+        overlayVC.transitioningDelegate  = self.overlayTransitioningDelegate
+        overlayVC.modalPresentationStyle = .custom
+        self.present(overlayVC, animated: true)
+    }
 }

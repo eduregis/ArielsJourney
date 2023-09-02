@@ -42,12 +42,4 @@ class HomeScreenRouter: BaseRouter {
         print("Home -> Conquistas")
         self.push(AchievementsScreenRouter.makeModule(), animated: true)
     }
-    
-    func showConfigurations() {
-        print("Home -> Configurações (Sheet)")
-        let overlayVC = ConfigurationsSheetRouter.makeModule()
-        overlayVC.transitioningDelegate  = self.overlayTransitioningDelegate
-        overlayVC.modalPresentationStyle = .custom
-        self.present(overlayVC, animated: true)
-    }
 }
