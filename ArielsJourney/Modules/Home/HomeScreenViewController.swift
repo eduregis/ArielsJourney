@@ -13,6 +13,8 @@ class HomeScreenViewController: BaseViewController {
 
     // MARK: - Outlets
     @IBOutlet weak var headerView: StyledHeaderView!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet var collectionOfButtons: Array<HomeStainedGlassButtonView>?
     
     // MARK: - Properties
     var presenter: HomeScreenPresenter!
@@ -31,10 +33,16 @@ class HomeScreenViewController: BaseViewController {
         super.viewDidLoad()
         presenter.didLoad()
         self.headerView.delegate = self
+        if let collectionOfButtons = collectionOfButtons {
+            for (index, button) in collectionOfButtons.enumerated() {
+                button.delegate = self
+                button.tagButton = index + 1
+                button.title = "Label \(index + 1)"
+            }
+        }
         self.view.backgroundColor = UIColor(named: "ArielBackground")
+        self.scrollView.showsHorizontalScrollIndicator = false
         self.headerView.showCenterIcon()
-        
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -45,13 +53,6 @@ class HomeScreenViewController: BaseViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         presenter.didAppear()
-    }
-    
-    // MARK: - Methods
-
-    // MARK: - Actions
-    func navigateToGameplay() {
-        self.presenter.navigateToGameplay()
     }
 }
 
@@ -69,5 +70,24 @@ extension HomeScreenViewController: StyledHeaderViewDelegate {
     
     func didTapConfigButton() {
         print("configurações")
+    }
+}
+
+extension HomeScreenViewController: HomeStainedGlassButtonViewDelegate {
+    func didTapButton(tag: Int) {
+        switch tag {
+        case 1:
+            self.presenter.navigateToGameplay()
+        case 2:
+            self.presenter.navigateToContinue()
+        case 3:
+            self.presenter.navigateToGameplay()
+        case 4:
+            self.presenter.navigateToGameplay()
+        case 5:
+            self.presenter.navigateToGameplay()
+        default:
+            break
+        }
     }
 }

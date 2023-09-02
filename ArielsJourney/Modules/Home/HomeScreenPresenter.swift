@@ -20,6 +20,7 @@ class HomeScreenPresenter {
         self.delegate = delegate
         self.router = router
     }
+    
     func didLoad() {
     }
     
@@ -31,6 +32,10 @@ class HomeScreenPresenter {
     
     func navigateToGameplay() {
         self.router.navigateToGameplay()
+    }
+    
+    func navigateToContinue() {
+        self.router.navigateToContinue()
     }
     
 }

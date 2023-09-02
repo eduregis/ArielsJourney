@@ -24,6 +24,8 @@
 		2E737FBF2AA24928001F4EB4 /* SplashScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E737FBE2AA24928001F4EB4 /* SplashScreenPresenter.swift */; };
 		2E737FC12AA249A5001F4EB4 /* SplashScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E737FC02AA249A5001F4EB4 /* SplashScreenViewController.xib */; };
 		2E737FC32AA249E1001F4EB4 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E737FC22AA249E1001F4EB4 /* SplashScreenViewController.swift */; };
+		2E883D1B2AA2D5C70009909D /* HomeStainedGlassButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E883D1A2AA2D5C70009909D /* HomeStainedGlassButtonView.swift */; };
+		2E883D1D2AA2D6790009909D /* HomeStainedGlassButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E883D1C2AA2D6790009909D /* HomeStainedGlassButtonView.xib */; };
 		2EB169572AA2766900615060 /* HomeScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB169562AA2766900615060 /* HomeScreenRouter.swift */; };
 		2EB169592AA2773600615060 /* HomeScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB169582AA2773600615060 /* HomeScreenPresenter.swift */; };
 		2EB1695B2AA2781800615060 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB1695A2AA2781800615060 /* HomeScreenViewController.swift */; };
@@ -71,6 +73,8 @@
 		2E737FBE2AA24928001F4EB4 /* SplashScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenPresenter.swift; sourceTree = "<group>"; };
 		2E737FC02AA249A5001F4EB4 /* SplashScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenViewController.xib; sourceTree = "<group>"; };
 		2E737FC22AA249E1001F4EB4 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		2E883D1A2AA2D5C70009909D /* HomeStainedGlassButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStainedGlassButtonView.swift; sourceTree = "<group>"; };
+		2E883D1C2AA2D6790009909D /* HomeStainedGlassButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeStainedGlassButtonView.xib; sourceTree = "<group>"; };
 		2EB169562AA2766900615060 /* HomeScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenRouter.swift; sourceTree = "<group>"; };
 		2EB169582AA2773600615060 /* HomeScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenPresenter.swift; sourceTree = "<group>"; };
 		2EB1695A2AA2781800615060 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 		2E6DEFCD2AA2A0DA00C02153 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				2E883D192AA2D5740009909D /* HomeStainedGlassButton */,
 				2E6DEFCE2AA2A0E700C02153 /* StyledHeader */,
 			);
 			path = Components;
@@ -244,6 +249,15 @@
 				2E737FBC2AA248F7001F4EB4 /* BasePresenterDelegate.swift */,
 			);
 			path = Bases;
+			sourceTree = "<group>";
+		};
+		2E883D192AA2D5740009909D /* HomeStainedGlassButton */ = {
+			isa = PBXGroup;
+			children = (
+				2E883D1A2AA2D5C70009909D /* HomeStainedGlassButtonView.swift */,
+				2E883D1C2AA2D6790009909D /* HomeStainedGlassButtonView.xib */,
+			);
+			path = HomeStainedGlassButton;
 			sourceTree = "<group>";
 		};
 		2EB169552AA275EA00615060 /* Home */ = {
@@ -392,6 +406,7 @@
 				2E737F8E2AA2455F001F4EB4 /* LaunchScreen.storyboard in Resources */,
 				2E6DEFD22AA2A50C00C02153 /* StyledHeaderView.xib in Resources */,
 				2E737F8B2AA2455F001F4EB4 /* Assets.xcassets in Resources */,
+				2E883D1D2AA2D6790009909D /* HomeStainedGlassButtonView.xib in Resources */,
 				2E1CD4DE2AA2B53B00D90276 /* Macondo-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,6 +507,7 @@
 				2EB169572AA2766900615060 /* HomeScreenRouter.swift in Sources */,
 				2E737FB92AA2486E001F4EB4 /* BaseRouter.swift in Sources */,
 				2E737FBD2AA248F7001F4EB4 /* BasePresenterDelegate.swift in Sources */,
+				2E883D1B2AA2D5C70009909D /* HomeStainedGlassButtonView.swift in Sources */,
 				2E6DEFD02AA2A2A000C02153 /* StyledHeaderView.swift in Sources */,
 				2E737FB32AA2472A001F4EB4 /* SplashScreenRouter.swift in Sources */,
 				2EB169592AA2773600615060 /* HomeScreenPresenter.swift in Sources */,
