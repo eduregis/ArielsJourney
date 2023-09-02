@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -31,44 +32,44 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j70-zw-jH3" userLabel="ScrollContainer">
-                    <rect key="frame" x="16" y="88" width="820" height="285"/>
+                    <rect key="frame" x="16" y="88" width="820" height="275"/>
                     <subviews>
                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sv2-Km-4aW" userLabel="ScrollView">
-                            <rect key="frame" x="0.0" y="0.0" width="820" height="285"/>
+                            <rect key="frame" x="0.0" y="0.0" width="820" height="275"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MNM-cC-3EF" userLabel="ScrollContent">
-                                    <rect key="frame" x="0.0" y="0.0" width="820" height="285"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="820" height="275"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYx-8t-TrF" userLabel="FirstButton" customClass="HomeStainedGlassButtonView" customModule="ArielsJourney" customModuleProvider="target">
-                                            <rect key="frame" x="64" y="0.0" width="119" height="285"/>
+                                            <rect key="frame" x="64" y="0.0" width="119" height="275"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="119" id="q20-Nw-VQu"/>
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6rn-71-hez" userLabel="SecondButton" customClass="HomeStainedGlassButtonView" customModule="ArielsJourney" customModuleProvider="target">
-                                            <rect key="frame" x="206" y="0.0" width="119" height="285"/>
+                                            <rect key="frame" x="206" y="0.0" width="119" height="275"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="119" id="U1j-Bc-YLg"/>
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GLy-Hr-3Ff" userLabel="ThirdButton" customClass="HomeStainedGlassButtonView" customModule="ArielsJourney" customModuleProvider="target">
-                                            <rect key="frame" x="348" y="0.0" width="119" height="285"/>
+                                            <rect key="frame" x="348" y="0.0" width="119" height="275"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="119" id="WhQ-qs-0nF"/>
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nB8-Aj-xld" userLabel="FourthButton" customClass="HomeStainedGlassButtonView" customModule="ArielsJourney" customModuleProvider="target">
-                                            <rect key="frame" x="490" y="0.0" width="119" height="285"/>
+                                            <rect key="frame" x="490" y="0.0" width="119" height="275"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="119" id="OSr-Sa-2dr"/>
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cNv-39-ezu" userLabel="FifthButton" customClass="HomeStainedGlassButtonView" customModule="ArielsJourney" customModuleProvider="target">
-                                            <rect key="frame" x="632" y="0.0" width="119" height="285"/>
+                                            <rect key="frame" x="632" y="0.0" width="119" height="275"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="119" id="MWh-Vv-Bd6"/>
@@ -109,6 +110,7 @@
                     <constraints>
                         <constraint firstItem="sv2-Km-4aW" firstAttribute="top" secondItem="j70-zw-jH3" secondAttribute="top" id="BLD-n1-w2s"/>
                         <constraint firstItem="sv2-Km-4aW" firstAttribute="leading" secondItem="j70-zw-jH3" secondAttribute="leading" id="Edc-5M-qQ3"/>
+                        <constraint firstAttribute="height" constant="275" id="Fb5-W9-mWf"/>
                         <constraint firstItem="MNM-cC-3EF" firstAttribute="height" secondItem="j70-zw-jH3" secondAttribute="height" id="NKO-tl-kpX"/>
                         <constraint firstAttribute="bottom" secondItem="sv2-Km-4aW" secondAttribute="bottom" id="UNf-0n-GSf"/>
                         <constraint firstAttribute="trailing" secondItem="sv2-Km-4aW" secondAttribute="trailing" id="fy4-IK-q90"/>
@@ -117,7 +119,6 @@
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="j70-zw-jH3" secondAttribute="bottom" constant="20" id="8eT-xn-UKu"/>
                 <constraint firstItem="LDW-GP-gTr" firstAttribute="centerX" secondItem="Itb-RH-fVE" secondAttribute="centerX" id="DhL-OE-QSx"/>
                 <constraint firstItem="j70-zw-jH3" firstAttribute="leading" secondItem="Itb-RH-fVE" secondAttribute="leading" constant="16" id="SEk-C7-3My"/>
                 <constraint firstAttribute="trailing" secondItem="j70-zw-jH3" secondAttribute="trailing" constant="16" id="bBb-J9-Eq7"/>
