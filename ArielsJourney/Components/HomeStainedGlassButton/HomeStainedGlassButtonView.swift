@@ -8,7 +8,7 @@
 import UIKit
 
 protocol HomeStainedGlassButtonViewDelegate: AnyObject {
-    func didTapButton(tag: Int)
+    func didTapButton(tag: HomeScreenTags)
 }
 
 class HomeStainedGlassButtonView: UIView {
@@ -24,7 +24,7 @@ class HomeStainedGlassButtonView: UIView {
         get { return titleLabel.text }
         set { titleLabel.text = newValue }
     }
-    var tagButton: Int?
+    var tagButton: HomeScreenTags?
     
     private enum Strings {
         static let nibName = "HomeStainedGlassButtonView"
@@ -61,7 +61,7 @@ class HomeStainedGlassButtonView: UIView {
     
     // MARK: - Methods
     @objc func handleTap(_ sender: UITapGestureRecognizer) {
-        delegate?.didTapButton(tag: self.tagButton ?? 0)
+        delegate?.didTapButton(tag: self.tagButton ?? HomeScreenTags.gameplayNew)
     }
 }
 

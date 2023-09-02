@@ -32,9 +32,9 @@
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeButtonTitleContainer" translatesAutoresizingMaskIntoConstraints="NO" id="aI6-Du-4pM" userLabel="ImageButton">
                             <rect key="frame" x="0.0" y="0.0" width="100" height="37"/>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2G-Qr-yvj">
-                            <rect key="frame" x="0.0" y="0.0" width="100" height="37"/>
-                            <fontDescription key="fontDescription" name="Macondo-Regular" family="Macondo" pointSize="17"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2G-Qr-yvj">
+                            <rect key="frame" x="8" y="0.0" width="84" height="37"/>
+                            <fontDescription key="fontDescription" name="Macondo-Regular" family="Macondo" pointSize="14"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -48,9 +48,9 @@
                         <constraint firstItem="aI6-Du-4pM" firstAttribute="top" secondItem="SZB-ow-Xi0" secondAttribute="top" id="M4W-jl-ETf"/>
                         <constraint firstAttribute="trailing" secondItem="aI6-Du-4pM" secondAttribute="trailing" id="ShB-Mn-q14"/>
                         <constraint firstAttribute="bottom" secondItem="y2G-Qr-yvj" secondAttribute="bottom" id="YB4-uo-Nji"/>
-                        <constraint firstItem="y2G-Qr-yvj" firstAttribute="leading" secondItem="SZB-ow-Xi0" secondAttribute="leading" id="ce4-wU-guR"/>
+                        <constraint firstItem="y2G-Qr-yvj" firstAttribute="leading" secondItem="SZB-ow-Xi0" secondAttribute="leading" constant="8" id="ce4-wU-guR"/>
                         <constraint firstAttribute="bottom" secondItem="aI6-Du-4pM" secondAttribute="bottom" id="r9F-Qe-om0"/>
-                        <constraint firstAttribute="trailing" secondItem="y2G-Qr-yvj" secondAttribute="trailing" id="tOS-Y0-Ice"/>
+                        <constraint firstAttribute="trailing" secondItem="y2G-Qr-yvj" secondAttribute="trailing" constant="8" id="tOS-Y0-Ice"/>
                     </constraints>
                 </view>
             </subviews>

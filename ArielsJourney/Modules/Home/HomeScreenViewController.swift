@@ -36,8 +36,8 @@ class HomeScreenViewController: BaseViewController {
         if let collectionOfButtons = collectionOfButtons {
             for (index, button) in collectionOfButtons.enumerated() {
                 button.delegate = self
-                button.tagButton = index + 1
-                button.title = "Label \(index + 1)"
+                button.tagButton = HomeScreenTags(rawValue: index) 
+                button.title = HomeScreenTags(rawValue: index)?.description
             }
         }
         self.view.backgroundColor = UIColor(named: "ArielBackground")
@@ -74,20 +74,7 @@ extension HomeScreenViewController: StyledHeaderViewDelegate {
 }
 
 extension HomeScreenViewController: HomeStainedGlassButtonViewDelegate {
-    func didTapButton(tag: Int) {
-        switch tag {
-        case 1:
-            self.presenter.navigateToGameplay()
-        case 2:
-            self.presenter.navigateToContinue()
-        case 3:
-            self.presenter.navigateToGameplay()
-        case 4:
-            self.presenter.navigateToGameplay()
-        case 5:
-            self.presenter.navigateToGameplay()
-        default:
-            break
-        }
+    func didTapButton(tag: HomeScreenTags) {
+        self.presenter.didTapButton(tag: tag)
     }
 }

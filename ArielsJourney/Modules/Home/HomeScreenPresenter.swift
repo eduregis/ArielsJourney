@@ -7,6 +7,24 @@
 
 import SwiftUI
 
+enum HomeScreenTags: Int {
+    case gameplayNew = 0
+    case gameplayContinue = 1
+    case herosJourney = 2
+    case archetypes = 3
+    case achievements = 4
+    
+    var description: String {
+        switch self {
+        case .gameplayNew: return "Novo Jogo"
+        case .gameplayContinue: return "Continuar"
+        case .herosJourney: return "Jornada do Herói"
+        case .archetypes: return "Arquétipos"
+        case .achievements: return "Conquistas"
+        }
+    }
+}
+
 protocol HomeScreenPresenterDelegate: BasePresenterDelegate {
 }
 
@@ -30,12 +48,20 @@ class HomeScreenPresenter {
     func didAppear() {
     }
     
-    func navigateToGameplay() {
-        self.router.navigateToGameplay()
+    func didTapButton(tag: HomeScreenTags) {
+        switch tag {
+        case .gameplayNew:
+            self.router.navigateToGameplay()
+        case .gameplayContinue:
+            self.router.navigateToContinue()
+        case .herosJourney:
+            self.router.navigateToGameplay()
+        case .archetypes:
+            self.router.navigateToGameplay()
+        case .achievements:
+            self.router.navigateToGameplay()
+        default:
+            break
+        }
     }
-    
-    func navigateToContinue() {
-        self.router.navigateToContinue()
-    }
-    
 }
