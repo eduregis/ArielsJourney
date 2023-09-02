@@ -30,7 +30,6 @@ class HomeScreenViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.didLoad()
-        self.headerView.title = "Teste"
         self.headerView.delegate = self
         self.view.backgroundColor = UIColor(named: "ArielBackground")
         self.headerView.showCenterIcon()

@@ -14,12 +14,14 @@ protocol StyledHeaderViewDelegate: AnyObject {
 
 class StyledHeaderView: UIView {
     
+    // MARK: - Outlets
     @IBOutlet weak var centerIcon: UIImageView!
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var configButton: UIButton!
     
+    // MARK: - Properties
     weak var delegate: StyledHeaderViewDelegate?
     var title: String? {
         get { return titleLabel.text }
@@ -31,9 +33,10 @@ class StyledHeaderView: UIView {
     }
     
     private enum Fonts {
-        static let title = UIFont(name: "Macondo-Regular", size: 22)
+        static let title = UIFont(name: "Macondo-Regular", size: 20)
     }
     
+    // MARK: - View Lifecycle
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         
@@ -57,6 +60,7 @@ class StyledHeaderView: UIView {
         self.contentView.backgroundColor = UIColor(patternImage: UIImage(named: "darkFlatPattern") ?? UIImage())
     }
     
+    // MARK: - Methods
     func hideBackButton() {
         self.backButton.isHidden = true
     }
@@ -67,7 +71,7 @@ class StyledHeaderView: UIView {
         self.backButton.isHidden = true
     }
     
-    
+    // MARK: - Actions
     @IBAction func backButtonAction(_ sender: Any) {
         delegate?.didTapBackButton()
     }
