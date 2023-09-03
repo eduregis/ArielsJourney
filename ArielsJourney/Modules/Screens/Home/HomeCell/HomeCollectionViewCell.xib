@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Macondo-Regular.ttf">
+            <string>Macondo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="IpR-hX-hw8" customClass="HomeCollectionViewCell" customModule="ArielsJourney" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="119" height="275"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="nqf-xW-e4A">
+                <rect key="frame" x="0.0" y="0.0" width="119" height="275"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vdz-PO-Saa">
+                        <rect key="frame" x="0.0" y="0.0" width="119" height="275"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hiF-kZ-ZZ7">
+                                <rect key="frame" x="0.0" y="0.0" width="119" height="275"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ina-cm-URI" userLabel="TitleContainer">
+                                <rect key="frame" x="9.6666666666666643" y="233" width="100" height="37"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeButtonTitleContainer" translatesAutoresizingMaskIntoConstraints="NO" id="lEp-Gq-MIG" userLabel="ImageButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="37"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNk-g0-waV">
+                                        <rect key="frame" x="8" y="0.0" width="84" height="37"/>
+                                        <fontDescription key="fontDescription" name="Macondo-Regular" family="Macondo" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="MNk-g0-waV" firstAttribute="top" secondItem="lEp-Gq-MIG" secondAttribute="top" id="2yV-db-egF"/>
+                                    <constraint firstItem="lEp-Gq-MIG" firstAttribute="leading" secondItem="ina-cm-URI" secondAttribute="leading" id="39t-dD-8wU"/>
+                                    <constraint firstItem="lEp-Gq-MIG" firstAttribute="top" secondItem="ina-cm-URI" secondAttribute="top" id="4gE-1j-Ncl"/>
+                                    <constraint firstAttribute="trailing" secondItem="lEp-Gq-MIG" secondAttribute="trailing" id="O4D-6Y-rz2"/>
+                                    <constraint firstItem="MNk-g0-waV" firstAttribute="leading" secondItem="ina-cm-URI" secondAttribute="leading" constant="8" id="Odp-LD-RVt"/>
+                                    <constraint firstAttribute="height" constant="37" id="OoC-H3-DZN"/>
+                                    <constraint firstAttribute="width" constant="100" id="aMj-W8-aFW"/>
+                                    <constraint firstAttribute="trailing" secondItem="MNk-g0-waV" secondAttribute="trailing" constant="8" id="fHK-aW-VfZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="MNk-g0-waV" secondAttribute="bottom" id="fYp-3p-7cX"/>
+                                    <constraint firstAttribute="bottom" secondItem="lEp-Gq-MIG" secondAttribute="bottom" id="tpM-LO-OvG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hiF-kZ-ZZ7" secondAttribute="trailing" id="7ny-qS-dIc"/>
+                            <constraint firstItem="ina-cm-URI" firstAttribute="centerX" secondItem="vdz-PO-Saa" secondAttribute="centerX" id="8wz-hf-dOT"/>
+                            <constraint firstItem="hiF-kZ-ZZ7" firstAttribute="leading" secondItem="vdz-PO-Saa" secondAttribute="leading" id="MSy-7i-diW"/>
+                            <constraint firstItem="hiF-kZ-ZZ7" firstAttribute="top" secondItem="vdz-PO-Saa" secondAttribute="top" id="Vni-g3-omJ"/>
+                            <constraint firstAttribute="height" constant="275" id="bGg-ym-IOo"/>
+                            <constraint firstAttribute="width" constant="119" id="htT-sk-ovl"/>
+                            <constraint firstAttribute="bottom" secondItem="hiF-kZ-ZZ7" secondAttribute="bottom" id="tci-D0-D18"/>
+                            <constraint firstAttribute="bottom" secondItem="ina-cm-URI" secondAttribute="bottom" constant="5" id="uqN-yX-gwp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vdz-PO-Saa" firstAttribute="centerX" secondItem="nqf-xW-e4A" secondAttribute="centerX" id="2kR-4o-CGJ"/>
+                    <constraint firstItem="vdz-PO-Saa" firstAttribute="centerY" secondItem="nqf-xW-e4A" secondAttribute="centerY" id="DsH-vj-HVu"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <connections>
+                <outlet property="imageView" destination="hiF-kZ-ZZ7" id="lgk-0A-w8x"/>
+                <outlet property="titleLabel" destination="MNk-g0-waV" id="qg3-EE-wCz"/>
+            </connections>
+            <point key="canvasLocation" x="339.69465648854958" y="43.309859154929576"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="homeButtonTitleContainer" width="100" height="37"/>
+    </resources>
+</document>

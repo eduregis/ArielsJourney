@@ -9,16 +9,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeScreenViewController" customModule="ArielsJourney" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="TaM-nv-Wef" id="yj2-42-sVe"/>
                 <outlet property="headerView" destination="LDW-GP-gTr" id="63S-cL-H3O"/>
                 <outlet property="leadingGradientView" destination="0hq-ya-3cz" id="Ivz-X8-TMC"/>
-                <outlet property="scrollView" destination="sv2-Km-4aW" id="DCK-Ms-QF2"/>
                 <outlet property="trailingGradientView" destination="7CB-Td-f5Z" id="YHD-75-cU6"/>
                 <outlet property="view" destination="Itb-RH-fVE" id="bJ5-s1-Gcw"/>
-                <outletCollection property="collectionOfButtons" destination="fYx-8t-TrF" collectionClass="NSMutableArray" id="CMf-at-sns"/>
-                <outletCollection property="collectionOfButtons" destination="6rn-71-hez" collectionClass="NSMutableArray" id="XvG-Ti-xFV"/>
-                <outletCollection property="collectionOfButtons" destination="GLy-Hr-3Ff" collectionClass="NSMutableArray" id="Ymy-h3-QEw"/>
-                <outletCollection property="collectionOfButtons" destination="nB8-Aj-xld" collectionClass="NSMutableArray" id="l63-tU-1sb"/>
-                <outletCollection property="collectionOfButtons" destination="cNv-39-ezu" collectionClass="NSMutableArray" id="SJh-aJ-Tts"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -36,86 +31,6 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Kt-DA-h1k" userLabel="BodyContainer">
                     <rect key="frame" x="16" y="76" width="820" height="309"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j70-zw-jH3" userLabel="ScrollContainer">
-                            <rect key="frame" x="0.0" y="17" width="820" height="275"/>
-                            <subviews>
-                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sv2-Km-4aW" userLabel="ScrollView">
-                                    <rect key="frame" x="0.0" y="0.0" width="820" height="275"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MNM-cC-3EF" userLabel="ScrollContent">
-                                            <rect key="frame" x="0.0" y="0.0" width="820" height="275"/>
-                                            <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="6fW-zC-Gu2">
-                                                    <rect key="frame" x="66.666666666666686" y="0.0" width="687" height="275"/>
-                                                    <subviews>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYx-8t-TrF" userLabel="FirstButton" customClass="HomeStainedGlassButtonView" customModule="ArielsJourney" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="0.0" width="119" height="275"/>
-                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="119" id="q20-Nw-VQu"/>
-                                                            </constraints>
-                                                        </view>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6rn-71-hez" userLabel="SecondButton" customClass="HomeStainedGlassButtonView" customModule="ArielsJourney" customModuleProvider="target">
-                                                            <rect key="frame" x="142" y="0.0" width="119" height="275"/>
-                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="119" id="U1j-Bc-YLg"/>
-                                                            </constraints>
-                                                        </view>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GLy-Hr-3Ff" userLabel="ThirdButton" customClass="HomeStainedGlassButtonView" customModule="ArielsJourney" customModuleProvider="target">
-                                                            <rect key="frame" x="284" y="0.0" width="119" height="275"/>
-                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="119" id="WhQ-qs-0nF"/>
-                                                            </constraints>
-                                                        </view>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nB8-Aj-xld" userLabel="FourthButton" customClass="HomeStainedGlassButtonView" customModule="ArielsJourney" customModuleProvider="target">
-                                                            <rect key="frame" x="426" y="0.0" width="119" height="275"/>
-                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="119" id="OSr-Sa-2dr"/>
-                                                            </constraints>
-                                                        </view>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cNv-39-ezu" userLabel="FifthButton" customClass="HomeStainedGlassButtonView" customModule="ArielsJourney" customModuleProvider="target">
-                                                            <rect key="frame" x="568" y="0.0" width="119" height="275"/>
-                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="119" id="MWh-Vv-Bd6"/>
-                                                            </constraints>
-                                                        </view>
-                                                    </subviews>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="275" id="tB2-v5-Q8k"/>
-                                                    </constraints>
-                                                </stackView>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <constraints>
-                                                <constraint firstItem="6fW-zC-Gu2" firstAttribute="centerY" secondItem="MNM-cC-3EF" secondAttribute="centerY" id="Qs8-hO-SuA"/>
-                                                <constraint firstItem="6fW-zC-Gu2" firstAttribute="centerX" secondItem="MNM-cC-3EF" secondAttribute="centerX" id="SDD-fA-mEy"/>
-                                                <constraint firstAttribute="width" constant="820" id="tNt-lK-RYc"/>
-                                            </constraints>
-                                        </view>
-                                    </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <constraints>
-                                        <constraint firstItem="MNM-cC-3EF" firstAttribute="leading" secondItem="sv2-Km-4aW" secondAttribute="leading" id="5Ud-86-N2G"/>
-                                        <constraint firstItem="MNM-cC-3EF" firstAttribute="top" secondItem="sv2-Km-4aW" secondAttribute="top" id="AcR-Uf-XiW"/>
-                                        <constraint firstAttribute="trailing" secondItem="MNM-cC-3EF" secondAttribute="trailing" id="C5o-KM-Uno"/>
-                                        <constraint firstAttribute="bottom" secondItem="MNM-cC-3EF" secondAttribute="bottom" id="zeH-tj-5eh"/>
-                                    </constraints>
-                                </scrollView>
-                            </subviews>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <constraints>
-                                <constraint firstItem="sv2-Km-4aW" firstAttribute="top" secondItem="j70-zw-jH3" secondAttribute="top" id="BLD-n1-w2s"/>
-                                <constraint firstItem="sv2-Km-4aW" firstAttribute="leading" secondItem="j70-zw-jH3" secondAttribute="leading" id="Edc-5M-qQ3"/>
-                                <constraint firstAttribute="height" constant="275" id="Fb5-W9-mWf"/>
-                                <constraint firstItem="MNM-cC-3EF" firstAttribute="height" secondItem="j70-zw-jH3" secondAttribute="height" id="NKO-tl-kpX"/>
-                                <constraint firstAttribute="bottom" secondItem="sv2-Km-4aW" secondAttribute="bottom" id="UNf-0n-GSf"/>
-                                <constraint firstAttribute="trailing" secondItem="sv2-Km-4aW" secondAttribute="trailing" id="fy4-IK-q90"/>
-                            </constraints>
-                        </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0hq-ya-3cz" userLabel="LeadingGradientView">
                             <rect key="frame" x="0.0" y="0.0" width="16" height="309"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -131,13 +46,26 @@
                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="16" id="bGo-5w-BWr"/>
                             </constraints>
                         </view>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="TaM-nv-Wef">
+                            <rect key="frame" x="16" y="17" width="788" height="275"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="275" id="C3I-nX-r3Z"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZF1-N0-5Hu">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="j70-zw-jH3" firstAttribute="leading" secondItem="0Kt-DA-h1k" secondAttribute="leading" id="1Cv-NR-zRH"/>
+                        <constraint firstItem="7CB-Td-f5Z" firstAttribute="leading" secondItem="TaM-nv-Wef" secondAttribute="trailing" id="1D1-lP-9OW"/>
                         <constraint firstAttribute="bottom" secondItem="0hq-ya-3cz" secondAttribute="bottom" id="6fd-Rd-1aK"/>
-                        <constraint firstItem="j70-zw-jH3" firstAttribute="centerY" secondItem="0Kt-DA-h1k" secondAttribute="centerY" id="Nuc-kl-SbC"/>
-                        <constraint firstAttribute="trailing" secondItem="j70-zw-jH3" secondAttribute="trailing" id="V0C-IT-FRL"/>
+                        <constraint firstItem="TaM-nv-Wef" firstAttribute="centerY" secondItem="0Kt-DA-h1k" secondAttribute="centerY" id="8CR-eI-Um5"/>
+                        <constraint firstItem="TaM-nv-Wef" firstAttribute="leading" secondItem="0hq-ya-3cz" secondAttribute="trailing" id="YfO-r6-poR"/>
                         <constraint firstAttribute="bottom" secondItem="7CB-Td-f5Z" secondAttribute="bottom" id="cYB-OB-Shi"/>
                         <constraint firstAttribute="trailing" secondItem="7CB-Td-f5Z" secondAttribute="trailing" id="p0E-Pz-A9P"/>
                         <constraint firstItem="0hq-ya-3cz" firstAttribute="leading" secondItem="0Kt-DA-h1k" secondAttribute="leading" id="p5x-48-IJ7"/>

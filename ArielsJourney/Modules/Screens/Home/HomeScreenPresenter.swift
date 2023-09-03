@@ -7,24 +7,6 @@
 
 import Foundation
 
-enum HomeScreenTags: Int {
-    case gameplayNew = 0
-    case gameplayContinue = 1
-    case herosJourney = 2
-    case archetypes = 3
-    case achievements = 4
-    
-    var description: String {
-        switch self {
-        case .gameplayNew: return "Novo Jogo"
-        case .gameplayContinue: return "Continuar"
-        case .herosJourney: return "Jornada do Herói"
-        case .archetypes: return "Arquétipos"
-        case .achievements: return "Conquistas"
-        }
-    }
-}
-
 protocol HomeScreenPresenterDelegate: BasePresenterDelegate {
 }
 
@@ -32,6 +14,8 @@ class HomeScreenPresenter {
     
     weak var delegate: HomeScreenPresenterDelegate?
     let router: HomeScreenRouter
+    
+    var dateCells: [HomeEnum] = HomeEnum.allCases
     
     init(delegate: HomeScreenPresenterDelegate, router: HomeScreenRouter) {
         
@@ -52,7 +36,7 @@ class HomeScreenPresenter {
         self.router.showConfigurations()
     }
     
-    func didTapButton(tag: HomeScreenTags) {
+    func didTapButton(tag: HomeEnum) {
         switch tag {
         case .gameplayNew:
             self.router.navigateToGameplay()
