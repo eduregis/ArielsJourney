@@ -42,6 +42,11 @@ class ArchetypesScreenPresenter {
         self.router.showConfigurations()
     }
     
+    func showArchetypeDetails(index: Int) {
+        let archetype = self.dateCells[index]
+        self.router.showArchetypeDetails(archetype: archetype)
+    }
+    
     func navigateToHome() {
         print("Home <- Arquétipos")
         self.router.pop(animated: true)

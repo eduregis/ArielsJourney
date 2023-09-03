@@ -14,6 +14,10 @@
 		2E3D74BB2AA4E25200CD00C8 /* ArchetypesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3D74BA2AA4E25200CD00C8 /* ArchetypesEnum.swift */; };
 		2E3D74BE2AA4E3D400CD00C8 /* ArchetypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3D74BD2AA4E3D400CD00C8 /* ArchetypeCollectionViewCell.swift */; };
 		2E3D74C02AA4E3DE00CD00C8 /* ArchetypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3D74BF2AA4E3DE00CD00C8 /* ArchetypeCollectionViewCell.xib */; };
+		2E3D74C32AA4F7AF00CD00C8 /* ArchetypeDetailsSheetRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3D74C22AA4F7AF00CD00C8 /* ArchetypeDetailsSheetRouter.swift */; };
+		2E3D74C52AA4F7F300CD00C8 /* ArchetypeDetailsSheetPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3D74C42AA4F7F300CD00C8 /* ArchetypeDetailsSheetPresenter.swift */; };
+		2E3D74C72AA4F83B00CD00C8 /* ArchetypeDetailsSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3D74C62AA4F83B00CD00C8 /* ArchetypeDetailsSheetViewController.swift */; };
+		2E3D74C92AA4F88600CD00C8 /* ArchetypeDetailsSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3D74C82AA4F88600CD00C8 /* ArchetypeDetailsSheetViewController.xib */; };
 		2E6DEFD02AA2A2A000C02153 /* StyledHeaderScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6DEFCF2AA2A2A000C02153 /* StyledHeaderScreenView.swift */; };
 		2E6DEFD22AA2A50C00C02153 /* StyledHeaderScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6DEFD12AA2A50C00C02153 /* StyledHeaderScreenView.xib */; };
 		2E737F822AA2455D001F4EB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E737F812AA2455D001F4EB4 /* AppDelegate.swift */; };
@@ -96,6 +100,10 @@
 		2E3D74BA2AA4E25200CD00C8 /* ArchetypesEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchetypesEnum.swift; sourceTree = "<group>"; };
 		2E3D74BD2AA4E3D400CD00C8 /* ArchetypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchetypeCollectionViewCell.swift; sourceTree = "<group>"; };
 		2E3D74BF2AA4E3DE00CD00C8 /* ArchetypeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArchetypeCollectionViewCell.xib; sourceTree = "<group>"; };
+		2E3D74C22AA4F7AF00CD00C8 /* ArchetypeDetailsSheetRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchetypeDetailsSheetRouter.swift; sourceTree = "<group>"; };
+		2E3D74C42AA4F7F300CD00C8 /* ArchetypeDetailsSheetPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchetypeDetailsSheetPresenter.swift; sourceTree = "<group>"; };
+		2E3D74C62AA4F83B00CD00C8 /* ArchetypeDetailsSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchetypeDetailsSheetViewController.swift; sourceTree = "<group>"; };
+		2E3D74C82AA4F88600CD00C8 /* ArchetypeDetailsSheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArchetypeDetailsSheetViewController.xib; sourceTree = "<group>"; };
 		2E6DEFCF2AA2A2A000C02153 /* StyledHeaderScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledHeaderScreenView.swift; sourceTree = "<group>"; };
 		2E6DEFD12AA2A50C00C02153 /* StyledHeaderScreenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StyledHeaderScreenView.xib; sourceTree = "<group>"; };
 		2E737F7E2AA2455D001F4EB4 /* ArielsJourney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArielsJourney.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -227,6 +235,17 @@
 				2E3D74BF2AA4E3DE00CD00C8 /* ArchetypeCollectionViewCell.xib */,
 			);
 			path = ArchetypeCell;
+			sourceTree = "<group>";
+		};
+		2E3D74C12AA4F78800CD00C8 /* ArchetypeDetails */ = {
+			isa = PBXGroup;
+			children = (
+				2E3D74C22AA4F7AF00CD00C8 /* ArchetypeDetailsSheetRouter.swift */,
+				2E3D74C42AA4F7F300CD00C8 /* ArchetypeDetailsSheetPresenter.swift */,
+				2E3D74C62AA4F83B00CD00C8 /* ArchetypeDetailsSheetViewController.swift */,
+				2E3D74C82AA4F88600CD00C8 /* ArchetypeDetailsSheetViewController.xib */,
+			);
+			path = ArchetypeDetails;
 			sourceTree = "<group>";
 		};
 		2E6DEFCD2AA2A0DA00C02153 /* Components */ = {
@@ -432,6 +451,7 @@
 		2EAF95762AA3EB2400B3FAC2 /* Sheets */ = {
 			isa = PBXGroup;
 			children = (
+				2E3D74C12AA4F78800CD00C8 /* ArchetypeDetails */,
 				2EAF95772AA3EB8B00B3FAC2 /* Configurations */,
 			);
 			path = Sheets;
@@ -641,6 +661,7 @@
 				2E6DEFD22AA2A50C00C02153 /* StyledHeaderScreenView.xib in Resources */,
 				2E737F8B2AA2455F001F4EB4 /* Assets.xcassets in Resources */,
 				2EAF95A42AA416EE00B3FAC2 /* HerosJourneyCardView.xib in Resources */,
+				2E3D74C92AA4F88600CD00C8 /* ArchetypeDetailsSheetViewController.xib in Resources */,
 				2EAF95842AA3F1D000B3FAC2 /* StyledHeaderSheetView.xib in Resources */,
 				2E883D1D2AA2D6790009909D /* HomeStainedGlassButtonView.xib in Resources */,
 				2E1CD4DE2AA2B53B00D90276 /* Macondo-Regular.ttf in Resources */,
@@ -761,10 +782,13 @@
 				2E883D1B2AA2D5C70009909D /* HomeStainedGlassButtonView.swift in Sources */,
 				2E6DEFD02AA2A2A000C02153 /* StyledHeaderScreenView.swift in Sources */,
 				2E7FAC562AA3B22300E1AF20 /* HerosJourneyScreenViewController.swift in Sources */,
+				2E3D74C72AA4F83B00CD00C8 /* ArchetypeDetailsSheetViewController.swift in Sources */,
 				2EAF95792AA3EBE300B3FAC2 /* ConfigurationsSheetRouter.swift in Sources */,
 				2E7FAC5B2AA3B49700E1AF20 /* ArchetypesScreenRouter.swift in Sources */,
+				2E3D74C52AA4F7F300CD00C8 /* ArchetypeDetailsSheetPresenter.swift in Sources */,
 				2EAF958E2AA40B6E00B3FAC2 /* Localizable.swift in Sources */,
 				2E3D74B92AA4E22800CD00C8 /* ArchetypesModel.swift in Sources */,
+				2E3D74C32AA4F7AF00CD00C8 /* ArchetypeDetailsSheetRouter.swift in Sources */,
 				2E7FAC542AA3B1CC00E1AF20 /* HerosJourneyScreenPresenter.swift in Sources */,
 				2E3D74BB2AA4E25200CD00C8 /* ArchetypesEnum.swift in Sources */,
 				2E737FB32AA2472A001F4EB4 /* SplashScreenRouter.swift in Sources */,

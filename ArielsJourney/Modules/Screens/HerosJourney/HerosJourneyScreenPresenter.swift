@@ -16,7 +16,6 @@ class HerosJourneyScreenPresenter {
     let router: HerosJourneyScreenRouter
     
     init(delegate: HerosJourneyScreenPresenterDelegate, router: HerosJourneyScreenRouter) {
-        
         self.delegate = delegate
         self.router = router
     }
@@ -28,10 +27,13 @@ class HerosJourneyScreenPresenter {
     }
     
     func didAppear() {
-        
     }
     
     func showConfigurations() {
+        self.router.showConfigurations()
+    }
+    
+    func showArcheetypeDetails() {
         self.router.showConfigurations()
     }
     
