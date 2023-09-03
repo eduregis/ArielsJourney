@@ -15,8 +15,9 @@ class ArchetypesScreenPresenter {
     weak var delegate: ArchetypesScreenPresenterDelegate?
     let router: ArchetypesScreenRouter
     
+    var dateCells: [ArchetypeModel] = []
+    
     init(delegate: ArchetypesScreenPresenterDelegate, router: ArchetypesScreenRouter) {
-        
         self.delegate = delegate
         self.router = router
     }
@@ -28,6 +29,13 @@ class ArchetypesScreenPresenter {
     }
     
     func didAppear() {
+    }
+    
+    func getArchetypes(completion: @escaping () -> Void) {
+        for archetype in ArchetypesEnum.allCases {
+            dateCells.append(archetype.archetypesModel)
+        }
+        completion()
     }
     
     func showConfigurations() {

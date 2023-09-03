@@ -7,6 +7,26 @@
 
 import Foundation
 
+enum ArchetypesScreenTexts: String, Localizable {
+    case firstTitle = "ArchetypesScreenTexts_firstTitle"
+    case firstDesc = "ArchetypesScreenTexts_firstDesc"
+    case secondTitle = "ArchetypesScreenTexts_secondTitle"
+    case secondDesc = "ArchetypesScreenTexts_secondDesc"
+    case thirdTitle = "ArchetypesScreenTexts_thirdTitle"
+    case thirdDesc = "ArchetypesScreenTexts_thirdDesc"
+    case fourthTitle = "ArchetypesScreenTexts_fourthTitle"
+    case fourthDesc = "ArchetypesScreenTexts_fourthDesc"
+    case fifthTitle = "ArchetypesScreenTexts_fifthTitle"
+    case fifthDesc = "ArchetypesScreenTexts_fifthDesc"
+    case sixthTitle = "ArchetypesScreenTexts_sixthTitle"
+    case sixthDesc = "ArchetypesScreenTexts_sixthDesc"
+    case seventhTitle = "ArchetypesScreenTexts_seventhTitle"
+    case seventhDesc = "ArchetypesScreenTexts_seventhDesc"
+    case eighthTitle = "ArchetypesScreenTexts_eighthTitle"
+    case eighthDesc = "ArchetypesScreenTexts_eighthDesc"
+    case back = "ArchetypesScreenTexts_back"
+}
+
 enum HerosJourneyScreenTexts: String, Localizable {
     case firstTitle = "HerosJourneyScreenTexts_firstTitle"
     case firstDesc = "HerosJourneyScreenTexts_firstDesc"
