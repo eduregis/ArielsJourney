@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_12" orientation="landscape" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21507"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -10,8 +10,20 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HerosJourneyScreenViewController" customModule="ArielsJourney" customModuleProvider="target">
             <connections>
                 <outlet property="headerView" destination="YJt-dY-kev" id="9RM-cD-yoA"/>
+                <outlet property="scrollView" destination="JLh-ai-snL" id="adl-H8-qDC"/>
                 <outlet property="view" destination="JIO-A2-Ept" id="KA3-f3-X3z"/>
-                <outletCollection property="collectionOfCards" destination="bl4-X1-Oqa" collectionClass="NSMutableArray" id="qr6-Nd-KT9"/>
+                <outletCollection property="collectionOfCards" destination="fny-NF-hRs" collectionClass="NSMutableArray" id="6wk-Em-wTr"/>
+                <outletCollection property="collectionOfCards" destination="gHz-IJ-3l0" collectionClass="NSMutableArray" id="pJ5-H1-Sd0"/>
+                <outletCollection property="collectionOfCards" destination="c85-30-bTW" collectionClass="NSMutableArray" id="lpD-dd-BYi"/>
+                <outletCollection property="collectionOfCards" destination="DsB-8a-gFD" collectionClass="NSMutableArray" id="oAF-fc-uf4"/>
+                <outletCollection property="collectionOfCards" destination="2AH-Vp-MgV" collectionClass="NSMutableArray" id="JX1-Un-uZi"/>
+                <outletCollection property="collectionOfCards" destination="mca-mB-EbK" collectionClass="NSMutableArray" id="4Rk-h0-hkg"/>
+                <outletCollection property="collectionOfCards" destination="Y1J-fM-g5V" collectionClass="NSMutableArray" id="eNk-Un-s5t"/>
+                <outletCollection property="collectionOfCards" destination="dpi-Cb-Q8W" collectionClass="NSMutableArray" id="EK9-EI-wOh"/>
+                <outletCollection property="collectionOfCards" destination="tdR-IO-sA3" collectionClass="NSMutableArray" id="7vM-TL-CjQ"/>
+                <outletCollection property="collectionOfCards" destination="KfA-bX-ocQ" collectionClass="NSMutableArray" id="dis-tG-nMB"/>
+                <outletCollection property="collectionOfCards" destination="kCp-jV-Ord" collectionClass="NSMutableArray" id="HmU-ap-1rK"/>
+                <outletCollection property="collectionOfCards" destination="FoB-st-8e5" collectionClass="NSMutableArray" id="QPo-x1-8AP"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -26,27 +38,176 @@
                         <constraint firstAttribute="height" constant="68" id="Ost-R3-VrJ"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bl4-X1-Oqa" customClass="HerosJourneyCardView" customModule="ArielsJourney" customModuleProvider="target">
-                    <rect key="frame" x="149" y="72" width="142" height="249"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pht-h9-cjo" userLabel="BodyContainer">
+                    <rect key="frame" x="16" y="76" width="820" height="309"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vSX-Co-Mat" userLabel="ScrollContainer">
+                            <rect key="frame" x="0.0" y="30" width="820" height="249"/>
+                            <subviews>
+                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JLh-ai-snL">
+                                    <rect key="frame" x="0.0" y="0.0" width="820" height="249"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="17h-1o-ot6" userLabel="ScrollContent">
+                                            <rect key="frame" x="0.0" y="0.0" width="1803" height="249"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tpt-rq-LXg">
+                                                    <rect key="frame" x="-1" y="0.0" width="1805" height="249"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="herosJourney_arrowBack" translatesAutoresizingMaskIntoConstraints="NO" id="d7f-5d-Dm0" userLabel="arrowBackImage">
+                                                            <rect key="frame" x="0.0" y="0.0" width="33" height="249"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="33" id="hJm-a8-dPh"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fny-NF-hRs" userLabel="Hero Journey Card View 01" customClass="HerosJourneyCardView" customModule="ArielsJourney" customModuleProvider="target">
+                                                            <rect key="frame" x="33" y="0.0" width="142" height="249"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="142" id="Xd9-Nn-FRh"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHz-IJ-3l0" userLabel="Hero Journey Card View 02" customClass="HerosJourneyCardView" customModule="ArielsJourney" customModuleProvider="target">
+                                                            <rect key="frame" x="175" y="0.0" width="142" height="249"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="142" id="XXd-zT-FVW"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c85-30-bTW" userLabel="Hero Journey Card View 03" customClass="HerosJourneyCardView" customModule="ArielsJourney" customModuleProvider="target">
+                                                            <rect key="frame" x="317" y="0.0" width="142" height="249"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="142" id="XNf-If-1gJ"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DsB-8a-gFD" userLabel="Hero Journey Card View 04" customClass="HerosJourneyCardView" customModule="ArielsJourney" customModuleProvider="target">
+                                                            <rect key="frame" x="459" y="0.0" width="142" height="249"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="142" id="osB-qY-Rca"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2AH-Vp-MgV" userLabel="Hero Journey Card View 05" customClass="HerosJourneyCardView" customModule="ArielsJourney" customModuleProvider="target">
+                                                            <rect key="frame" x="601" y="0.0" width="142" height="249"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="142" id="CfE-87-MpQ"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mca-mB-EbK" userLabel="Hero Journey Card View 06" customClass="HerosJourneyCardView" customModule="ArielsJourney" customModuleProvider="target">
+                                                            <rect key="frame" x="743" y="0.0" width="142" height="249"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="142" id="5lb-4c-YVD"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y1J-fM-g5V" userLabel="Hero Journey Card View 07" customClass="HerosJourneyCardView" customModule="ArielsJourney" customModuleProvider="target">
+                                                            <rect key="frame" x="885" y="0.0" width="142" height="249"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="142" id="8SH-Jl-wdI"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dpi-Cb-Q8W" userLabel="Hero Journey Card View 08" customClass="HerosJourneyCardView" customModule="ArielsJourney" customModuleProvider="target">
+                                                            <rect key="frame" x="1027" y="0.0" width="142" height="249"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="142" id="79F-3g-nxU"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tdR-IO-sA3" userLabel="Hero Journey Card View 09" customClass="HerosJourneyCardView" customModule="ArielsJourney" customModuleProvider="target">
+                                                            <rect key="frame" x="1169" y="0.0" width="142" height="249"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="142" id="X1Y-aR-hyh"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KfA-bX-ocQ" userLabel="Hero Journey Card View 10" customClass="HerosJourneyCardView" customModule="ArielsJourney" customModuleProvider="target">
+                                                            <rect key="frame" x="1311" y="0.0" width="142" height="249"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="142" id="gnA-oE-nBh"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kCp-jV-Ord" userLabel="Hero Journey Card View 11" customClass="HerosJourneyCardView" customModule="ArielsJourney" customModuleProvider="target">
+                                                            <rect key="frame" x="1453" y="0.0" width="142" height="249"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="142" id="9rB-z4-KD9"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FoB-st-8e5" userLabel="Hero Journey Card View 12" customClass="HerosJourneyCardView" customModule="ArielsJourney" customModuleProvider="target">
+                                                            <rect key="frame" x="1595" y="0.0" width="142" height="249"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="142" id="s1f-bT-q55"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="herosJourney_arrowFront" translatesAutoresizingMaskIntoConstraints="NO" id="228-Sz-1f3" userLabel="arrowBackImage">
+                                                            <rect key="frame" x="1737" y="0.0" width="68" height="249"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="68" id="HL3-rP-4uV"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="249" id="Nry-ya-xeA"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="Tpt-rq-LXg" firstAttribute="centerY" secondItem="17h-1o-ot6" secondAttribute="centerY" id="CDF-rk-yZA"/>
+                                                <constraint firstItem="Tpt-rq-LXg" firstAttribute="centerX" secondItem="17h-1o-ot6" secondAttribute="centerX" id="fN9-ee-wFv"/>
+                                                <constraint firstAttribute="width" constant="1803" id="on4-JZ-AAk"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="17h-1o-ot6" firstAttribute="leading" secondItem="JLh-ai-snL" secondAttribute="leading" id="JYe-JY-vZw"/>
+                                        <constraint firstAttribute="trailing" secondItem="17h-1o-ot6" secondAttribute="trailing" id="jDc-GQ-oz0"/>
+                                        <constraint firstItem="17h-1o-ot6" firstAttribute="top" secondItem="JLh-ai-snL" secondAttribute="top" id="sjj-xm-XcD"/>
+                                        <constraint firstAttribute="bottom" secondItem="17h-1o-ot6" secondAttribute="bottom" id="yVM-WQ-abs"/>
+                                    </constraints>
+                                </scrollView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="JLh-ai-snL" secondAttribute="trailing" id="A9S-9q-X3c"/>
+                                <constraint firstAttribute="height" constant="249" id="G9i-sK-D03"/>
+                                <constraint firstItem="17h-1o-ot6" firstAttribute="height" secondItem="vSX-Co-Mat" secondAttribute="height" id="NDO-qJ-b4i"/>
+                                <constraint firstItem="JLh-ai-snL" firstAttribute="top" secondItem="vSX-Co-Mat" secondAttribute="top" id="W9b-TB-bnK"/>
+                                <constraint firstAttribute="bottom" secondItem="JLh-ai-snL" secondAttribute="bottom" id="Zeb-Ai-hKi"/>
+                                <constraint firstItem="JLh-ai-snL" firstAttribute="leading" secondItem="vSX-Co-Mat" secondAttribute="leading" id="qC7-aK-7gZ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="249" id="541-8t-awH"/>
-                        <constraint firstAttribute="width" constant="142" id="Twy-l3-lBx"/>
+                        <constraint firstAttribute="trailing" secondItem="vSX-Co-Mat" secondAttribute="trailing" id="IMU-o6-aAT"/>
+                        <constraint firstItem="vSX-Co-Mat" firstAttribute="leading" secondItem="Pht-h9-cjo" secondAttribute="leading" id="gE8-fa-Q6R"/>
+                        <constraint firstItem="vSX-Co-Mat" firstAttribute="centerY" secondItem="Pht-h9-cjo" secondAttribute="centerY" id="jd0-lG-jaV"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="Pht-h9-cjo" secondAttribute="trailing" constant="16" id="2bv-Bk-IDe"/>
                 <constraint firstItem="YJt-dY-kev" firstAttribute="leading" secondItem="JIO-A2-Ept" secondAttribute="leading" id="3Pr-EH-6hF"/>
-                <constraint firstItem="bl4-X1-Oqa" firstAttribute="centerY" secondItem="JIO-A2-Ept" secondAttribute="centerY" id="5oh-Sr-WzV"/>
-                <constraint firstItem="bl4-X1-Oqa" firstAttribute="leading" secondItem="JIO-A2-Ept" secondAttribute="leading" constant="149" id="SeF-f3-JE7"/>
+                <constraint firstItem="Pht-h9-cjo" firstAttribute="top" secondItem="YJt-dY-kev" secondAttribute="bottom" constant="8" id="68p-oI-QJX"/>
+                <constraint firstItem="Pht-h9-cjo" firstAttribute="leading" secondItem="JIO-A2-Ept" secondAttribute="leading" constant="16" id="ijK-Gy-Q8R"/>
                 <constraint firstItem="YJt-dY-kev" firstAttribute="top" secondItem="JIO-A2-Ept" secondAttribute="top" id="sja-dE-6qM"/>
+                <constraint firstAttribute="bottom" secondItem="Pht-h9-cjo" secondAttribute="bottom" constant="8" id="uiG-mo-bx0"/>
                 <constraint firstAttribute="trailing" secondItem="YJt-dY-kev" secondAttribute="trailing" id="yHw-7R-bWn"/>
             </constraints>
-            <point key="canvasLocation" x="216" y="10"/>
+            <point key="canvasLocation" x="215.49295774647888" y="9.9236641221374047"/>
         </view>
     </objects>
     <resources>
+        <image name="herosJourney_arrowBack" width="33.333332061767578" height="107.33333587646484"/>
+        <image name="herosJourney_arrowFront" width="69.333335876464844" height="107"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

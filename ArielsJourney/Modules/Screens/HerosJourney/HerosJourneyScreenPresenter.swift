@@ -41,6 +41,8 @@ class HerosJourneyScreenPresenter {
     }
     
     func didTapCard(cardInfo: HerosJourneyModel) {
+        // TODO: - TROCAR PARA MODAL PROPRIO
+        self.router.showConfigurations()
         print(cardInfo.descriptionText)
     }
 }

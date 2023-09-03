@@ -12,6 +12,7 @@ class HerosJourneyScreenViewController: BaseViewController {
     // MARK: - Outlets
     @IBOutlet weak var headerView: StyledHeaderScreenView!
     @IBOutlet var collectionOfCards: Array<HerosJourneyCardView>?
+    @IBOutlet weak var scrollView: UIScrollView!
     
     // MARK: - Properties
     var presenter: HerosJourneyScreenPresenter!
@@ -39,6 +40,7 @@ class HerosJourneyScreenViewController: BaseViewController {
                 card.setupCard(cardInfo: HerosJourneyEnum.allCases[index].herosJourneyModel )
             }
         }
+        self.scrollView.showsHorizontalScrollIndicator = false
     }
     
     override func viewWillAppear(_ animated: Bool) {
