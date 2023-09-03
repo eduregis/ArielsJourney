@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArchetypeDetailsSheetViewController" customModule="ArielsJourney" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionText" destination="h0p-ES-VlH" id="0zD-R2-drK"/>
+                <outlet property="headerView" destination="A91-tq-Bc8" id="Xbv-bd-KoQ"/>
+                <outlet property="view" destination="Gg5-KW-a86" id="6bF-Zc-vBt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Gg5-KW-a86">
+            <rect key="frame" x="0.0" y="0.0" width="454" height="393"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A91-tq-Bc8" customClass="StyledHeaderSheetView" customModule="ArielsJourney" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="454" height="83"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="83" id="LgG-8W-U95"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0p-ES-VlH" userLabel="DescriptionLabel">
+                    <rect key="frame" x="16" y="99" width="422" height="20.333333333333329"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="h0p-ES-VlH" firstAttribute="leading" secondItem="Gg5-KW-a86" secondAttribute="leading" constant="16" id="CD6-Xq-q68"/>
+                <constraint firstAttribute="trailing" secondItem="A91-tq-Bc8" secondAttribute="trailing" id="TQf-Z8-XYf"/>
+                <constraint firstItem="A91-tq-Bc8" firstAttribute="top" secondItem="Gg5-KW-a86" secondAttribute="top" id="Wip-f6-CcO"/>
+                <constraint firstItem="A91-tq-Bc8" firstAttribute="leading" secondItem="Gg5-KW-a86" secondAttribute="leading" id="YV2-5a-eXU"/>
+                <constraint firstItem="h0p-ES-VlH" firstAttribute="top" secondItem="A91-tq-Bc8" secondAttribute="bottom" constant="16" id="ZQ8-ZM-PTW"/>
+                <constraint firstAttribute="trailing" secondItem="h0p-ES-VlH" secondAttribute="trailing" constant="16" id="o2m-5z-SiR"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="h0p-ES-VlH" secondAttribute="bottom" constant="16" id="tAw-kg-8Er"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="323.94366197183098" y="12.977099236641221"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

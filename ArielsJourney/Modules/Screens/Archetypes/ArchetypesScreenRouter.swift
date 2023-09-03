@@ -17,4 +17,11 @@ class ArchetypesScreenRouter: BaseRouter {
         
         return viewController
     }
+    
+    func showArchetypeDetails(archetype: ArchetypeModel) {
+        let overlayVC = ArchetypeDetailsSheetRouter.makeModule(archetype: archetype)
+        overlayVC.transitioningDelegate  = self.overlayTransitioningDelegate
+        overlayVC.modalPresentationStyle = .custom
+        self.present(overlayVC, animated: true)
+    }
 }

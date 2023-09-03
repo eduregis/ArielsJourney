@@ -16,7 +16,6 @@ class HerosJourneyScreenPresenter {
     let router: HerosJourneyScreenRouter
     
     init(delegate: HerosJourneyScreenPresenterDelegate, router: HerosJourneyScreenRouter) {
-        
         self.delegate = delegate
         self.router = router
     }
@@ -34,8 +33,18 @@ class HerosJourneyScreenPresenter {
         self.router.showConfigurations()
     }
     
+    func showArcheetypeDetails() {
+        self.router.showConfigurations()
+    }
+    
     func navigateToHome() {
         print("Home <- Jornada do Herói")
         self.router.pop(animated: true)
+    }
+    
+    func didTapCard(cardInfo: HerosJourneyModel) {
+        // TODO: - TROCAR PARA MODAL PROPRIO
+        self.router.showConfigurations()
+        print(cardInfo.descriptionText)
     }
 }

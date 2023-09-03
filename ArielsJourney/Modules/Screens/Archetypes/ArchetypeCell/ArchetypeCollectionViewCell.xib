@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="mXx-M4-b7c" userLabel="ArchetypeCollectionViewCell" customClass="ArchetypeCollectionViewCell" customModule="ArielsJourney" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="142" height="249"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="0fr-7d-WLJ">
+                <rect key="frame" x="0.0" y="0.0" width="142" height="249"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yCW-Jf-NVC">
+                        <rect key="frame" x="0.0" y="0.0" width="142" height="249"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="archetypeCard_card_empty" translatesAutoresizingMaskIntoConstraints="NO" id="77a-TI-aa6" userLabel="EmptyCard">
+                                <rect key="frame" x="11.666666666666671" y="0.0" width="119.00000000000001" height="249"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="119" id="rzi-pZ-7aH"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="archetypeCard_emptyIcon_hero" translatesAutoresizingMaskIntoConstraints="NO" id="mhm-hx-7D0" userLabel="ArchetypeEmptyIcon">
+                                <rect key="frame" x="41" y="94.666666666666671" width="60" height="60.000000000000014"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="GAK-Uk-Xn3"/>
+                                    <constraint firstAttribute="height" constant="60" id="Yy8-hs-xCy"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DCa-3Q-9vu" userLabel="Card">
+                                <rect key="frame" x="11.666666666666671" y="0.0" width="119.00000000000001" height="249"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="119" id="3B9-1p-ia5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axP-TG-6W6" userLabel="TitleLabel">
+                                <rect key="frame" x="50" y="220" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hnO-oB-HdQ" userLabel="ArchetypeIcon">
+                                <rect key="frame" x="60" y="16" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="lk1-fV-JWv"/>
+                                    <constraint firstAttribute="width" constant="22" id="p4A-si-haM"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="77a-TI-aa6" firstAttribute="top" secondItem="yCW-Jf-NVC" secondAttribute="top" id="4FX-Yj-DyS"/>
+                            <constraint firstItem="77a-TI-aa6" firstAttribute="centerX" secondItem="yCW-Jf-NVC" secondAttribute="centerX" id="4FZ-Hn-gj6"/>
+                            <constraint firstItem="DCa-3Q-9vu" firstAttribute="centerX" secondItem="yCW-Jf-NVC" secondAttribute="centerX" id="Fzc-FP-gpt"/>
+                            <constraint firstItem="hnO-oB-HdQ" firstAttribute="top" secondItem="yCW-Jf-NVC" secondAttribute="top" constant="16" id="J0N-v6-eXQ"/>
+                            <constraint firstItem="mhm-hx-7D0" firstAttribute="centerX" secondItem="77a-TI-aa6" secondAttribute="centerX" id="SVl-aa-1hE"/>
+                            <constraint firstAttribute="bottom" secondItem="77a-TI-aa6" secondAttribute="bottom" id="l5j-4q-jRP"/>
+                            <constraint firstAttribute="width" constant="142" id="nAD-XA-D6s"/>
+                            <constraint firstAttribute="bottom" secondItem="axP-TG-6W6" secondAttribute="bottom" constant="8" id="pge-uj-eM1"/>
+                            <constraint firstAttribute="height" constant="249" id="qJT-6H-x6O"/>
+                            <constraint firstItem="hnO-oB-HdQ" firstAttribute="centerX" secondItem="yCW-Jf-NVC" secondAttribute="centerX" id="qX2-t6-LUk"/>
+                            <constraint firstItem="DCa-3Q-9vu" firstAttribute="top" secondItem="yCW-Jf-NVC" secondAttribute="top" id="sJA-xh-s8J"/>
+                            <constraint firstAttribute="bottom" secondItem="DCa-3Q-9vu" secondAttribute="bottom" id="t9O-4U-bKn"/>
+                            <constraint firstItem="mhm-hx-7D0" firstAttribute="centerY" secondItem="77a-TI-aa6" secondAttribute="centerY" id="vQq-kj-zB5"/>
+                            <constraint firstItem="axP-TG-6W6" firstAttribute="centerX" secondItem="yCW-Jf-NVC" secondAttribute="centerX" id="vYT-U5-rWh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="yCW-Jf-NVC" firstAttribute="centerX" secondItem="0fr-7d-WLJ" secondAttribute="centerX" id="8in-LW-ubj"/>
+                    <constraint firstItem="yCW-Jf-NVC" firstAttribute="centerY" secondItem="0fr-7d-WLJ" secondAttribute="centerY" id="F97-bZ-Orj"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <connections>
+                <outlet property="archetypeEmptyIcon" destination="mhm-hx-7D0" id="kNI-Yt-gH2"/>
+                <outlet property="archetypeIcon" destination="hnO-oB-HdQ" id="tYT-R1-AtD"/>
+                <outlet property="card" destination="DCa-3Q-9vu" id="rt6-xz-dIi"/>
+                <outlet property="emptyCard" destination="77a-TI-aa6" id="Vkc-AH-LT0"/>
+                <outlet property="titleLabel" destination="axP-TG-6W6" id="AOM-at-gNQ"/>
+            </connections>
+            <point key="canvasLocation" x="108" y="1"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="archetypeCard_card_empty" width="119" height="249"/>
+        <image name="archetypeCard_emptyIcon_hero" width="27.333333969116211" height="61.333332061767578"/>
+    </resources>
+</document>

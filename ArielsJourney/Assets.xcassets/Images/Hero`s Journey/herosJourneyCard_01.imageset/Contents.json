@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Ariel_back_button.png",
+      "filename" : "Ariel_herosJourney_card_01.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Ariel_back_button@2x.png",
+      "filename" : "Ariel_herosJourney_card_01@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Ariel_back_button@3x.png",
+      "filename" : "Ariel_herosJourney_card_01@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

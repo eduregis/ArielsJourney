@@ -2,13 +2,14 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_12" orientation="landscape" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21507"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArchetypesScreenViewController" customModule="ArielsJourney" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="RYX-re-QPt" id="ruQ-R7-1X8"/>
                 <outlet property="headerView" destination="fKy-NT-NW1" id="gV2-T2-fvQ"/>
                 <outlet property="view" destination="UNW-2x-2sD" id="PPl-Xd-TvN"/>
             </connections>
@@ -25,12 +26,40 @@
                         <constraint firstAttribute="height" constant="68" id="jie-nL-Kdu"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rlh-YQ-IkZ" userLabel="ContainerView">
+                    <rect key="frame" x="16" y="76" width="820" height="309"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="RYX-re-QPt">
+                            <rect key="frame" x="32" y="30" width="756" height="249"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="249" id="hpX-8w-rAU"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QhB-bc-q7P">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="RYX-re-QPt" firstAttribute="leading" secondItem="Rlh-YQ-IkZ" secondAttribute="leading" constant="32" id="1mb-y6-iaE"/>
+                        <constraint firstItem="RYX-re-QPt" firstAttribute="centerY" secondItem="Rlh-YQ-IkZ" secondAttribute="centerY" id="8uD-XW-0N9"/>
+                        <constraint firstAttribute="trailing" secondItem="RYX-re-QPt" secondAttribute="trailing" constant="32" id="iI1-QP-N9e"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fKy-NT-NW1" firstAttribute="leading" secondItem="UNW-2x-2sD" secondAttribute="leading" id="5Jj-o6-4Kx"/>
+                <constraint firstItem="Rlh-YQ-IkZ" firstAttribute="top" secondItem="fKy-NT-NW1" secondAttribute="bottom" constant="8" id="Vcz-wf-BSy"/>
                 <constraint firstAttribute="trailing" secondItem="fKy-NT-NW1" secondAttribute="trailing" id="XNZ-tN-0Ba"/>
+                <constraint firstAttribute="trailing" secondItem="Rlh-YQ-IkZ" secondAttribute="trailing" constant="16" id="Y5b-DE-66D"/>
+                <constraint firstAttribute="bottom" secondItem="Rlh-YQ-IkZ" secondAttribute="bottom" constant="8" id="bAf-ex-QN2"/>
                 <constraint firstItem="fKy-NT-NW1" firstAttribute="top" secondItem="UNW-2x-2sD" secondAttribute="top" id="cCe-3C-5cy"/>
+                <constraint firstItem="Rlh-YQ-IkZ" firstAttribute="leading" secondItem="UNW-2x-2sD" secondAttribute="leading" constant="16" id="y8m-Gl-qIB"/>
             </constraints>
             <point key="canvasLocation" x="236" y="14"/>
         </view>
