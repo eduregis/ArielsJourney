@@ -14,11 +14,11 @@
                 <outlet property="scrollView" destination="sv2-Km-4aW" id="DCK-Ms-QF2"/>
                 <outlet property="trailingGradientView" destination="7CB-Td-f5Z" id="YHD-75-cU6"/>
                 <outlet property="view" destination="Itb-RH-fVE" id="bJ5-s1-Gcw"/>
-                <outletCollection property="collectionOfButtons" destination="nB8-Aj-xld" collectionClass="NSMutableArray" id="jyo-rn-m7N"/>
-                <outletCollection property="collectionOfButtons" destination="6rn-71-hez" collectionClass="NSMutableArray" id="fw6-VG-tgf"/>
-                <outletCollection property="collectionOfButtons" destination="fYx-8t-TrF" collectionClass="NSMutableArray" id="PNA-Wa-hK8"/>
-                <outletCollection property="collectionOfButtons" destination="GLy-Hr-3Ff" collectionClass="NSMutableArray" id="oua-rb-Slf"/>
-                <outletCollection property="collectionOfButtons" destination="cNv-39-ezu" collectionClass="NSMutableArray" id="ghV-zi-6Ou"/>
+                <outletCollection property="collectionOfButtons" destination="fYx-8t-TrF" collectionClass="NSMutableArray" id="CMf-at-sns"/>
+                <outletCollection property="collectionOfButtons" destination="6rn-71-hez" collectionClass="NSMutableArray" id="XvG-Ti-xFV"/>
+                <outletCollection property="collectionOfButtons" destination="GLy-Hr-3Ff" collectionClass="NSMutableArray" id="Ymy-h3-QEw"/>
+                <outletCollection property="collectionOfButtons" destination="nB8-Aj-xld" collectionClass="NSMutableArray" id="l63-tU-1sb"/>
+                <outletCollection property="collectionOfButtons" destination="cNv-39-ezu" collectionClass="NSMutableArray" id="SJh-aJ-Tts"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

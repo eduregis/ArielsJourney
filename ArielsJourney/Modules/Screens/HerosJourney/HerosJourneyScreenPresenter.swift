@@ -14,6 +14,7 @@ class HerosJourneyScreenPresenter {
     
     weak var delegate: HerosJourneyScreenPresenterDelegate?
     let router: HerosJourneyScreenRouter
+    var herosJourneyList: [HerosJourneyModel] = []
     
     init(delegate: HerosJourneyScreenPresenterDelegate, router: HerosJourneyScreenRouter) {
         
@@ -25,9 +26,14 @@ class HerosJourneyScreenPresenter {
     }
     
     func willAppear() {
+        HerosJourneyEnum.allCases.forEach {
+            herosJourneyList.append($0.herosJourneyModel)
+        }
+        print(herosJourneyList)
     }
     
     func didAppear() {
+        
     }
     
     func showConfigurations() {
