@@ -94,6 +94,6 @@ extension ArchetypesScreenViewController: UICollectionViewDelegate, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        presenter.showArchetypeDetails(index: indexPath.row)
+        presenter.showElementDetails(index: indexPath.row)
     }
 }
