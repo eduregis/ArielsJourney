@@ -49,6 +49,7 @@
 		2EAF957F2AA3ED7100B3FAC2 /* ConfigurationsSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EAF957E2AA3ED7100B3FAC2 /* ConfigurationsSheetViewController.xib */; };
 		2EAF95822AA3F12000B3FAC2 /* StyledHeaderSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF95812AA3F12000B3FAC2 /* StyledHeaderSheetView.swift */; };
 		2EAF95842AA3F1D000B3FAC2 /* StyledHeaderSheetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EAF95832AA3F1D000B3FAC2 /* StyledHeaderSheetView.xib */; };
+		2EAF95862AA401FC00B3FAC2 /* GradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF95852AA401FC00B3FAC2 /* GradientLayer.swift */; };
 		2EB169572AA2766900615060 /* HomeScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB169562AA2766900615060 /* HomeScreenRouter.swift */; };
 		2EB169592AA2773600615060 /* HomeScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB169582AA2773600615060 /* HomeScreenPresenter.swift */; };
 		2EB1695B2AA2781800615060 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB1695A2AA2781800615060 /* HomeScreenViewController.swift */; };
@@ -121,6 +122,7 @@
 		2EAF957E2AA3ED7100B3FAC2 /* ConfigurationsSheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfigurationsSheetViewController.xib; sourceTree = "<group>"; };
 		2EAF95812AA3F12000B3FAC2 /* StyledHeaderSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledHeaderSheetView.swift; sourceTree = "<group>"; };
 		2EAF95832AA3F1D000B3FAC2 /* StyledHeaderSheetView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StyledHeaderSheetView.xib; sourceTree = "<group>"; };
+		2EAF95852AA401FC00B3FAC2 /* GradientLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientLayer.swift; sourceTree = "<group>"; };
 		2EB169562AA2766900615060 /* HomeScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenRouter.swift; sourceTree = "<group>"; };
 		2EB169582AA2773600615060 /* HomeScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenPresenter.swift; sourceTree = "<group>"; };
 		2EB1695A2AA2781800615060 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
@@ -356,6 +358,7 @@
 			isa = PBXGroup;
 			children = (
 				2EAF95732AA3EABF00B3FAC2 /* OverlayPresentation.swift */,
+				2EAF95852AA401FC00B3FAC2 /* GradientLayer.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -659,6 +662,7 @@
 				2E737FB92AA2486E001F4EB4 /* BaseRouter.swift in Sources */,
 				2EAF957D2AA3EC9C00B3FAC2 /* ConfigurationsSheetViewController.swift in Sources */,
 				2E7FAC5F2AA3B4FE00E1AF20 /* ArchetypesScreenViewController.swift in Sources */,
+				2EAF95862AA401FC00B3FAC2 /* GradientLayer.swift in Sources */,
 				2E7FAC522AA3B18A00E1AF20 /* HerosJourneyScreenRouter.swift in Sources */,
 				2EAF95742AA3EABF00B3FAC2 /* OverlayPresentation.swift in Sources */,
 				2EAF95822AA3F12000B3FAC2 /* StyledHeaderSheetView.swift in Sources */,

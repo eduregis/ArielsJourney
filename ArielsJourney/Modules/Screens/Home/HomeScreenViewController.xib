@@ -10,7 +10,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeScreenViewController" customModule="ArielsJourney" customModuleProvider="target">
             <connections>
                 <outlet property="headerView" destination="LDW-GP-gTr" id="63S-cL-H3O"/>
+                <outlet property="leadingGradientView" destination="0hq-ya-3cz" id="Ivz-X8-TMC"/>
                 <outlet property="scrollView" destination="sv2-Km-4aW" id="DCK-Ms-QF2"/>
+                <outlet property="trailingGradientView" destination="7CB-Td-f5Z" id="YHD-75-cU6"/>
                 <outlet property="view" destination="Itb-RH-fVE" id="bJ5-s1-Gcw"/>
                 <outletCollection property="collectionOfButtons" destination="nB8-Aj-xld" collectionClass="NSMutableArray" id="jyo-rn-m7N"/>
                 <outletCollection property="collectionOfButtons" destination="6rn-71-hez" collectionClass="NSMutableArray" id="fw6-VG-tgf"/>
@@ -114,12 +116,33 @@
                                 <constraint firstAttribute="trailing" secondItem="sv2-Km-4aW" secondAttribute="trailing" id="fy4-IK-q90"/>
                             </constraints>
                         </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0hq-ya-3cz" userLabel="LeadingGradientView">
+                            <rect key="frame" x="0.0" y="0.0" width="16" height="309"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="zi7-pM-OlY"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7CB-Td-f5Z" userLabel="TrailingGradientView">
+                            <rect key="frame" x="804" y="0.0" width="16" height="309"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="Bz3-fc-VI7"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="16" id="bGo-5w-BWr"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="j70-zw-jH3" firstAttribute="leading" secondItem="0Kt-DA-h1k" secondAttribute="leading" id="1Cv-NR-zRH"/>
+                        <constraint firstAttribute="bottom" secondItem="0hq-ya-3cz" secondAttribute="bottom" id="6fd-Rd-1aK"/>
                         <constraint firstItem="j70-zw-jH3" firstAttribute="centerY" secondItem="0Kt-DA-h1k" secondAttribute="centerY" id="Nuc-kl-SbC"/>
                         <constraint firstAttribute="trailing" secondItem="j70-zw-jH3" secondAttribute="trailing" id="V0C-IT-FRL"/>
+                        <constraint firstAttribute="bottom" secondItem="7CB-Td-f5Z" secondAttribute="bottom" id="cYB-OB-Shi"/>
+                        <constraint firstAttribute="trailing" secondItem="7CB-Td-f5Z" secondAttribute="trailing" id="p0E-Pz-A9P"/>
+                        <constraint firstItem="0hq-ya-3cz" firstAttribute="leading" secondItem="0Kt-DA-h1k" secondAttribute="leading" id="p5x-48-IJ7"/>
+                        <constraint firstItem="7CB-Td-f5Z" firstAttribute="top" secondItem="0Kt-DA-h1k" secondAttribute="top" id="prD-xb-mda"/>
+                        <constraint firstItem="0hq-ya-3cz" firstAttribute="top" secondItem="0Kt-DA-h1k" secondAttribute="top" id="tiW-4N-eId"/>
                     </constraints>
                 </view>
             </subviews>

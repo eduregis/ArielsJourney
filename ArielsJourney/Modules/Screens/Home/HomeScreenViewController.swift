@@ -12,7 +12,10 @@ class HomeScreenViewController: BaseViewController {
     // MARK: - Outlets
     @IBOutlet weak var headerView: StyledHeaderScreenView!
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var leadingGradientView: UIView!
+    @IBOutlet weak var trailingGradientView: UIView!
     @IBOutlet var collectionOfButtons: Array<HomeStainedGlassButtonView>?
+    
     
     // MARK: - Properties
     var presenter: HomeScreenPresenter!
@@ -51,6 +54,8 @@ class HomeScreenViewController: BaseViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         presenter.didAppear()
+        leadingGradientView.setOpecityGradientBackground(color: UIColor(named: "ArielBackground") ?? .clear, direction: .toRight)
+        trailingGradientView.setOpecityGradientBackground(color: UIColor(named: "ArielBackground") ?? .clear, direction: .toLeft)
     }
 }
 
