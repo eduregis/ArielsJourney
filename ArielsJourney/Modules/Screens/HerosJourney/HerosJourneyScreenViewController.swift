@@ -11,6 +11,7 @@ class HerosJourneyScreenViewController: BaseViewController {
     
     // MARK: - Outlets
     @IBOutlet weak var headerView: StyledHeaderScreenView!
+    @IBOutlet var collectionOfCards: Array<HerosJourneyCardView>?
     
     // MARK: - Properties
     var presenter: HerosJourneyScreenPresenter!
@@ -32,6 +33,12 @@ class HerosJourneyScreenViewController: BaseViewController {
         self.headerView.titleLabel.text = "Jornada do Herói"
         self.headerView.hideAdornments()
         self.view.backgroundColor = UIColor(named: "ArielBackground")
+        if let cards = collectionOfCards {
+            for (index, card) in cards.enumerated() {
+                card.delegate = self
+                card.setupCard(cardInfo: HerosJourneyEnum.allCases[index].herosJourneyModel )
+            }
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -59,5 +66,11 @@ extension HerosJourneyScreenViewController: StyledHeaderScreenViewDelegate {
     
     func didTapConfigButton() {
         self.presenter.showConfigurations()
+    }
+}
+
+extension HerosJourneyScreenViewController: HerosJourneyCardViewDelegate {
+    func didTapCard(cardInfo: HerosJourneyModel) {
+        self.presenter.didTapCard(cardInfo: cardInfo)
     }
 }

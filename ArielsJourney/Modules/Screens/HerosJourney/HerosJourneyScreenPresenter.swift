@@ -14,7 +14,6 @@ class HerosJourneyScreenPresenter {
     
     weak var delegate: HerosJourneyScreenPresenterDelegate?
     let router: HerosJourneyScreenRouter
-    var herosJourneyList: [HerosJourneyModel] = []
     
     init(delegate: HerosJourneyScreenPresenterDelegate, router: HerosJourneyScreenRouter) {
         
@@ -26,10 +25,6 @@ class HerosJourneyScreenPresenter {
     }
     
     func willAppear() {
-        HerosJourneyEnum.allCases.forEach {
-            herosJourneyList.append($0.herosJourneyModel)
-        }
-        print(herosJourneyList)
     }
     
     func didAppear() {
@@ -43,5 +38,9 @@ class HerosJourneyScreenPresenter {
     func navigateToHome() {
         print("Home <- Jornada do Herói")
         self.router.pop(animated: true)
+    }
+    
+    func didTapCard(cardInfo: HerosJourneyModel) {
+        print(cardInfo.descriptionText)
     }
 }

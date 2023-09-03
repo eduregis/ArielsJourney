@@ -56,6 +56,8 @@
 		2EAF95902AA40B9500B3FAC2 /* LocalizableProjectStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF958F2AA40B9500B3FAC2 /* LocalizableProjectStrings.swift */; };
 		2EAF95962AA40CF900B3FAC2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2EAF95982AA40CF900B3FAC2 /* Localizable.strings */; };
 		2EAF959C2AA40D2600B3FAC2 /* Dialogues.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2EAF959E2AA40D2600B3FAC2 /* Dialogues.strings */; };
+		2EAF95A22AA415DE00B3FAC2 /* HerosJourneyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF95A12AA415DE00B3FAC2 /* HerosJourneyCardView.swift */; };
+		2EAF95A42AA416EE00B3FAC2 /* HerosJourneyCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EAF95A32AA416EE00B3FAC2 /* HerosJourneyCardView.xib */; };
 		2EB169572AA2766900615060 /* HomeScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB169562AA2766900615060 /* HomeScreenRouter.swift */; };
 		2EB169592AA2773600615060 /* HomeScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB169582AA2773600615060 /* HomeScreenPresenter.swift */; };
 		2EB1695B2AA2781800615060 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB1695A2AA2781800615060 /* HomeScreenViewController.swift */; };
@@ -138,6 +140,8 @@
 		2EAF95992AA40CFC00B3FAC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2EAF959D2AA40D2600B3FAC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Dialogues.strings; sourceTree = "<group>"; };
 		2EAF959F2AA40D2A00B3FAC2 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Dialogues.strings"; sourceTree = "<group>"; };
+		2EAF95A12AA415DE00B3FAC2 /* HerosJourneyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosJourneyCardView.swift; sourceTree = "<group>"; };
+		2EAF95A32AA416EE00B3FAC2 /* HerosJourneyCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HerosJourneyCardView.xib; sourceTree = "<group>"; };
 		2EB169562AA2766900615060 /* HomeScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenRouter.swift; sourceTree = "<group>"; };
 		2EB169582AA2773600615060 /* HomeScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenPresenter.swift; sourceTree = "<group>"; };
 		2EB1695A2AA2781800615060 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
@@ -200,6 +204,7 @@
 		2E6DEFCD2AA2A0DA00C02153 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				2EAF95A02AA4155C00B3FAC2 /* HerosJourneyCard */,
 				2E883D192AA2D5740009909D /* HomeStainedGlassButton */,
 				2E6DEFCE2AA2A0E700C02153 /* StyledHeaderScreen */,
 				2EAF95802AA3F08B00B3FAC2 /* StyledHeaderSheet */,
@@ -441,6 +446,15 @@
 			path = Localizable;
 			sourceTree = "<group>";
 		};
+		2EAF95A02AA4155C00B3FAC2 /* HerosJourneyCard */ = {
+			isa = PBXGroup;
+			children = (
+				2EAF95A12AA415DE00B3FAC2 /* HerosJourneyCardView.swift */,
+				2EAF95A32AA416EE00B3FAC2 /* HerosJourneyCardView.xib */,
+			);
+			path = HerosJourneyCard;
+			sourceTree = "<group>";
+		};
 		2EB169552AA275EA00615060 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -594,6 +608,7 @@
 				2E737F8E2AA2455F001F4EB4 /* LaunchScreen.storyboard in Resources */,
 				2E6DEFD22AA2A50C00C02153 /* StyledHeaderScreenView.xib in Resources */,
 				2E737F8B2AA2455F001F4EB4 /* Assets.xcassets in Resources */,
+				2EAF95A42AA416EE00B3FAC2 /* HerosJourneyCardView.xib in Resources */,
 				2EAF95842AA3F1D000B3FAC2 /* StyledHeaderSheetView.xib in Resources */,
 				2E883D1D2AA2D6790009909D /* HomeStainedGlassButtonView.xib in Resources */,
 				2E1CD4DE2AA2B53B00D90276 /* Macondo-Regular.ttf in Resources */,
@@ -708,6 +723,7 @@
 				2EAF95892AA40AF100B3FAC2 /* HerosJourneyModel.swift in Sources */,
 				2EAF95902AA40B9500B3FAC2 /* LocalizableProjectStrings.swift in Sources */,
 				2EAF95822AA3F12000B3FAC2 /* StyledHeaderSheetView.swift in Sources */,
+				2EAF95A22AA415DE00B3FAC2 /* HerosJourneyCardView.swift in Sources */,
 				2E737FBD2AA248F7001F4EB4 /* BasePresenterDelegate.swift in Sources */,
 				2E883D1B2AA2D5C70009909D /* HomeStainedGlassButtonView.swift in Sources */,
 				2E6DEFD02AA2A2A000C02153 /* StyledHeaderScreenView.swift in Sources */,

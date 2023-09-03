@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "dark_flat_pattern.png",
+      "filename" : "Ariel_darkFlatPattern.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "dark_flat_pattern@2x.png",
+      "filename" : "Ariel_darkFlatPattern@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "dark_flat_pattern@3x.png",
+      "filename" : "Ariel_darkFlatPattern@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
