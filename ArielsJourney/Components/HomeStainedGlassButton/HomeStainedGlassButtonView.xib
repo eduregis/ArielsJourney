@@ -25,6 +25,9 @@
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sn2-NA-DWc" userLabel="StainedGlassImage">
                     <rect key="frame" x="0.0" y="0.0" width="119" height="275"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="275" id="CnY-NP-yAS"/>
+                    </constraints>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SZB-ow-Xi0" userLabel="TitleContainer">
                     <rect key="frame" x="9.6666666666666643" y="233" width="100" height="37"/>
@@ -43,8 +46,8 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="37" id="38Y-E4-vuj"/>
                         <constraint firstItem="aI6-Du-4pM" firstAttribute="leading" secondItem="SZB-ow-Xi0" secondAttribute="leading" id="7mh-J7-tib"/>
-                        <constraint firstItem="y2G-Qr-yvj" firstAttribute="top" secondItem="SZB-ow-Xi0" secondAttribute="top" id="8Fu-Ba-o6j"/>
                         <constraint firstAttribute="width" constant="100" id="Emt-ce-AD6"/>
+                        <constraint firstItem="y2G-Qr-yvj" firstAttribute="top" secondItem="aI6-Du-4pM" secondAttribute="top" id="L8o-ge-lSL"/>
                         <constraint firstItem="aI6-Du-4pM" firstAttribute="top" secondItem="SZB-ow-Xi0" secondAttribute="top" id="M4W-jl-ETf"/>
                         <constraint firstAttribute="trailing" secondItem="aI6-Du-4pM" secondAttribute="trailing" id="ShB-Mn-q14"/>
                         <constraint firstAttribute="bottom" secondItem="y2G-Qr-yvj" secondAttribute="bottom" id="YB4-uo-Nji"/>
@@ -56,10 +59,9 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="Sn2-NA-DWc" secondAttribute="bottom" id="IKH-kI-qqh"/>
+                <constraint firstItem="Sn2-NA-DWc" firstAttribute="bottom" secondItem="SZB-ow-Xi0" secondAttribute="bottom" constant="5" id="Hk0-IF-VQv"/>
                 <constraint firstItem="Sn2-NA-DWc" firstAttribute="top" secondItem="2OT-6j-PJh" secondAttribute="top" id="PjL-dd-6xE"/>
                 <constraint firstItem="SZB-ow-Xi0" firstAttribute="centerX" secondItem="2OT-6j-PJh" secondAttribute="centerX" id="R8r-5U-1MW"/>
-                <constraint firstItem="Sn2-NA-DWc" firstAttribute="bottom" secondItem="SZB-ow-Xi0" secondAttribute="bottom" constant="5" id="aj3-Nd-sAI"/>
                 <constraint firstAttribute="trailing" secondItem="Sn2-NA-DWc" secondAttribute="trailing" id="sdI-8j-C0N"/>
                 <constraint firstItem="Sn2-NA-DWc" firstAttribute="leading" secondItem="2OT-6j-PJh" secondAttribute="leading" id="yZV-dP-I8M"/>
             </constraints>

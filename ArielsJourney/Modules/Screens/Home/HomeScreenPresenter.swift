@@ -5,7 +5,7 @@
 //  Created by Eduardo Oliveira on 01/09/23.
 //
 
-import SwiftUI
+import Foundation
 
 enum HomeScreenTags: Int {
     case gameplayNew = 0
@@ -46,6 +46,10 @@ class HomeScreenPresenter {
     }
     
     func didAppear() {
+    }
+    
+    func showConfigurations() {
+        self.router.showConfigurations()
     }
     
     func didTapButton(tag: HomeScreenTags) {

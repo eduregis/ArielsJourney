@@ -11,7 +11,7 @@ class GameplayScreenViewController: BaseViewController {
     
     // MARK: - Outlets
 
-    @IBOutlet weak var headerView: StyledHeaderView!
+    @IBOutlet weak var headerView: StyledHeaderScreenView!
     // MARK: - Properties
     var presenter: GameplayScreenPresenter!
     
@@ -50,12 +50,12 @@ extension GameplayScreenViewController: GameplayScreenPresenterDelegate {
     }
 }
 
-extension GameplayScreenViewController: StyledHeaderViewDelegate {
+extension GameplayScreenViewController: StyledHeaderScreenViewDelegate {
     func didTapBackButton() {
         self.presenter.navigateToHome()
     }
     
     func didTapConfigButton() {
-        print("configurações")
+        self.presenter.showConfigurations()
     }
 }

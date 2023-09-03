@@ -10,6 +10,7 @@ import UIKit
 class BaseRouter {
     
     weak var viewController: UIViewController?
+    let overlayTransitioningDelegate = OverlayTransitioningDelegate()
     
     required init(viewController: UIViewController) {
         self.viewController = viewController
@@ -55,5 +56,17 @@ class BaseRouter {
         viewController.tabBarItem.selectedImage = selectedImage.withRenderingMode(.automatic)
         viewController.tabBarItem.title = title
         viewController.tabBarItem.accessibilityLabel = title
+    }
+    
+    
+}
+
+// MARK: - Common Routers
+extension BaseRouter {
+    func showConfigurations() {
+        let overlayVC = ConfigurationsSheetRouter.makeModule()
+        overlayVC.transitioningDelegate  = self.overlayTransitioningDelegate
+        overlayVC.modalPresentationStyle = .custom
+        self.present(overlayVC, animated: true)
     }
 }

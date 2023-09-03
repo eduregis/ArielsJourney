@@ -7,32 +7,32 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameplayScreenViewController" customModule="ArielsJourney" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArchetypesScreenViewController" customModule="ArielsJourney" customModuleProvider="target">
             <connections>
-                <outlet property="headerView" destination="KyG-Mi-aru" id="ZOT-iW-SFB"/>
-                <outlet property="view" destination="7HX-ER-qGZ" id="Kme-eJ-usb"/>
+                <outlet property="headerView" destination="fKy-NT-NW1" id="gV2-T2-fvQ"/>
+                <outlet property="view" destination="UNW-2x-2sD" id="PPl-Xd-TvN"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="7HX-ER-qGZ">
+        <view contentMode="scaleToFill" id="UNW-2x-2sD">
             <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KyG-Mi-aru" customClass="StyledHeaderView" customModule="ArielsJourney" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fKy-NT-NW1" customClass="StyledHeaderScreenView" customModule="ArielsJourney" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="852" height="68"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="68" id="zoy-ls-U3b"/>
+                        <constraint firstAttribute="height" constant="68" id="jie-nL-Kdu"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="KyG-Mi-aru" firstAttribute="leading" secondItem="7HX-ER-qGZ" secondAttribute="leading" id="6bE-uT-YIQ"/>
-                <constraint firstAttribute="trailing" secondItem="KyG-Mi-aru" secondAttribute="trailing" id="fVe-Cr-24H"/>
-                <constraint firstItem="KyG-Mi-aru" firstAttribute="top" secondItem="7HX-ER-qGZ" secondAttribute="top" id="mlk-5I-zdM"/>
+                <constraint firstItem="fKy-NT-NW1" firstAttribute="leading" secondItem="UNW-2x-2sD" secondAttribute="leading" id="5Jj-o6-4Kx"/>
+                <constraint firstAttribute="trailing" secondItem="fKy-NT-NW1" secondAttribute="trailing" id="XNZ-tN-0Ba"/>
+                <constraint firstItem="fKy-NT-NW1" firstAttribute="top" secondItem="UNW-2x-2sD" secondAttribute="top" id="cCe-3C-5cy"/>
             </constraints>
-            <point key="canvasLocation" x="-127" y="-2"/>
+            <point key="canvasLocation" x="236" y="14"/>
         </view>
     </objects>
     <resources>

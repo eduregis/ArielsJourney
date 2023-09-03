@@ -5,7 +5,7 @@
 //  Created by Eduardo Oliveira on 02/09/23.
 //
 
-import SwiftUI
+import Foundation
 
 protocol AchievementsScreenPresenterDelegate: BasePresenterDelegate {
 }
@@ -28,6 +28,10 @@ class AchievementsScreenPresenter {
     }
     
     func didAppear() {
+    }
+    
+    func showConfigurations() {
+        self.router.showConfigurations()
     }
     
     func navigateToHome() {

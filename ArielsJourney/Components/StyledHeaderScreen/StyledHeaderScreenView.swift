@@ -1,5 +1,5 @@
 //
-//  StyledHeaderView.swift
+//  StyledHeaderScreenView.swift
 //  ArielsJourney
 //
 //  Created by Eduardo Oliveira on 01/09/23.
@@ -7,12 +7,12 @@
 
 import UIKit
 
-protocol StyledHeaderViewDelegate: AnyObject {
+protocol StyledHeaderScreenViewDelegate: AnyObject {
     func didTapBackButton()
     func didTapConfigButton()
 }
 
-class StyledHeaderView: UIView {
+class StyledHeaderScreenView: UIView {
     
     // MARK: - Outlets
     @IBOutlet weak var centerIcon: UIImageView!
@@ -25,14 +25,14 @@ class StyledHeaderView: UIView {
     @IBOutlet weak var configButton: UIButton!
     
     // MARK: - Properties
-    weak var delegate: StyledHeaderViewDelegate?
+    weak var delegate: StyledHeaderScreenViewDelegate?
     var title: String? {
         get { return titleLabel.text }
         set { titleLabel.text = newValue }
     }
     
     private enum Strings {
-        static let nibName = "StyledHeaderView"
+        static let nibName = "StyledHeaderScreenView"
     }
     
     private enum Fonts {

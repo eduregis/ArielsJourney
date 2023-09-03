@@ -1,21 +1,19 @@
 //
-//  AchievementsScreenViewController.swift
+//  ConfigurationsSheetViewController.swift
 //  ArielsJourney
 //
 //  Created by Eduardo Oliveira on 02/09/23.
 //
 
-import Foundation
-
 import UIKit
 
-class AchievementsScreenViewController: BaseViewController {
+class ConfigurationsSheetViewController: BaseViewController {
     
     // MARK: - Outlets
-    @IBOutlet weak var headerView: StyledHeaderView!
+    @IBOutlet weak var headerView: StyledHeaderSheetView!
     
     // MARK: - Properties
-    var presenter: AchievementsScreenPresenter!
+    var presenter: ConfigurationsSheetPresenter!
     
     // MARK: - View Lifecycle
     
@@ -31,8 +29,7 @@ class AchievementsScreenViewController: BaseViewController {
         super.viewDidLoad()
         presenter.didLoad()
         self.headerView.delegate = self
-        self.headerView.titleLabel.text = "Conquistas"
-        self.headerView.hideAdornments()
+        self.headerView.titleLabel.text = "Configurações"
         self.view.backgroundColor = UIColor(named: "ArielBackground")
     }
     
@@ -47,19 +44,13 @@ class AchievementsScreenViewController: BaseViewController {
     }
 }
 
-// MARK: - AchievementsScreenPresenterDelegate
-extension AchievementsScreenViewController: AchievementsScreenPresenterDelegate {
+// MARK: - ConfigurationsSheetPresenterDelegate
+extension ConfigurationsSheetViewController: ConfigurationsSheetPresenterDelegate {
     
     func didLoadRemoteConfig() {
     }
 }
 
-extension AchievementsScreenViewController: StyledHeaderViewDelegate {
-    func didTapBackButton() {
-        self.presenter.navigateToHome()
-    }
+extension ConfigurationsSheetViewController: StyledHeaderSheetViewDelegate {
     
-    func didTapConfigButton() {
-        print("configurações")
-    }
 }
