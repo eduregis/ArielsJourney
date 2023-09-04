@@ -85,17 +85,6 @@ extension HomeScreenViewController: UICollectionViewDelegate, UICollectionViewDa
         return presenter.dateCells.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-
-        let totalCellWidth = 142 * presenter.dateCells.count
-        let totalSpacingWidth = 23 * (presenter.dateCells.count - 1)
-
-        let leftInset = (collectionView.frame.width - CGFloat(totalCellWidth + totalSpacingWidth)) / 2
-        let rightInset = leftInset
-
-        return UIEdgeInsets(top: 0, left: leftInset, bottom: 0, right: rightInset)
-    }
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 142, height: 275)
     }

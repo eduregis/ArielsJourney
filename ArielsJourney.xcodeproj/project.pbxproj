@@ -235,7 +235,7 @@
 			path = ArchetypeCell;
 			sourceTree = "<group>";
 		};
-		2E3D74C12AA4F78800CD00C8 /* ArchetypeDetails */ = {
+		2E3D74C12AA4F78800CD00C8 /* ElementDetails */ = {
 			isa = PBXGroup;
 			children = (
 				2E3D74C22AA4F7AF00CD00C8 /* ElementDetailsSheetRouter.swift */,
@@ -243,7 +243,7 @@
 				2E3D74C62AA4F83B00CD00C8 /* ElementDetailsSheetViewController.swift */,
 				2E3D74C82AA4F88600CD00C8 /* ElementDetailsSheetViewController.xib */,
 			);
-			path = ArchetypeDetails;
+			path = ElementDetails;
 			sourceTree = "<group>";
 		};
 		2E6DEFCD2AA2A0DA00C02153 /* Components */ = {
@@ -439,7 +439,7 @@
 		2EAF95762AA3EB2400B3FAC2 /* Sheets */ = {
 			isa = PBXGroup;
 			children = (
-				2E3D74C12AA4F78800CD00C8 /* ArchetypeDetails */,
+				2E3D74C12AA4F78800CD00C8 /* ElementDetails */,
 				2EAF95772AA3EB8B00B3FAC2 /* Configurations */,
 			);
 			path = Sheets;
