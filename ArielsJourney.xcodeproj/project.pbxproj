@@ -12,6 +12,10 @@
 		2E2C9D9B2AA548E100995D41 /* HomeScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C9D9A2AA548E100995D41 /* HomeScreenModel.swift */; };
 		2E2C9D9E2AA54CB400995D41 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C9D9D2AA54CB400995D41 /* HomeCollectionViewCell.swift */; };
 		2E2C9DA02AA54CFB00995D41 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E2C9D9F2AA54CFB00995D41 /* HomeCollectionViewCell.xib */; };
+		2E2C9DA22AA567A300995D41 /* LocalizableDialogueStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C9DA12AA567A300995D41 /* LocalizableDialogueStrings.swift */; };
+		2E2C9DA52AA56B3600995D41 /* GameplayCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C9DA42AA56B3600995D41 /* GameplayCardView.swift */; };
+		2E2C9DA72AA56BD600995D41 /* GameplayCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E2C9DA62AA56BD600995D41 /* GameplayCardView.xib */; };
+		2E2C9DA92AA56F7A00995D41 /* GameplayScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C9DA82AA56F7A00995D41 /* GameplayScreenModel.swift */; };
 		2E3D74B62AA4E19900CD00C8 /* ReusableCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3D74B52AA4E19900CD00C8 /* ReusableCells.swift */; };
 		2E3D74B92AA4E22800CD00C8 /* ArchetypesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3D74B82AA4E22800CD00C8 /* ArchetypesModel.swift */; };
 		2E3D74BE2AA4E3D400CD00C8 /* ArchetypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3D74BD2AA4E3D400CD00C8 /* ArchetypeCollectionViewCell.swift */; };
@@ -97,6 +101,10 @@
 		2E2C9D9A2AA548E100995D41 /* HomeScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenModel.swift; sourceTree = "<group>"; };
 		2E2C9D9D2AA54CB400995D41 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		2E2C9D9F2AA54CFB00995D41 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		2E2C9DA12AA567A300995D41 /* LocalizableDialogueStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableDialogueStrings.swift; sourceTree = "<group>"; };
+		2E2C9DA42AA56B3600995D41 /* GameplayCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayCardView.swift; sourceTree = "<group>"; };
+		2E2C9DA62AA56BD600995D41 /* GameplayCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameplayCardView.xib; sourceTree = "<group>"; };
+		2E2C9DA82AA56F7A00995D41 /* GameplayScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayScreenModel.swift; sourceTree = "<group>"; };
 		2E3D74B52AA4E19900CD00C8 /* ReusableCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCells.swift; sourceTree = "<group>"; };
 		2E3D74B82AA4E22800CD00C8 /* ArchetypesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchetypesModel.swift; sourceTree = "<group>"; };
 		2E3D74BD2AA4E3D400CD00C8 /* ArchetypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchetypeCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -226,6 +234,15 @@
 			path = HomeCell;
 			sourceTree = "<group>";
 		};
+		2E2C9DA32AA56B1A00995D41 /* GameplayCard */ = {
+			isa = PBXGroup;
+			children = (
+				2E2C9DA42AA56B3600995D41 /* GameplayCardView.swift */,
+				2E2C9DA62AA56BD600995D41 /* GameplayCardView.xib */,
+			);
+			path = GameplayCard;
+			sourceTree = "<group>";
+		};
 		2E3D74BC2AA4E36600CD00C8 /* ArchetypeCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +266,7 @@
 		2E6DEFCD2AA2A0DA00C02153 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				2E2C9DA32AA56B1A00995D41 /* GameplayCard */,
 				2EAF95A02AA4155C00B3FAC2 /* HerosJourneyCard */,
 				2E6DEFCE2AA2A0E700C02153 /* StyledHeaderScreen */,
 				2EAF95802AA3F08B00B3FAC2 /* StyledHeaderSheet */,
@@ -369,6 +387,7 @@
 		2E7FAC472AA3A89400E1AF20 /* Gameplay */ = {
 			isa = PBXGroup;
 			children = (
+				2E2C9DA82AA56F7A00995D41 /* GameplayScreenModel.swift */,
 				2E7FAC482AA3A8AD00E1AF20 /* GameplayScreenRouter.swift */,
 				2E7FAC4A2AA3A91F00E1AF20 /* GameplayScreenPresenter.swift */,
 				2E7FAC4C2AA3A9F800E1AF20 /* GameplayScreenViewController.swift */,
@@ -470,6 +489,7 @@
 			children = (
 				2EAF958D2AA40B6E00B3FAC2 /* Localizable.swift */,
 				2EAF958F2AA40B9500B3FAC2 /* LocalizableProjectStrings.swift */,
+				2E2C9DA12AA567A300995D41 /* LocalizableDialogueStrings.swift */,
 				2EAF95982AA40CF900B3FAC2 /* Localizable.strings */,
 				2EAF959E2AA40D2600B3FAC2 /* Dialogues.strings */,
 			);
@@ -646,6 +666,7 @@
 				2EAF95842AA3F1D000B3FAC2 /* StyledHeaderSheetView.xib in Resources */,
 				2E2C9DA02AA54CFB00995D41 /* HomeCollectionViewCell.xib in Resources */,
 				2E1CD4DE2AA2B53B00D90276 /* Macondo-Regular.ttf in Resources */,
+				2E2C9DA72AA56BD600995D41 /* GameplayCardView.xib in Resources */,
 				2E7FAC582AA3B22D00E1AF20 /* HerosJourneyScreenViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -754,17 +775,20 @@
 				2EAF95862AA401FC00B3FAC2 /* GradientLayer.swift in Sources */,
 				2E7FAC522AA3B18A00E1AF20 /* HerosJourneyScreenRouter.swift in Sources */,
 				2E2C9D9B2AA548E100995D41 /* HomeScreenModel.swift in Sources */,
+				2E2C9DA22AA567A300995D41 /* LocalizableDialogueStrings.swift in Sources */,
 				2EAF95742AA3EABF00B3FAC2 /* OverlayPresentation.swift in Sources */,
 				2EAF95892AA40AF100B3FAC2 /* HerosJourneyScreenModel.swift in Sources */,
 				2EAF95902AA40B9500B3FAC2 /* LocalizableProjectStrings.swift in Sources */,
 				2E3D74B62AA4E19900CD00C8 /* ReusableCells.swift in Sources */,
 				2EAF95822AA3F12000B3FAC2 /* StyledHeaderSheetView.swift in Sources */,
 				2EAF95A22AA415DE00B3FAC2 /* HerosJourneyCardView.swift in Sources */,
+				2E2C9DA92AA56F7A00995D41 /* GameplayScreenModel.swift in Sources */,
 				2E737FBD2AA248F7001F4EB4 /* BasePresenterDelegate.swift in Sources */,
 				2E6DEFD02AA2A2A000C02153 /* StyledHeaderScreenView.swift in Sources */,
 				2E7FAC562AA3B22300E1AF20 /* HerosJourneyScreenViewController.swift in Sources */,
 				2E3D74C72AA4F83B00CD00C8 /* ElementDetailsSheetViewController.swift in Sources */,
 				2EAF95792AA3EBE300B3FAC2 /* ConfigurationsSheetRouter.swift in Sources */,
+				2E2C9DA52AA56B3600995D41 /* GameplayCardView.swift in Sources */,
 				2E7FAC5B2AA3B49700E1AF20 /* ArchetypesScreenRouter.swift in Sources */,
 				2E3D74C52AA4F7F300CD00C8 /* ElementDetailsSheetPresenter.swift in Sources */,
 				2EAF958E2AA40B6E00B3FAC2 /* Localizable.swift in Sources */,

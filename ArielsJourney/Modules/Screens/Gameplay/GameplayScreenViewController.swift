@@ -10,8 +10,10 @@ import UIKit
 class GameplayScreenViewController: BaseViewController {
     
     // MARK: - Outlets
-
     @IBOutlet weak var headerView: StyledHeaderScreenView!
+    @IBOutlet weak var firstCard: GameplayCardView!
+    @IBOutlet weak var secondCard: GameplayCardView!
+    
     // MARK: - Properties
     var presenter: GameplayScreenPresenter!
     
@@ -31,6 +33,8 @@ class GameplayScreenViewController: BaseViewController {
         self.headerView.delegate = self
         self.headerView.hideBackground()
         self.blurBackground(backgroundName: "background_placeholder")
+        self.firstCard.setupCard(cardInfo: GameplayCardModel(image: "gameplayCard_MC_01", title: "Teste1", isCardSelected: true))
+        self.secondCard.setupCard(cardInfo: GameplayCardModel(image: "gameplayCard_MC_01", title: "Teste2", isCardSelected: true))
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -42,6 +46,8 @@ class GameplayScreenViewController: BaseViewController {
         super.viewDidAppear(animated)
         presenter.didAppear()
     }
+    
+
 }
 
 // MARK: - GameplayScreenPresenterDelegate
