@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21507"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -17,9 +18,13 @@
             <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
+                <view alpha="0.65000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2pl-5p-2h6" userLabel="Dimmed Overlay">
+                    <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KyG-Mi-aru" customClass="StyledHeaderScreenView" customModule="ArielsJourney" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="852" height="68"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="68" id="zoy-ls-U3b"/>
                     </constraints>
@@ -28,8 +33,12 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="KyG-Mi-aru" firstAttribute="leading" secondItem="7HX-ER-qGZ" secondAttribute="leading" id="6bE-uT-YIQ"/>
+                <constraint firstItem="2pl-5p-2h6" firstAttribute="top" secondItem="7HX-ER-qGZ" secondAttribute="top" id="IpC-2K-Oxs"/>
+                <constraint firstAttribute="bottom" secondItem="2pl-5p-2h6" secondAttribute="bottom" id="MhV-5k-1bK"/>
                 <constraint firstAttribute="trailing" secondItem="KyG-Mi-aru" secondAttribute="trailing" id="fVe-Cr-24H"/>
                 <constraint firstItem="KyG-Mi-aru" firstAttribute="top" secondItem="7HX-ER-qGZ" secondAttribute="top" id="mlk-5I-zdM"/>
+                <constraint firstItem="2pl-5p-2h6" firstAttribute="leading" secondItem="7HX-ER-qGZ" secondAttribute="leading" id="q95-A9-3Qw"/>
+                <constraint firstAttribute="trailing" secondItem="2pl-5p-2h6" secondAttribute="trailing" id="qzA-qC-jPp"/>
             </constraints>
             <point key="canvasLocation" x="-127" y="-2"/>
         </view>

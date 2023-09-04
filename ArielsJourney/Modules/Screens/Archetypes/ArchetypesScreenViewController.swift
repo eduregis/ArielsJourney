@@ -11,7 +11,9 @@ class ArchetypesScreenViewController: BaseViewController {
     
     // MARK: - Outlets
     @IBOutlet weak var headerView: StyledHeaderScreenView!
+    @IBOutlet weak var leadingGradientView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var trailingGradientView: UIView!
     
     // MARK: - Properties
     var presenter: ArchetypesScreenPresenter!
@@ -36,6 +38,8 @@ class ArchetypesScreenViewController: BaseViewController {
         presenter.getArchetypes {
             self.configureCollectionView()
         }
+        leadingGradientView.setOpecityGradientBackground(color: UIColor(named: "ArielBackground") ?? .clear, direction: .toRight)
+        trailingGradientView.setOpecityGradientBackground(color: UIColor(named: "ArielBackground") ?? .clear, direction: .toLeft)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -94,6 +98,6 @@ extension ArchetypesScreenViewController: UICollectionViewDelegate, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        presenter.showArchetypeDetails(index: indexPath.row)
+        presenter.showElementDetails(index: indexPath.row)
     }
 }

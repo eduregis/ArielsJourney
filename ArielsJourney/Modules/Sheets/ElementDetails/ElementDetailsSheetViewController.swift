@@ -1,5 +1,5 @@
 //
-//  ArchetypeDetailsSheetViewController.swift
+//  ElementDetailsSheetViewController.swift
 //  ArielsJourney
 //
 //  Created by Eduardo Oliveira on 03/09/23.
@@ -7,14 +7,14 @@
 
 import UIKit
 
-class ArchetypeDetailsSheetViewController: BaseViewController {
+class ElementDetailsSheetViewController: BaseViewController {
     
     // MARK: - Outlets
     @IBOutlet weak var headerView: StyledHeaderSheetView!
     @IBOutlet weak var descriptionText: UILabel!
     
     // MARK: - Properties
-    var presenter: ArchetypeDetailsSheetPresenter!
+    var presenter: ElementDetailsSheetPresenter!
     
     private enum Fonts {
         static let description = UIFont(name: "Macondo-Regular", size: 16)
@@ -39,6 +39,12 @@ class ArchetypeDetailsSheetViewController: BaseViewController {
             self.descriptionText.font = Fonts.description
             self.descriptionText.textColor = UIColor(named: "ArielText")
         }
+        if let herosJourney = presenter.herosJourney {
+            self.headerView.titleLabel.text = herosJourney.herosJourneysStage
+            self.descriptionText.text = herosJourney.descriptionText
+            self.descriptionText.font = Fonts.description
+            self.descriptionText.textColor = UIColor(named: "ArielText")
+        }
         self.view.backgroundColor = UIColor(named: "ArielBackground")
     }
     
@@ -53,11 +59,11 @@ class ArchetypeDetailsSheetViewController: BaseViewController {
     }
 }
 
-// MARK: - ArchetypeDetailsSheetPresenterDelegate
-extension ArchetypeDetailsSheetViewController: ArchetypeDetailsSheetPresenterDelegate {
+// MARK: - ElementDetailsSheetPresenterDelegate
+extension ElementDetailsSheetViewController: ElementDetailsSheetPresenterDelegate {
     func didLoadRemoteConfig() {
     }
 }
 
-extension ArchetypeDetailsSheetViewController: StyledHeaderSheetViewDelegate {
+extension ElementDetailsSheetViewController: StyledHeaderSheetViewDelegate {
 }

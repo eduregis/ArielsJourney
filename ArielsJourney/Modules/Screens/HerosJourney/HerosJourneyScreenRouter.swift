@@ -17,4 +17,11 @@ class HerosJourneyScreenRouter: BaseRouter {
         
         return viewController
     }
+    
+    func showElementDetails(herosJourney: HerosJourneyModel) {
+        let overlayVC = ElementDetailsSheetRouter.makeModule(herosJourney: herosJourney)
+        overlayVC.transitioningDelegate  = self.overlayTransitioningDelegate
+        overlayVC.modalPresentationStyle = .custom
+        self.present(overlayVC, animated: true)
+    }
 }

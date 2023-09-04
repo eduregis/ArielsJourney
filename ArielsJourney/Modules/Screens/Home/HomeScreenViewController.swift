@@ -11,11 +11,9 @@ class HomeScreenViewController: BaseViewController {
 
     // MARK: - Outlets
     @IBOutlet weak var headerView: StyledHeaderScreenView!
-    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var leadingGradientView: UIView!
     @IBOutlet weak var trailingGradientView: UIView!
-    @IBOutlet var collectionOfButtons: Array<HomeStainedGlassButtonView>?
-    
     
     // MARK: - Properties
     var presenter: HomeScreenPresenter!
@@ -34,16 +32,10 @@ class HomeScreenViewController: BaseViewController {
         super.viewDidLoad()
         presenter.didLoad()
         self.headerView.delegate = self
-        if let collectionOfButtons = collectionOfButtons {
-            for (index, button) in collectionOfButtons.enumerated() {
-                button.delegate = self
-                button.tagButton = HomeScreenTags(rawValue: index) 
-                button.title = HomeScreenTags(rawValue: index)?.description
-            }
-        }
         self.view.backgroundColor = UIColor(named: "ArielBackground")
-        self.scrollView.showsHorizontalScrollIndicator = false
+        self.collectionView.showsHorizontalScrollIndicator = false
         self.headerView.showCenterIcon()
+        self.configureCollectionView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -56,6 +48,18 @@ class HomeScreenViewController: BaseViewController {
         presenter.didAppear()
         leadingGradientView.setOpecityGradientBackground(color: UIColor(named: "ArielBackground") ?? .clear, direction: .toRight)
         trailingGradientView.setOpecityGradientBackground(color: UIColor(named: "ArielBackground") ?? .clear, direction: .toLeft)
+    }
+    
+    // MARK: - Private Methods
+    private func configureCollectionView() {
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.showsHorizontalScrollIndicator = false
+        collectionView.contentMode = .center
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        collectionView.collectionViewLayout = layout
+        HomeCollectionViewCell.registerNib(for: collectionView)
     }
 }
 
@@ -75,8 +79,22 @@ extension HomeScreenViewController: StyledHeaderScreenViewDelegate {
     }
 }
 
-extension HomeScreenViewController: HomeStainedGlassButtonViewDelegate {
-    func didTapButton(tag: HomeScreenTags) {
-        self.presenter.didTapButton(tag: tag)
+extension HomeScreenViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return presenter.dateCells.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 142, height: 275)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = HomeCollectionViewCell.dequeueCell(from: collectionView, for: indexPath)
+        cell.dateCell = presenter.dateCells[indexPath.row]
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        presenter.didTapButton(tag: presenter.dateCells[indexPath.row])
     }
 }
