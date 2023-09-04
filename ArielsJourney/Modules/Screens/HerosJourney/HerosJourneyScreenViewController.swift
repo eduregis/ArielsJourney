@@ -13,6 +13,8 @@ class HerosJourneyScreenViewController: BaseViewController {
     @IBOutlet weak var headerView: StyledHeaderScreenView!
     @IBOutlet var collectionOfCards: Array<HerosJourneyCardView>?
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var leadingGradientView: UIView!
+    @IBOutlet weak var trailingGradientView: UIView!
     
     // MARK: - Properties
     var presenter: HerosJourneyScreenPresenter!
@@ -40,6 +42,8 @@ class HerosJourneyScreenViewController: BaseViewController {
                 card.setupCard(cardInfo: HerosJourneyEnum.allCases[index].herosJourneyModel )
             }
         }
+        leadingGradientView.setOpecityGradientBackground(color: UIColor(named: "ArielBackground") ?? .clear, direction: .toRight)
+        trailingGradientView.setOpecityGradientBackground(color: UIColor(named: "ArielBackground") ?? .clear, direction: .toLeft)
         self.scrollView.showsHorizontalScrollIndicator = false
     }
     

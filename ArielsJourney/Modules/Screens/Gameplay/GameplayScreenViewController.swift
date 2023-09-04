@@ -30,6 +30,7 @@ class GameplayScreenViewController: BaseViewController {
         presenter.didLoad()
         self.headerView.delegate = self
         self.headerView.hideBackground()
+        self.blurBackground(backgroundName: "background_placeholder")
     }
     
     override func viewWillAppear(_ animated: Bool) {

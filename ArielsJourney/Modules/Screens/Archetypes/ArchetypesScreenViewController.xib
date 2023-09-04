@@ -11,6 +11,8 @@
             <connections>
                 <outlet property="collectionView" destination="RYX-re-QPt" id="ruQ-R7-1X8"/>
                 <outlet property="headerView" destination="fKy-NT-NW1" id="gV2-T2-fvQ"/>
+                <outlet property="leadingGradientView" destination="aRd-oF-bt1" id="5qi-uh-wEX"/>
+                <outlet property="trailingGradientView" destination="8sb-Ll-9O7" id="FLv-6L-UDf"/>
                 <outlet property="view" destination="UNW-2x-2sD" id="PPl-Xd-TvN"/>
             </connections>
         </placeholder>
@@ -30,7 +32,7 @@
                     <rect key="frame" x="16" y="76" width="820" height="309"/>
                     <subviews>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="RYX-re-QPt">
-                            <rect key="frame" x="32" y="30" width="756" height="249"/>
+                            <rect key="frame" x="0.0" y="30" width="820" height="249"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="249" id="hpX-8w-rAU"/>
@@ -42,12 +44,34 @@
                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </collectionViewFlowLayout>
                         </collectionView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aRd-oF-bt1" userLabel="LeadingGradientView">
+                            <rect key="frame" x="0.0" y="0.0" width="16" height="309"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="16" id="t8R-zG-KWW"/>
+                                <constraint firstAttribute="width" constant="16" id="utC-hW-qqI"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8sb-Ll-9O7" userLabel="TrailingGradientView">
+                            <rect key="frame" x="804" y="0.0" width="16" height="309"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="H63-d2-WNX"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="16" id="gJb-S5-dY3"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="RYX-re-QPt" firstAttribute="leading" secondItem="Rlh-YQ-IkZ" secondAttribute="leading" constant="32" id="1mb-y6-iaE"/>
+                        <constraint firstItem="RYX-re-QPt" firstAttribute="leading" secondItem="Rlh-YQ-IkZ" secondAttribute="leading" id="1mb-y6-iaE"/>
+                        <constraint firstItem="aRd-oF-bt1" firstAttribute="leading" secondItem="Rlh-YQ-IkZ" secondAttribute="leading" id="37X-ve-Jk2"/>
+                        <constraint firstItem="8sb-Ll-9O7" firstAttribute="top" secondItem="Rlh-YQ-IkZ" secondAttribute="top" id="8Hf-za-Z8y"/>
                         <constraint firstItem="RYX-re-QPt" firstAttribute="centerY" secondItem="Rlh-YQ-IkZ" secondAttribute="centerY" id="8uD-XW-0N9"/>
-                        <constraint firstAttribute="trailing" secondItem="RYX-re-QPt" secondAttribute="trailing" constant="32" id="iI1-QP-N9e"/>
+                        <constraint firstAttribute="bottom" secondItem="aRd-oF-bt1" secondAttribute="bottom" id="F5g-m8-OFg"/>
+                        <constraint firstAttribute="bottom" secondItem="8sb-Ll-9O7" secondAttribute="bottom" id="Sqt-Vy-1Ee"/>
+                        <constraint firstItem="aRd-oF-bt1" firstAttribute="top" secondItem="Rlh-YQ-IkZ" secondAttribute="top" id="alp-5z-b2K"/>
+                        <constraint firstAttribute="trailing" secondItem="8sb-Ll-9O7" secondAttribute="trailing" id="eci-27-1yx"/>
+                        <constraint firstAttribute="trailing" secondItem="RYX-re-QPt" secondAttribute="trailing" id="iI1-QP-N9e"/>
                     </constraints>
                 </view>
             </subviews>

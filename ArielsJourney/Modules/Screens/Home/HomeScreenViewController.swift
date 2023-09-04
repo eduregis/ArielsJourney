@@ -15,7 +15,6 @@ class HomeScreenViewController: BaseViewController {
     @IBOutlet weak var leadingGradientView: UIView!
     @IBOutlet weak var trailingGradientView: UIView!
     
-    
     // MARK: - Properties
     var presenter: HomeScreenPresenter!
     

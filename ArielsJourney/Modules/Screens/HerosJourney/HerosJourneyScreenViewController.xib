@@ -10,7 +10,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HerosJourneyScreenViewController" customModule="ArielsJourney" customModuleProvider="target">
             <connections>
                 <outlet property="headerView" destination="YJt-dY-kev" id="9RM-cD-yoA"/>
+                <outlet property="leadingGradientView" destination="I2l-az-WyH" id="vh6-Cy-6bs"/>
                 <outlet property="scrollView" destination="JLh-ai-snL" id="adl-H8-qDC"/>
+                <outlet property="trailingGradientView" destination="VAb-25-l4p" id="ACv-VR-91r"/>
                 <outlet property="view" destination="JIO-A2-Ept" id="KA3-f3-X3z"/>
                 <outletCollection property="collectionOfCards" destination="fny-NF-hRs" collectionClass="NSMutableArray" id="6wk-Em-wTr"/>
                 <outletCollection property="collectionOfCards" destination="gHz-IJ-3l0" collectionClass="NSMutableArray" id="pJ5-H1-Sd0"/>
@@ -183,12 +185,35 @@
                                 <constraint firstItem="JLh-ai-snL" firstAttribute="leading" secondItem="vSX-Co-Mat" secondAttribute="leading" id="qC7-aK-7gZ"/>
                             </constraints>
                         </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I2l-az-WyH" userLabel="LeadingGradientView">
+                            <rect key="frame" x="0.0" y="0.0" width="16" height="309"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="6LI-pc-Kqo"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="16" id="l3z-aB-t0v"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VAb-25-l4p" userLabel="TrailingGradientView">
+                            <rect key="frame" x="804" y="0.0" width="16" height="309"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="16" id="4Ec-nC-l2S"/>
+                                <constraint firstAttribute="width" constant="16" id="MZD-sa-79Q"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="16" id="hZ9-Wx-1h3"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="I2l-az-WyH" firstAttribute="leading" secondItem="Pht-h9-cjo" secondAttribute="leading" id="4tb-hk-rkf"/>
+                        <constraint firstItem="I2l-az-WyH" firstAttribute="top" secondItem="Pht-h9-cjo" secondAttribute="top" id="8aR-AN-TO4"/>
+                        <constraint firstItem="VAb-25-l4p" firstAttribute="top" secondItem="Pht-h9-cjo" secondAttribute="top" id="8ds-hB-5Ek"/>
                         <constraint firstAttribute="trailing" secondItem="vSX-Co-Mat" secondAttribute="trailing" id="IMU-o6-aAT"/>
+                        <constraint firstAttribute="trailing" secondItem="VAb-25-l4p" secondAttribute="trailing" id="fei-UW-jku"/>
                         <constraint firstItem="vSX-Co-Mat" firstAttribute="leading" secondItem="Pht-h9-cjo" secondAttribute="leading" id="gE8-fa-Q6R"/>
                         <constraint firstItem="vSX-Co-Mat" firstAttribute="centerY" secondItem="Pht-h9-cjo" secondAttribute="centerY" id="jd0-lG-jaV"/>
+                        <constraint firstAttribute="bottom" secondItem="I2l-az-WyH" secondAttribute="bottom" id="txJ-fH-Kdd"/>
+                        <constraint firstAttribute="bottom" secondItem="VAb-25-l4p" secondAttribute="bottom" id="z0B-Qb-9EV"/>
                     </constraints>
                 </view>
             </subviews>
