@@ -23,7 +23,7 @@ extension Localizable where Self.RawValue == String {
     
     func localized(_ args: [CVarArg] = [], key: String? = "") -> String {
         
-        if let key = key, key == "country" {
+        if let key = key, key == "dialogue" {
             return args.isEmpty ? localizedCountries : String(format: localizedCountries, arguments: args)
         } else {
             return args.isEmpty ? localizedString : String(format: localizedString, arguments: args)

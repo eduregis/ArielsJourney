@@ -67,9 +67,6 @@ class ArchetypesScreenViewController: BaseViewController {
 
 // MARK: - ArchetypesScreenPresenterDelegate
 extension ArchetypesScreenViewController: ArchetypesScreenPresenterDelegate {
-    
-    func didLoadRemoteConfig() {
-    }
 }
 
 extension ArchetypesScreenViewController: StyledHeaderScreenViewDelegate {

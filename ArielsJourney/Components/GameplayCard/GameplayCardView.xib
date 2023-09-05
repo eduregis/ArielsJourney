@@ -17,8 +17,11 @@
             <rect key="frame" x="0.0" y="0.0" width="167" height="292"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iea-7N-lrk">
-                    <rect key="frame" x="83.666666666666671" y="284" width="0.0" height="0.0"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iea-7N-lrk">
+                    <rect key="frame" x="83.666666666666671" y="251" width="0.0" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="oct-LP-NnG"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -26,7 +29,7 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="iea-7N-lrk" secondAttribute="bottom" constant="8" id="QX3-uK-Hcb"/>
+                <constraint firstAttribute="bottom" secondItem="iea-7N-lrk" secondAttribute="bottom" id="QX3-uK-Hcb"/>
                 <constraint firstItem="iea-7N-lrk" firstAttribute="centerX" secondItem="j65-Rr-0tC" secondAttribute="centerX" id="WWz-Oo-L2V"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

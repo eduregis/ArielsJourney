@@ -46,9 +46,6 @@ class ConfigurationsSheetViewController: BaseViewController {
 
 // MARK: - ConfigurationsSheetPresenterDelegate
 extension ConfigurationsSheetViewController: ConfigurationsSheetPresenterDelegate {
-    
-    func didLoadRemoteConfig() {
-    }
 }
 
 extension ConfigurationsSheetViewController: StyledHeaderSheetViewDelegate {

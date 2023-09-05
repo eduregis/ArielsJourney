@@ -75,21 +75,22 @@ class GameplayCardView: UIView {
     }
     
     @objc func flipTapped() {
-        flip(cardInfo: cardInfo!)
+//        flip()
     }
     
-    func flip(cardInfo: GameplayCardModel) {
-        var displayFlipItem = cardInfo
-        frontImageView.isHidden = !displayFlipItem.isCardSelected
-        backImageView.isHidden = displayFlipItem.isCardSelected
-        titleLabel.isHidden = !displayFlipItem.isCardSelected
-        
-        UIView.transition(from: displayFlipItem.isCardSelected ? frontImageView : backImageView,
-                          to: displayFlipItem.isCardSelected ? frontImageView : backImageView,
-                          duration: spinTimeInterval,
-                          options: [.transitionFlipFromLeft, .showHideTransitionViews])
-        
-        displayFlipItem.isCardSelected = !displayFlipItem.isCardSelected
-        self.cardInfo = displayFlipItem
+    func flip() {
+        if var displayFlipItem = self.cardInfo {
+            frontImageView.isHidden = !displayFlipItem.isCardSelected
+            backImageView.isHidden = displayFlipItem.isCardSelected
+            titleLabel.isHidden = !displayFlipItem.isCardSelected
+            
+            UIView.transition(from: displayFlipItem.isCardSelected ? frontImageView : backImageView,
+                              to: displayFlipItem.isCardSelected ? frontImageView : backImageView,
+                              duration: spinTimeInterval,
+                              options: [.transitionFlipFromLeft, .showHideTransitionViews])
+            
+            displayFlipItem.isCardSelected = !displayFlipItem.isCardSelected
+            self.cardInfo = displayFlipItem
+        }
     }
 }

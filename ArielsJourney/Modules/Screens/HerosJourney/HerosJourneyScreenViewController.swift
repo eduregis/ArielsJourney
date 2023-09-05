@@ -60,9 +60,6 @@ class HerosJourneyScreenViewController: BaseViewController {
 
 // MARK: - HerosJourneyScreenPresenterDelegate
 extension HerosJourneyScreenViewController: HerosJourneyScreenPresenterDelegate {
-    
-    func didLoadRemoteConfig() {
-    }
 }
 
 extension HerosJourneyScreenViewController: StyledHeaderScreenViewDelegate {

@@ -13,9 +13,14 @@ class GameplayScreenViewController: BaseViewController {
     @IBOutlet weak var headerView: StyledHeaderScreenView!
     @IBOutlet weak var firstCard: GameplayCardView!
     @IBOutlet weak var secondCard: GameplayCardView!
+    @IBOutlet weak var letterText: UILabel!
     
     // MARK: - Properties
     var presenter: GameplayScreenPresenter!
+    
+    private enum Fonts {
+        static let text = UIFont(name: "Macondo-Regular", size: 13)
+    }
     
     // MARK: - View Lifecycle
     
@@ -33,8 +38,8 @@ class GameplayScreenViewController: BaseViewController {
         self.headerView.delegate = self
         self.headerView.hideBackground()
         self.blurBackground(backgroundName: "background_placeholder")
-        self.firstCard.setupCard(cardInfo: GameplayCardModel(image: "gameplayCard_MC_01", title: "Teste1", isCardSelected: true))
-        self.secondCard.setupCard(cardInfo: GameplayCardModel(image: "gameplayCard_MC_01", title: "Teste2", isCardSelected: true))
+        self.letterText.font = Fonts.text
+        self.letterText.textColor = UIColor(named: "ArielDark")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -46,14 +51,33 @@ class GameplayScreenViewController: BaseViewController {
         super.viewDidAppear(animated)
         presenter.didAppear()
     }
-    
-
 }
 
 // MARK: - GameplayScreenPresenterDelegate
 extension GameplayScreenViewController: GameplayScreenPresenterDelegate {
     
-    func didLoadRemoteConfig() {
+    func flipCards() {
+        self.firstCard.flip()
+        self.secondCard.flip()
+    }
+    
+    func setDialogueAndCards() {
+        if let dialogue = presenter.dialogue {
+            self.firstCard.setupCard(cardInfo: GameplayCardModel(image: dialogue.firstCardImageName, title: dialogue.firstCardText, isCardSelected: true))
+            self.secondCard.setupCard(cardInfo: GameplayCardModel(image: dialogue.secondCardImageName, title: dialogue.secondCardText, isCardSelected: true))
+            self.letterText.text = dialogue.descriptionText
+        }
+    }
+    
+    func startTypingText() {
+        if let dialogue = presenter.dialogue {
+            letterText.setTyping(text: dialogue.descriptionText, completion: {
+                DispatchQueue.main.async {
+                    self.flipCards()
+                }
+            })
+        }
+        
     }
 }
 

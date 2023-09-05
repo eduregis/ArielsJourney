@@ -49,9 +49,7 @@ class AchievementsScreenViewController: BaseViewController {
 
 // MARK: - AchievementsScreenPresenterDelegate
 extension AchievementsScreenViewController: AchievementsScreenPresenterDelegate {
-    
-    func didLoadRemoteConfig() {
-    }
+
 }
 
 extension AchievementsScreenViewController: StyledHeaderScreenViewDelegate {
