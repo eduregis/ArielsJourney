@@ -35,10 +35,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
             self.titleLabel.text = dateModel.title
             self.titleLabel.font = Fonts.title
             self.titleLabel.textColor = UIColor(named: "ArielDark")
-            if !isActive {
-                self.imageView.layer.opacity = 0.5
-                self.titleContainer.layer.opacity = 0.5
-            }
-        }
+            self.imageView.layer.opacity = isActive ? 1.0 : 0.5
+            self.titleContainer.layer.opacity = isActive ? 1.0 : 0.5        }
     }
 }

@@ -26,7 +26,9 @@ class GameplayScreenPresenter {
     // MARK: - Properties
     weak var delegate: GameplayScreenPresenterDelegate?
     let router: GameplayScreenRouter
+    
     var dialogue: Dialogue?
+    var isNewGame: Bool?
     
     // MARK: - Init
     init(delegate: GameplayScreenPresenterDelegate, router: GameplayScreenRouter) {
@@ -41,7 +43,7 @@ class GameplayScreenPresenter {
     
     func willAppear() {
         var lastDialogueSaved = UserDefaults.standard.string(forKey: UserDefaults.Keys.lastDialogueSaved.description)
-        if lastDialogueSaved == "" {
+        if lastDialogueSaved == "" || isNewGame == true {
             lastDialogueSaved = "MC_01"
         }
         guard let dialogueModel = GameplayDialogueManager.shared.getDialogueByString(name: lastDialogueSaved ?? "") else { return }

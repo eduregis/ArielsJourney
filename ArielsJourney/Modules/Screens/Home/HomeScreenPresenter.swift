@@ -16,7 +16,7 @@ class HomeScreenPresenter {
     weak var delegate: HomeScreenPresenterDelegate?
     let router: HomeScreenRouter
     
-    var dateCells: [HomeEnum] = HomeEnum.allCases
+    var dateCells: [HomeEnum] = []
     var cellSize: CGSize = CGSize(width: 142, height: 275)
     
     // MARK: - Init
@@ -31,9 +31,14 @@ class HomeScreenPresenter {
     }
     
     func willAppear() {
+        dateCells = HomeEnum.allCases
     }
     
     func didAppear() {
+    }
+    
+    func didDisappear() {
+        dateCells = []
     }
     
     //  MARK: - Methods
@@ -47,6 +52,7 @@ class HomeScreenPresenter {
         switch tag {
         case .gameplayNew:
             self.router.navigateToGameplay()
+            UserDefaults.standard.set(true, forKey: UserDefaults.Keys.gameInProgress.description)
         case .gameplayContinue:
             if UserDefaults.standard.bool(forKey: UserDefaults.Keys.gameInProgress.description) {
                 self.router.navigateToContinue()
