@@ -12,6 +12,10 @@
 		2E2C9D9B2AA548E100995D41 /* HomeScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C9D9A2AA548E100995D41 /* HomeScreenModel.swift */; };
 		2E2C9D9E2AA54CB400995D41 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C9D9D2AA54CB400995D41 /* HomeCollectionViewCell.swift */; };
 		2E2C9DA02AA54CFB00995D41 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E2C9D9F2AA54CFB00995D41 /* HomeCollectionViewCell.xib */; };
+		2E2C9DA22AA567A300995D41 /* LocalizableDialogueStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C9DA12AA567A300995D41 /* LocalizableDialogueStrings.swift */; };
+		2E2C9DA52AA56B3600995D41 /* GameplayCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C9DA42AA56B3600995D41 /* GameplayCardView.swift */; };
+		2E2C9DA72AA56BD600995D41 /* GameplayCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E2C9DA62AA56BD600995D41 /* GameplayCardView.xib */; };
+		2E2C9DA92AA56F7A00995D41 /* GameplayDialogueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C9DA82AA56F7A00995D41 /* GameplayDialogueModel.swift */; };
 		2E3D74B62AA4E19900CD00C8 /* ReusableCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3D74B52AA4E19900CD00C8 /* ReusableCells.swift */; };
 		2E3D74B92AA4E22800CD00C8 /* ArchetypesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3D74B82AA4E22800CD00C8 /* ArchetypesModel.swift */; };
 		2E3D74BE2AA4E3D400CD00C8 /* ArchetypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3D74BD2AA4E3D400CD00C8 /* ArchetypeCollectionViewCell.swift */; };
@@ -70,6 +74,8 @@
 		2EB169592AA2773600615060 /* HomeScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB169582AA2773600615060 /* HomeScreenPresenter.swift */; };
 		2EB1695B2AA2781800615060 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB1695A2AA2781800615060 /* HomeScreenViewController.swift */; };
 		2EB1695D2AA278AC00615060 /* HomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EB1695C2AA278AC00615060 /* HomeScreenViewController.xib */; };
+		2EBE72B42AA7913A005E6010 /* AnimationTyping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE72B32AA7913A005E6010 /* AnimationTyping.swift */; };
+		2EBFD18F2AA6B77600308B0D /* GameplayDialogueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBFD18E2AA6B77600308B0D /* GameplayDialogueManager.swift */; };
 		2FA13BF89C9F4289D43A1CA2 /* Pods_ArielsJourneyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF4E32BF96B409B84703B49 /* Pods_ArielsJourneyTests.framework */; };
 		B9BEA4BED5CEFF252C1DC90E /* Pods_ArielsJourney_ArielsJourneyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 334888D2E0D69E3EE22615CE /* Pods_ArielsJourney_ArielsJourneyUITests.framework */; };
 /* End PBXBuildFile section */
@@ -97,6 +103,10 @@
 		2E2C9D9A2AA548E100995D41 /* HomeScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenModel.swift; sourceTree = "<group>"; };
 		2E2C9D9D2AA54CB400995D41 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		2E2C9D9F2AA54CFB00995D41 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		2E2C9DA12AA567A300995D41 /* LocalizableDialogueStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableDialogueStrings.swift; sourceTree = "<group>"; };
+		2E2C9DA42AA56B3600995D41 /* GameplayCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayCardView.swift; sourceTree = "<group>"; };
+		2E2C9DA62AA56BD600995D41 /* GameplayCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameplayCardView.xib; sourceTree = "<group>"; };
+		2E2C9DA82AA56F7A00995D41 /* GameplayDialogueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayDialogueModel.swift; sourceTree = "<group>"; };
 		2E3D74B52AA4E19900CD00C8 /* ReusableCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCells.swift; sourceTree = "<group>"; };
 		2E3D74B82AA4E22800CD00C8 /* ArchetypesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchetypesModel.swift; sourceTree = "<group>"; };
 		2E3D74BD2AA4E3D400CD00C8 /* ArchetypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchetypeCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -162,6 +172,8 @@
 		2EB169582AA2773600615060 /* HomeScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenPresenter.swift; sourceTree = "<group>"; };
 		2EB1695A2AA2781800615060 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		2EB1695C2AA278AC00615060 /* HomeScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenViewController.xib; sourceTree = "<group>"; };
+		2EBE72B32AA7913A005E6010 /* AnimationTyping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTyping.swift; sourceTree = "<group>"; };
+		2EBFD18E2AA6B77600308B0D /* GameplayDialogueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayDialogueManager.swift; sourceTree = "<group>"; };
 		2F48B1E409AF8E12E9C77714 /* Pods-ArielsJourney.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArielsJourney.release.xcconfig"; path = "Target Support Files/Pods-ArielsJourney/Pods-ArielsJourney.release.xcconfig"; sourceTree = "<group>"; };
 		334888D2E0D69E3EE22615CE /* Pods_ArielsJourney_ArielsJourneyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArielsJourney_ArielsJourneyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B82745CC2ECA9191FCEB262 /* Pods-ArielsJourneyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArielsJourneyTests.debug.xcconfig"; path = "Target Support Files/Pods-ArielsJourneyTests/Pods-ArielsJourneyTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -226,6 +238,15 @@
 			path = HomeCell;
 			sourceTree = "<group>";
 		};
+		2E2C9DA32AA56B1A00995D41 /* GameplayCard */ = {
+			isa = PBXGroup;
+			children = (
+				2E2C9DA42AA56B3600995D41 /* GameplayCardView.swift */,
+				2E2C9DA62AA56BD600995D41 /* GameplayCardView.xib */,
+			);
+			path = GameplayCard;
+			sourceTree = "<group>";
+		};
 		2E3D74BC2AA4E36600CD00C8 /* ArchetypeCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +270,7 @@
 		2E6DEFCD2AA2A0DA00C02153 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				2E2C9DA32AA56B1A00995D41 /* GameplayCard */,
 				2EAF95A02AA4155C00B3FAC2 /* HerosJourneyCard */,
 				2E6DEFCE2AA2A0E700C02153 /* StyledHeaderScreen */,
 				2EAF95802AA3F08B00B3FAC2 /* StyledHeaderSheet */,
@@ -369,6 +391,7 @@
 		2E7FAC472AA3A89400E1AF20 /* Gameplay */ = {
 			isa = PBXGroup;
 			children = (
+				2EBFD18D2AA6B74100308B0D /* GameplayScreenModel */,
 				2E7FAC482AA3A8AD00E1AF20 /* GameplayScreenRouter.swift */,
 				2E7FAC4A2AA3A91F00E1AF20 /* GameplayScreenPresenter.swift */,
 				2E7FAC4C2AA3A9F800E1AF20 /* GameplayScreenViewController.swift */,
@@ -419,6 +442,7 @@
 				2EAF95732AA3EABF00B3FAC2 /* OverlayPresentation.swift */,
 				2EAF95852AA401FC00B3FAC2 /* GradientLayer.swift */,
 				2E3D74B52AA4E19900CD00C8 /* ReusableCells.swift */,
+				2EBE72B32AA7913A005E6010 /* AnimationTyping.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -470,6 +494,7 @@
 			children = (
 				2EAF958D2AA40B6E00B3FAC2 /* Localizable.swift */,
 				2EAF958F2AA40B9500B3FAC2 /* LocalizableProjectStrings.swift */,
+				2E2C9DA12AA567A300995D41 /* LocalizableDialogueStrings.swift */,
 				2EAF95982AA40CF900B3FAC2 /* Localizable.strings */,
 				2EAF959E2AA40D2600B3FAC2 /* Dialogues.strings */,
 			);
@@ -496,6 +521,15 @@
 				2EB1695C2AA278AC00615060 /* HomeScreenViewController.xib */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		2EBFD18D2AA6B74100308B0D /* GameplayScreenModel */ = {
+			isa = PBXGroup;
+			children = (
+				2E2C9DA82AA56F7A00995D41 /* GameplayDialogueModel.swift */,
+				2EBFD18E2AA6B77600308B0D /* GameplayDialogueManager.swift */,
+			);
+			path = GameplayScreenModel;
 			sourceTree = "<group>";
 		};
 		62E0B182D2C4BF5A0821EC89 /* Pods */ = {
@@ -646,6 +680,7 @@
 				2EAF95842AA3F1D000B3FAC2 /* StyledHeaderSheetView.xib in Resources */,
 				2E2C9DA02AA54CFB00995D41 /* HomeCollectionViewCell.xib in Resources */,
 				2E1CD4DE2AA2B53B00D90276 /* Macondo-Regular.ttf in Resources */,
+				2E2C9DA72AA56BD600995D41 /* GameplayCardView.xib in Resources */,
 				2E7FAC582AA3B22D00E1AF20 /* HerosJourneyScreenViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -741,6 +776,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E7FAC492AA3A8AD00E1AF20 /* GameplayScreenRouter.swift in Sources */,
+				2EBFD18F2AA6B77600308B0D /* GameplayDialogueManager.swift in Sources */,
 				2E737F822AA2455D001F4EB4 /* AppDelegate.swift in Sources */,
 				2E7FAC642AA3B66300E1AF20 /* AchievementsScreenRouter.swift in Sources */,
 				2EAF957B2AA3EC3800B3FAC2 /* ConfigurationsSheetPresenter.swift in Sources */,
@@ -754,17 +790,20 @@
 				2EAF95862AA401FC00B3FAC2 /* GradientLayer.swift in Sources */,
 				2E7FAC522AA3B18A00E1AF20 /* HerosJourneyScreenRouter.swift in Sources */,
 				2E2C9D9B2AA548E100995D41 /* HomeScreenModel.swift in Sources */,
+				2E2C9DA22AA567A300995D41 /* LocalizableDialogueStrings.swift in Sources */,
 				2EAF95742AA3EABF00B3FAC2 /* OverlayPresentation.swift in Sources */,
 				2EAF95892AA40AF100B3FAC2 /* HerosJourneyScreenModel.swift in Sources */,
 				2EAF95902AA40B9500B3FAC2 /* LocalizableProjectStrings.swift in Sources */,
 				2E3D74B62AA4E19900CD00C8 /* ReusableCells.swift in Sources */,
 				2EAF95822AA3F12000B3FAC2 /* StyledHeaderSheetView.swift in Sources */,
 				2EAF95A22AA415DE00B3FAC2 /* HerosJourneyCardView.swift in Sources */,
+				2E2C9DA92AA56F7A00995D41 /* GameplayDialogueModel.swift in Sources */,
 				2E737FBD2AA248F7001F4EB4 /* BasePresenterDelegate.swift in Sources */,
 				2E6DEFD02AA2A2A000C02153 /* StyledHeaderScreenView.swift in Sources */,
 				2E7FAC562AA3B22300E1AF20 /* HerosJourneyScreenViewController.swift in Sources */,
 				2E3D74C72AA4F83B00CD00C8 /* ElementDetailsSheetViewController.swift in Sources */,
 				2EAF95792AA3EBE300B3FAC2 /* ConfigurationsSheetRouter.swift in Sources */,
+				2E2C9DA52AA56B3600995D41 /* GameplayCardView.swift in Sources */,
 				2E7FAC5B2AA3B49700E1AF20 /* ArchetypesScreenRouter.swift in Sources */,
 				2E3D74C52AA4F7F300CD00C8 /* ElementDetailsSheetPresenter.swift in Sources */,
 				2EAF958E2AA40B6E00B3FAC2 /* Localizable.swift in Sources */,
@@ -777,6 +816,7 @@
 				2E2C9D9E2AA54CB400995D41 /* HomeCollectionViewCell.swift in Sources */,
 				2EB169592AA2773600615060 /* HomeScreenPresenter.swift in Sources */,
 				2E7FAC682AA3B6BC00E1AF20 /* AchievementsScreenViewController.swift in Sources */,
+				2EBE72B42AA7913A005E6010 /* AnimationTyping.swift in Sources */,
 				2E3D74BE2AA4E3D400CD00C8 /* ArchetypeCollectionViewCell.swift in Sources */,
 				2E737FBF2AA24928001F4EB4 /* SplashScreenPresenter.swift in Sources */,
 				2E7FAC5D2AA3B4C700E1AF20 /* ArchetypesScreenPresenter.swift in Sources */,

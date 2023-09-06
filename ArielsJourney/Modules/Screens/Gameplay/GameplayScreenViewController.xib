@@ -2,14 +2,18 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_12" orientation="landscape" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21507"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameplayScreenViewController" customModule="ArielsJourney" customModuleProvider="target">
             <connections>
+                <outlet property="firstCard" destination="QYW-S8-BYt" id="mBA-4m-Qke"/>
                 <outlet property="headerView" destination="KyG-Mi-aru" id="ZOT-iW-SFB"/>
+                <outlet property="letterContainer" destination="5Qe-ku-HX5" id="ld8-nh-LG8"/>
+                <outlet property="letterText" destination="hli-gn-smd" id="Evv-p3-Yxf"/>
+                <outlet property="secondCard" destination="q6I-Jq-1BG" id="aaK-oG-hta"/>
                 <outlet property="view" destination="7HX-ER-qGZ" id="Kme-eJ-usb"/>
             </connections>
         </placeholder>
@@ -29,21 +33,109 @@
                         <constraint firstAttribute="height" constant="68" id="zoy-ls-U3b"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rbY-a2-qEv" userLabel="BodyContainer">
+                    <rect key="frame" x="16" y="54" width="820" height="323"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Qe-ku-HX5" userLabel="LetterContainer">
+                            <rect key="frame" x="290" y="0.0" width="240" height="323"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="letter" translatesAutoresizingMaskIntoConstraints="NO" id="JRG-VB-UkA" userLabel="LetterTexture">
+                                    <rect key="frame" x="5" y="22.666666666666657" width="230" height="277.66666666666674"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="JRG-VB-UkA" secondAttribute="height" multiplier="63:76" id="17r-Ks-7QX"/>
+                                        <constraint firstAttribute="width" constant="230" id="9vl-UA-J7B"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hli-gn-smd" userLabel="LetterText">
+                                    <rect key="frame" x="13" y="38.666666666666671" width="206" height="229.66666666666663"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="JRG-VB-UkA" firstAttribute="centerY" secondItem="5Qe-ku-HX5" secondAttribute="centerY" id="GwT-kf-ugb"/>
+                                <constraint firstItem="hli-gn-smd" firstAttribute="top" secondItem="JRG-VB-UkA" secondAttribute="top" constant="16" id="MIt-L1-E3o"/>
+                                <constraint firstItem="JRG-VB-UkA" firstAttribute="trailing" secondItem="hli-gn-smd" secondAttribute="trailing" constant="16" id="X0v-1u-p98"/>
+                                <constraint firstItem="JRG-VB-UkA" firstAttribute="centerX" secondItem="5Qe-ku-HX5" secondAttribute="centerX" id="Xql-Q2-Ovv"/>
+                                <constraint firstItem="JRG-VB-UkA" firstAttribute="bottom" secondItem="hli-gn-smd" secondAttribute="bottom" constant="32" id="afY-nS-Zaj"/>
+                                <constraint firstAttribute="width" constant="240" id="btu-Fv-3rT"/>
+                                <constraint firstItem="hli-gn-smd" firstAttribute="leading" secondItem="JRG-VB-UkA" secondAttribute="leading" constant="8" id="hOz-ZT-Ihi"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UYL-ia-fqS" userLabel="FirstCardContainer">
+                            <rect key="frame" x="16" y="0.0" width="270" height="323"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QYW-S8-BYt" userLabel="FirstCard" customClass="GameplayCardView" customModule="ArielsJourney" customModuleProvider="target">
+                                    <rect key="frame" x="51.666666666666686" y="15.666666666666686" width="167" height="292"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="292" id="8pD-t7-nrZ"/>
+                                        <constraint firstAttribute="width" constant="167" id="DL8-gd-XXj"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="QYW-S8-BYt" firstAttribute="centerY" secondItem="UYL-ia-fqS" secondAttribute="centerY" id="cc3-OE-5ma"/>
+                                <constraint firstItem="QYW-S8-BYt" firstAttribute="centerX" secondItem="UYL-ia-fqS" secondAttribute="centerX" id="jJy-FP-jia"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cDw-t7-sOn" userLabel="SecondCardContainer">
+                            <rect key="frame" x="534" y="0.0" width="278" height="323"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q6I-Jq-1BG" userLabel="SecondCard" customClass="GameplayCardView" customModule="ArielsJourney" customModuleProvider="target">
+                                    <rect key="frame" x="55.666666666666629" y="15.666666666666686" width="167" height="292"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="167" id="0L1-VS-RVj"/>
+                                        <constraint firstAttribute="height" constant="292" id="ffg-eq-5TI"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="q6I-Jq-1BG" firstAttribute="centerX" secondItem="cDw-t7-sOn" secondAttribute="centerX" id="Acv-0F-6dY"/>
+                                <constraint firstItem="q6I-Jq-1BG" firstAttribute="centerY" secondItem="cDw-t7-sOn" secondAttribute="centerY" id="PTT-9L-cje"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="5Qe-ku-HX5" secondAttribute="bottom" id="2hB-xN-ROr"/>
+                        <constraint firstAttribute="trailing" secondItem="cDw-t7-sOn" secondAttribute="trailing" constant="8" id="6YF-Sc-7ng"/>
+                        <constraint firstItem="5Qe-ku-HX5" firstAttribute="leading" secondItem="UYL-ia-fqS" secondAttribute="trailing" constant="4" id="Qdi-17-Eqh"/>
+                        <constraint firstItem="cDw-t7-sOn" firstAttribute="leading" secondItem="5Qe-ku-HX5" secondAttribute="trailing" constant="4" id="RAs-BI-lWx"/>
+                        <constraint firstItem="5Qe-ku-HX5" firstAttribute="top" secondItem="rbY-a2-qEv" secondAttribute="top" id="RYT-vI-pCk"/>
+                        <constraint firstAttribute="bottom" secondItem="cDw-t7-sOn" secondAttribute="bottom" id="VmN-AX-ppj"/>
+                        <constraint firstItem="5Qe-ku-HX5" firstAttribute="centerX" secondItem="rbY-a2-qEv" secondAttribute="centerX" id="X3E-KV-SVm"/>
+                        <constraint firstItem="cDw-t7-sOn" firstAttribute="top" secondItem="rbY-a2-qEv" secondAttribute="top" id="XE8-al-tVE"/>
+                        <constraint firstItem="UYL-ia-fqS" firstAttribute="leading" secondItem="rbY-a2-qEv" secondAttribute="leading" constant="16" id="XmJ-Gc-LY9"/>
+                        <constraint firstAttribute="bottom" secondItem="UYL-ia-fqS" secondAttribute="bottom" id="Zil-Lz-Y2U"/>
+                        <constraint firstItem="UYL-ia-fqS" firstAttribute="top" secondItem="rbY-a2-qEv" secondAttribute="top" id="gJz-SB-1Hg"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="KyG-Mi-aru" firstAttribute="leading" secondItem="7HX-ER-qGZ" secondAttribute="leading" id="6bE-uT-YIQ"/>
+                <constraint firstItem="rbY-a2-qEv" firstAttribute="leading" secondItem="7HX-ER-qGZ" secondAttribute="leading" constant="16" id="BMv-i1-lL6"/>
+                <constraint firstAttribute="bottom" secondItem="rbY-a2-qEv" secondAttribute="bottom" constant="16" id="Dz5-zb-IKp"/>
                 <constraint firstItem="2pl-5p-2h6" firstAttribute="top" secondItem="7HX-ER-qGZ" secondAttribute="top" id="IpC-2K-Oxs"/>
+                <constraint firstAttribute="trailing" secondItem="rbY-a2-qEv" secondAttribute="trailing" constant="16" id="LnN-Se-Z4B"/>
                 <constraint firstAttribute="bottom" secondItem="2pl-5p-2h6" secondAttribute="bottom" id="MhV-5k-1bK"/>
                 <constraint firstAttribute="trailing" secondItem="KyG-Mi-aru" secondAttribute="trailing" id="fVe-Cr-24H"/>
                 <constraint firstItem="KyG-Mi-aru" firstAttribute="top" secondItem="7HX-ER-qGZ" secondAttribute="top" id="mlk-5I-zdM"/>
+                <constraint firstItem="KyG-Mi-aru" firstAttribute="bottom" secondItem="rbY-a2-qEv" secondAttribute="top" constant="14" id="oJX-0l-prP"/>
                 <constraint firstItem="2pl-5p-2h6" firstAttribute="leading" secondItem="7HX-ER-qGZ" secondAttribute="leading" id="q95-A9-3Qw"/>
                 <constraint firstAttribute="trailing" secondItem="2pl-5p-2h6" secondAttribute="trailing" id="qzA-qC-jPp"/>
             </constraints>
-            <point key="canvasLocation" x="-127" y="-2"/>
+            <point key="canvasLocation" x="-127.46478873239437" y="-2.2900763358778624"/>
         </view>
     </objects>
     <resources>
+        <image name="letter" width="266" height="304"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

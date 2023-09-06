@@ -51,7 +51,4 @@ class SplashScreenViewController: BaseViewController {
 
 // MARK: - SplashScreenPresenterDelegate
 extension SplashScreenViewController: SplashScreenPresenterDelegate {
-    
-    func didLoadRemoteConfig() {
-    }
 }

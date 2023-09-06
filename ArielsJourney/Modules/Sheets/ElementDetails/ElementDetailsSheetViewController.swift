@@ -61,8 +61,6 @@ class ElementDetailsSheetViewController: BaseViewController {
 
 // MARK: - ElementDetailsSheetPresenterDelegate
 extension ElementDetailsSheetViewController: ElementDetailsSheetPresenterDelegate {
-    func didLoadRemoteConfig() {
-    }
 }
 
 extension ElementDetailsSheetViewController: StyledHeaderSheetViewDelegate {

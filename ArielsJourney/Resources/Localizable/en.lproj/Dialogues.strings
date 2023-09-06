@@ -5,3 +5,10 @@
   Created by Eduardo Oliveira on 02/09/23.
   
 */
+
+// MARK: - Dialogue Texts
+
+// MC_01 Text
+"MC_01_text" = "(thirdText) Sed ut (perspiciatis) unde omnis {iste} natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.";
+"MC_01_leftCard" = "Vapo";
+"MC_01_rightCard" = "Mengo";

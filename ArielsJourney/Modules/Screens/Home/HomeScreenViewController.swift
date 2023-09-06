@@ -65,9 +65,6 @@ class HomeScreenViewController: BaseViewController {
 
 // MARK: - HomeScreenPresenterDelegate
 extension HomeScreenViewController: HomeScreenPresenterDelegate {
-    
-    func didLoadRemoteConfig() {
-    }
 }
 
 extension HomeScreenViewController: StyledHeaderScreenViewDelegate {
