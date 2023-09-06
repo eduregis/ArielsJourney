@@ -40,7 +40,11 @@ class GameplayScreenPresenter {
     }
     
     func willAppear() {
-        guard let dialogueModel = GameplayDialogueManager.shared.getDialogueByString(name: "MC_01") else { return }
+        var lastDialogueSaved = UserDefaults.standard.string(forKey: UserDefaults.Keys.lastDialogueSaved.description)
+        if lastDialogueSaved == "" {
+            lastDialogueSaved = "MC_01"
+        }
+        guard let dialogueModel = GameplayDialogueManager.shared.getDialogueByString(name: lastDialogueSaved ?? "") else { return }
         self.dialogue = dialogueModel
         self.delegate?.setDialogueAndCards()
     }
@@ -75,6 +79,7 @@ class GameplayScreenPresenter {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [self] in
                 delegate?.hideElements(isHidden: true)
                 guard let dialogueModel = GameplayDialogueManager.shared.getDialogueByString(name: nextDialogueName) else { return }
+                UserDefaults.standard.set(nextDialogueName, forKey: UserDefaults.Keys.lastDialogueSaved.description)
                 dialogue = dialogueModel
                 delegate?.setDialogueAndCards()
                 setInitialPosition()
