@@ -46,6 +46,8 @@ class GameplayScreenViewController: BaseViewController {
         self.blurBackground(backgroundName: "background_placeholder")
         self.letterText.font = Fonts.text
         self.letterText.textColor = UIColor(named: "ArielDark")
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.stopTypingText(_:)))
+        self.letterContainer.addGestureRecognizer(tap)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -60,6 +62,12 @@ class GameplayScreenViewController: BaseViewController {
     }
     
     // MARK: - Methods
+    @objc func stopTypingText(_ sender: UITapGestureRecognizer) {
+        if let dialogue = presenter.dialogue, letterText.typingMode {
+            letterText.typingMode = false
+            letterText.text = dialogue.descriptionText
+        }
+    }
 }
 
 // MARK: - GameplayScreenPresenterDelegate
@@ -67,16 +75,7 @@ extension GameplayScreenViewController: GameplayScreenPresenterDelegate {
     
     func animateElements(animatedDirection: GameplayAnimatedElements, completionHandler: @escaping () -> Void) {
         
-        var movePoint: CGPoint = .zero
-        
-        switch animatedDirection {
-        case .aboveToScreen:
-            movePoint = CGPoint(x: 100, y: UIScreen.main.bounds.width)
-        case .screenToBelow:
-            movePoint = CGPoint(x: -100, y: UIScreen.main.bounds.width)
-        case .belowToAbove:
-            movePoint = CGPoint(x: 0, y: -2 * UIScreen.main.bounds.width)
-        }
+        var movePoint: CGPoint = presenter.getMovePoint(animatedDirection: animatedDirection)
         
         UIView.animate(withDuration: 1.0, delay: 0.5, options: .curveEaseIn,
                        animations: ({ [self] in

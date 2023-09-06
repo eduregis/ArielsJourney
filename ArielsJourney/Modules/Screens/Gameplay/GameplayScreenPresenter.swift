@@ -5,7 +5,7 @@
 //  Created by Eduardo Oliveira on 02/09/23.
 //
 
-import Foundation
+import UIKit
 
 enum GameplayAnimatedElements {
     case aboveToScreen
@@ -51,6 +51,17 @@ class GameplayScreenPresenter {
     
     //  MARK: - Methods
     
+    func getMovePoint(animatedDirection: GameplayAnimatedElements) -> CGPoint {
+        switch animatedDirection {
+        case .aboveToScreen:
+            return CGPoint(x: 100, y: UIScreen.main.bounds.width)
+        case .screenToBelow:
+            return CGPoint(x: -100, y: UIScreen.main.bounds.width)
+        case .belowToAbove:
+            return CGPoint(x: 0, y: -2 * UIScreen.main.bounds.width)
+        }
+    }
+    
     func startNewDialogue() {
         self.delegate?.animateElements(animatedDirection: .aboveToScreen, completionHandler: {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [self] in
@@ -74,10 +85,8 @@ class GameplayScreenPresenter {
     
     func setInitialPosition() {
         delegate?.animateElements(animatedDirection: .belowToAbove, completionHandler: {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [self] in
-                delegate?.hideElements(isHidden: false)
-                startNewDialogue()
-            }
+            self.delegate?.hideElements(isHidden: false)
+            self.startNewDialogue()
         })
     }
     
