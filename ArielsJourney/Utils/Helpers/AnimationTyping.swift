@@ -23,12 +23,18 @@ extension UILabel {
     }
     
     func setTyping(text: String, characterDelay: TimeInterval = 2.0, completion: @escaping () -> Void) {
+        
         self.text = ""
+        self.typingMode = true
         
         let writingTask = DispatchWorkItem { [weak self] in
             text.forEach { char in
-                DispatchQueue.main.async {
-                    self?.text?.append(char)
+                if (self?.typingMode == true) {
+                    DispatchQueue.main.async {
+                        self?.text?.append(char)
+                    }
+                } else {
+                    return
                 }
                 Thread.sleep(forTimeInterval: characterDelay/100)
             }

@@ -46,8 +46,8 @@
                                         <constraint firstAttribute="width" constant="230" id="9vl-UA-J7B"/>
                                     </constraints>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hli-gn-smd" userLabel="LetterText">
-                                    <rect key="frame" x="13" y="38.666666666666671" width="206" height="229.66666666666663"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hli-gn-smd" userLabel="LetterText">
+                                    <rect key="frame" x="13" y="38.666666666666671" width="206" height="0.0"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -59,7 +59,7 @@
                                 <constraint firstItem="hli-gn-smd" firstAttribute="top" secondItem="JRG-VB-UkA" secondAttribute="top" constant="16" id="MIt-L1-E3o"/>
                                 <constraint firstItem="JRG-VB-UkA" firstAttribute="trailing" secondItem="hli-gn-smd" secondAttribute="trailing" constant="16" id="X0v-1u-p98"/>
                                 <constraint firstItem="JRG-VB-UkA" firstAttribute="centerX" secondItem="5Qe-ku-HX5" secondAttribute="centerX" id="Xql-Q2-Ovv"/>
-                                <constraint firstItem="JRG-VB-UkA" firstAttribute="bottom" secondItem="hli-gn-smd" secondAttribute="bottom" constant="32" id="afY-nS-Zaj"/>
+                                <constraint firstItem="JRG-VB-UkA" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="hli-gn-smd" secondAttribute="bottom" constant="32" id="afY-nS-Zaj"/>
                                 <constraint firstAttribute="width" constant="240" id="btu-Fv-3rT"/>
                                 <constraint firstItem="hli-gn-smd" firstAttribute="leading" secondItem="JRG-VB-UkA" secondAttribute="leading" constant="8" id="hOz-ZT-Ihi"/>
                             </constraints>
