@@ -25,6 +25,7 @@ class SplashScreenPresenter {
     
     // MARK: - Lifecycle
     func didLoad() {
+        isFirstOpen()
         navigateToHome()
     }
     
@@ -53,6 +54,7 @@ class SplashScreenPresenter {
             userDefaults.set(0, forKey: UserDefaults.Keys.activeArchetypes.description)
             userDefaults.set(0, forKey: UserDefaults.Keys.duchbagCounter.description)
             
+            userDefaults.set("", forKey:  UserDefaults.Keys.lastDialogueSaved.description)
             userDefaults.set(false, forKey: UserDefaults.Keys.gameInProgress.description)
             
             let array: [String] = []

@@ -17,6 +17,7 @@ class HomeScreenPresenter {
     let router: HomeScreenRouter
     
     var dateCells: [HomeEnum] = HomeEnum.allCases
+    var cellSize: CGSize = CGSize(width: 142, height: 275)
     
     // MARK: - Init
     init(delegate: HomeScreenPresenterDelegate, router: HomeScreenRouter) {
@@ -47,7 +48,9 @@ class HomeScreenPresenter {
         case .gameplayNew:
             self.router.navigateToGameplay()
         case .gameplayContinue:
-            self.router.navigateToContinue()
+            if UserDefaults.standard.bool(forKey: UserDefaults.Keys.gameInProgress.description) {
+                self.router.navigateToContinue()
+            }
         case .herosJourney:
             self.router.navigateToHerosJourney()
         case .archetypes:

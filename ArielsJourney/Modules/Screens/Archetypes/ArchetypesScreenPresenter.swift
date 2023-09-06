@@ -17,6 +17,7 @@ class ArchetypesScreenPresenter {
     let router: ArchetypesScreenRouter
     
     var dateCells: [ArchetypeModel] = []
+    let cellSize: CGSize = CGSize(width: 142, height: 249)
     
     // MARK: - Init
     init(delegate: ArchetypesScreenPresenterDelegate, router: ArchetypesScreenRouter) {

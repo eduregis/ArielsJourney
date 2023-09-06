@@ -77,6 +77,7 @@
 		2EB1695D2AA278AC00615060 /* HomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EB1695C2AA278AC00615060 /* HomeScreenViewController.xib */; };
 		2EBE72B42AA7913A005E6010 /* AnimationTyping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE72B32AA7913A005E6010 /* AnimationTyping.swift */; };
 		2EBFD18F2AA6B77600308B0D /* GameplayDialogueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBFD18E2AA6B77600308B0D /* GameplayDialogueManager.swift */; };
+		2ECEEF342AA8F09900F15A7C /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECEEF332AA8F09900F15A7C /* AudioManager.swift */; };
 		2FA13BF89C9F4289D43A1CA2 /* Pods_ArielsJourneyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF4E32BF96B409B84703B49 /* Pods_ArielsJourneyTests.framework */; };
 		B9BEA4BED5CEFF252C1DC90E /* Pods_ArielsJourney_ArielsJourneyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 334888D2E0D69E3EE22615CE /* Pods_ArielsJourney_ArielsJourneyUITests.framework */; };
 /* End PBXBuildFile section */
@@ -176,6 +177,7 @@
 		2EB1695C2AA278AC00615060 /* HomeScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenViewController.xib; sourceTree = "<group>"; };
 		2EBE72B32AA7913A005E6010 /* AnimationTyping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTyping.swift; sourceTree = "<group>"; };
 		2EBFD18E2AA6B77600308B0D /* GameplayDialogueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayDialogueManager.swift; sourceTree = "<group>"; };
+		2ECEEF332AA8F09900F15A7C /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		2F48B1E409AF8E12E9C77714 /* Pods-ArielsJourney.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArielsJourney.release.xcconfig"; path = "Target Support Files/Pods-ArielsJourney/Pods-ArielsJourney.release.xcconfig"; sourceTree = "<group>"; };
 		334888D2E0D69E3EE22615CE /* Pods_ArielsJourney_ArielsJourneyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArielsJourney_ArielsJourneyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B82745CC2ECA9191FCEB262 /* Pods-ArielsJourneyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArielsJourneyTests.debug.xcconfig"; path = "Target Support Files/Pods-ArielsJourneyTests/Pods-ArielsJourneyTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -454,6 +456,7 @@
 			children = (
 				2EAF95732AA3EABF00B3FAC2 /* OverlayPresentation.swift */,
 				2E3D74B52AA4E19900CD00C8 /* ReusableCells.swift */,
+				2ECEEF332AA8F09900F15A7C /* AudioManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -828,6 +831,7 @@
 				2E2C9D9E2AA54CB400995D41 /* HomeCollectionViewCell.swift in Sources */,
 				2EB169592AA2773600615060 /* HomeScreenPresenter.swift in Sources */,
 				2E7FAC682AA3B6BC00E1AF20 /* AchievementsScreenViewController.swift in Sources */,
+				2ECEEF342AA8F09900F15A7C /* AudioManager.swift in Sources */,
 				2EBE72B42AA7913A005E6010 /* AnimationTyping.swift in Sources */,
 				2E3D74BE2AA4E3D400CD00C8 /* ArchetypeCollectionViewCell.swift in Sources */,
 				2E737FBF2AA24928001F4EB4 /* SplashScreenPresenter.swift in Sources */,

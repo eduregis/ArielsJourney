@@ -82,12 +82,16 @@ extension HomeScreenViewController: UICollectionViewDelegate, UICollectionViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 142, height: 275)
+        return presenter.cellSize
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = HomeCollectionViewCell.dequeueCell(from: collectionView, for: indexPath)
-        cell.dateCell = presenter.dateCells[indexPath.row]
+        let dateCell = presenter.dateCells[indexPath.row]
+        if dateCell == .gameplayContinue {
+            cell.isActive = UserDefaults.standard.bool(forKey: UserDefaults.Keys.gameInProgress.description)
+        }
+        cell.dateCell = dateCell
         return cell
     }
     

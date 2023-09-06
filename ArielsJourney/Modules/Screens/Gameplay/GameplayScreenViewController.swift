@@ -75,7 +75,7 @@ extension GameplayScreenViewController: GameplayScreenPresenterDelegate {
     
     func animateElements(animatedDirection: GameplayAnimatedElements, completionHandler: @escaping () -> Void) {
         
-        var movePoint: CGPoint = presenter.getMovePoint(animatedDirection: animatedDirection)
+        let movePoint: CGPoint = presenter.getMovePoint(animatedDirection: animatedDirection)
         
         UIView.animate(withDuration: 1.0, delay: 0.5, options: .curveEaseIn,
                        animations: ({ [self] in
