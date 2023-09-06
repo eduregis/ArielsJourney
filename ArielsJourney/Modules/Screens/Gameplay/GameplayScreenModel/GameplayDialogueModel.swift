@@ -10,7 +10,7 @@ import Foundation
 struct GameplayCardModel {
     let image: String
     let title: String
-    var isCardSelected: Bool
+    var isFlipped: Bool
 }
 
 struct Dialogue: Hashable {

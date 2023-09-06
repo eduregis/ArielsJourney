@@ -8,6 +8,7 @@
 import UIKit
 
 protocol GameplayCardViewDelegate: AnyObject {
+    func didTapCard()
 }
 
 class GameplayCardView: UIView {
@@ -17,6 +18,7 @@ class GameplayCardView: UIView {
     @IBOutlet weak var titleLabel: UILabel!
     
     // MARK: - Properties
+    weak var delegate: GameplayCardViewDelegate?
     private let backImageView: UIImageView! = UIImageView(image: UIImage(named: "gameplayCard_empty"))
     private var frontImageView = UIImageView()
     private var spinTimeInterval = 0.5
@@ -30,7 +32,7 @@ class GameplayCardView: UIView {
         static let title = UIFont(name: "Macondo-Regular", size: 13)
     }
     
-    // MARK: - View Lifecycle
+    // MARK: - Init
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         self.commonInit()
@@ -45,10 +47,11 @@ class GameplayCardView: UIView {
         self.titleLabel.textColor = UIColor(named: "ArielDark")
     }
     
+    // MARK: - Methods
     func setupCard(cardInfo: GameplayCardModel) {
         self.cardInfo = cardInfo
         self.titleLabel.text = cardInfo.title
-        self.titleLabel.isHidden = !cardInfo.isCardSelected
+        self.titleLabel.isHidden = !cardInfo.isFlipped
         self.frontImageView.image = UIImage(named: cardInfo.image)
         self.configFlipView()
     }
@@ -61,8 +64,8 @@ class GameplayCardView: UIView {
         frontImageView.contentMode = .scaleToFill
         
         if let cardInfo = cardInfo {
-            frontImageView.isHidden = cardInfo.isCardSelected
-            backImageView.isHidden = !cardInfo.isCardSelected
+            frontImageView.isHidden = cardInfo.isFlipped
+            backImageView.isHidden = !cardInfo.isFlipped
         }
         
         contentView.addSubview(backImageView)
@@ -70,26 +73,28 @@ class GameplayCardView: UIView {
         contentView.addSubview(frontImageView)
         contentView.sendSubviewToBack(frontImageView)
         
-        let singleTap = UITapGestureRecognizer(target: self, action: #selector(flipTapped))
-        contentView.addGestureRecognizer(singleTap)
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
+        self.contentView.addGestureRecognizer(tap)
     }
     
-    @objc func flipTapped() {
-//        flip()
+    @objc func handleTap(_ sender: UITapGestureRecognizer) {
+        if let isFlipped = cardInfo?.isFlipped, !isFlipped {
+            delegate?.didTapCard()
+        }
     }
     
     func flip() {
         if var displayFlipItem = self.cardInfo {
-            frontImageView.isHidden = !displayFlipItem.isCardSelected
-            backImageView.isHidden = displayFlipItem.isCardSelected
-            titleLabel.isHidden = !displayFlipItem.isCardSelected
+            frontImageView.isHidden = !displayFlipItem.isFlipped
+            backImageView.isHidden = displayFlipItem.isFlipped
+            titleLabel.isHidden = !displayFlipItem.isFlipped
             
-            UIView.transition(from: displayFlipItem.isCardSelected ? frontImageView : backImageView,
-                              to: displayFlipItem.isCardSelected ? frontImageView : backImageView,
+            UIView.transition(from: displayFlipItem.isFlipped ? frontImageView : backImageView,
+                              to: displayFlipItem.isFlipped ? frontImageView : backImageView,
                               duration: spinTimeInterval,
                               options: [.transitionFlipFromLeft, .showHideTransitionViews])
             
-            displayFlipItem.isCardSelected = !displayFlipItem.isCardSelected
+            displayFlipItem.isFlipped = !displayFlipItem.isFlipped
             self.cardInfo = displayFlipItem
         }
     }

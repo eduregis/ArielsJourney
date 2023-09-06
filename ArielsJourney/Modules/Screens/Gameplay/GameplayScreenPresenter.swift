@@ -8,6 +8,7 @@
 import Foundation
 
 protocol GameplayScreenPresenterDelegate: BasePresenterDelegate {
+    func animateElements(animatedDirection: GameplayAnimatedElements)
     func flipCards()
     func setDialogueAndCards()
     func startTypingText()
@@ -28,16 +29,14 @@ class GameplayScreenPresenter {
     }
  
     // MARK: - Lifecycle Methods
-    func didLoad() {
-        
-        guard let dialogue = GameplayDialogueManager.shared.getDialogueByString(name: "MC_01") else { return }
-        
-        self.dialogue = dialogue
-        self.delegate?.setDialogueAndCards()
-        self.delegate?.startTypingText()
+    func didLoad() {   
     }
     
     func willAppear() {
+        guard let dialogue = GameplayDialogueManager.shared.getDialogueByString(name: "MC_01") else { return }
+        self.dialogue = dialogue
+        self.delegate?.setDialogueAndCards()
+        
     }
     
     func didAppear() {

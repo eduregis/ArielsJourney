@@ -11,6 +11,7 @@
             <connections>
                 <outlet property="firstCard" destination="QYW-S8-BYt" id="mBA-4m-Qke"/>
                 <outlet property="headerView" destination="KyG-Mi-aru" id="ZOT-iW-SFB"/>
+                <outlet property="letterContainer" destination="5Qe-ku-HX5" id="ld8-nh-LG8"/>
                 <outlet property="letterText" destination="hli-gn-smd" id="Evv-p3-Yxf"/>
                 <outlet property="secondCard" destination="q6I-Jq-1BG" id="aaK-oG-hta"/>
                 <outlet property="view" destination="7HX-ER-qGZ" id="Kme-eJ-usb"/>
@@ -45,7 +46,7 @@
                                         <constraint firstAttribute="width" constant="230" id="9vl-UA-J7B"/>
                                     </constraints>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hli-gn-smd" userLabel="LetterText">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hli-gn-smd" userLabel="LetterText">
                                     <rect key="frame" x="13" y="38.666666666666671" width="206" height="229.66666666666663"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
