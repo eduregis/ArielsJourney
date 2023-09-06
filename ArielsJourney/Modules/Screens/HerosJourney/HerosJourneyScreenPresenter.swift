@@ -15,11 +15,13 @@ class HerosJourneyScreenPresenter {
     // MARK: - Properties
     weak var delegate: HerosJourneyScreenPresenterDelegate?
     let router: HerosJourneyScreenRouter
+    var activeHerosJourney: Int = 0
     
     // MARK: - Init
     init(delegate: HerosJourneyScreenPresenterDelegate, router: HerosJourneyScreenRouter) {
         self.delegate = delegate
         self.router = router
+        self.activeHerosJourney = UserDefaults.standard.integer(forKey: UserDefaults.Keys.activeHerosJourney.description)
     }
     
     // MARK: - Lifecycle

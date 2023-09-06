@@ -35,11 +35,16 @@ class HerosJourneyScreenViewController: BaseViewController {
         self.headerView.delegate = self
         self.headerView.titleLabel.text = "Jornada do Herói"
         self.headerView.hideAdornments()
+        
         self.view.backgroundColor = UIColor(named: "ArielBackground")
         if let cards = collectionOfCards {
             for (index, card) in cards.enumerated() {
                 card.delegate = self
-                card.setupCard(cardInfo: HerosJourneyEnum.allCases[index].herosJourneyModel )
+                card.largeNumberLabel.text = (index + 1).romanNumeral
+                if index < presenter.activeHerosJourney {
+                    card.setupCard(cardInfo: HerosJourneyEnum.allCases[index].herosJourneyModel)
+                    card.numberLabel.text = (index + 1).romanNumeral
+                }
             }
         }
         leadingGradientView.setOpecityGradientBackground(color: UIColor(named: "ArielBackground") ?? .clear, direction: .toRight)

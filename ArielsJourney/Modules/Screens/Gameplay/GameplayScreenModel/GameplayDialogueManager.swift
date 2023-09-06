@@ -92,7 +92,7 @@ enum GameplayDialogues {
                             nextFirstDialogue: "fifthText",
                             nextSecondDialogue: "sixthText",
                             herosJourneysStage: "Teste",
-                            genericTrigger: "babaca+1") // caso precise aumentar o indice de babaca, só chamar esse parâmetro com "babaca+1", o parâmetro assim como o achievementTrigger, é opcional
+                            triggerArray: ["duchbag+1"]) // caso precise aumentar o indice de duchbag, só chamar esse parâmetro com "duchbag+1", o parâmetro assim como o achievementTrigger, é opcional
         case .fifthText:
             return Dialogue(descriptionText: "(fifthText) Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
                             firstCardText: "Tá zoando",
@@ -103,7 +103,7 @@ enum GameplayDialogues {
                             nextSecondDialogue: "seventhText",
                             herosJourneysStage: "Teste",
                             achievementTrigger: "bestEnd",
-                            genericTrigger: "herosJourney_1") // caso chegar nesse Dialogue implique em desbloquear um colecionável relativo a Jornada do Herói, basta colocar "herosJourney_?", com ? sendo o índice do colecionável em questão.
+                            triggerArray: ["herosJourney_1"]) // caso chegar nesse Dialogue implique em desbloquear um colecionável relativo a Jornada do Herói, basta colocar "herosJourney_?", com ? sendo o índice do colecionável em questão.
         case .sixthText:
             return Dialogue(descriptionText: "(sixthText) CUESTA 🇦🇷 NA MEIA 🧦 ESQUERDA⬅️⬅️AMEAÇOU 🔫🔪 NÃO BATEU 🚫🥊 VEM PRA TABELA 📉📈 PEGLOW ☄️ PRO CUESTA 🇦🇷 BATEU CRUZADO 💴⚔️✝️ EDENILSOOOOOOOOOOOOOOOOON 👨🏾👨🏾👨🏾👨🏾👨🏾👨🏾👨🏾👨🏾  QUARENTA E UM ANOS 4️⃣1️⃣ 👉👌👴🏻🏆GOOOOOOOOOOOOOOL ⚽👨🏾🤸🏾‍♂️👨🏾 pipipi 🧏‍♂️🙋‍♂️🙋‍♂️🗽🚩",
                             firstCardText: "Mó paia",
@@ -113,7 +113,7 @@ enum GameplayDialogues {
                             nextFirstDialogue: "seventhText",
                             nextSecondDialogue: "eighthText",
                             herosJourneysStage: "Teste",
-                            genericTrigger: "archetype_1") // caso chegar nesse Dialogue implique em desbloquear um colecionável relativo a Arquétipos, basta colocar "archetype_?", com ? sendo o índice do colecionável em questão.
+                            triggerArray: ["archetype_1"]) // caso chegar nesse Dialogue implique em desbloquear um colecionável relativo a Arquétipos, basta colocar "archetype_?", com ? sendo o índice do colecionável em questão.
         case .seventhText:
             return Dialogue(descriptionText: "(seventhText) Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
                             firstCardText: "Tá zoando",
@@ -123,7 +123,7 @@ enum GameplayDialogues {
                             nextFirstDialogue: "eighthText",
                             nextSecondDialogue: "",
                             herosJourneysStage: "Teste",
-                            genericTrigger: "herosJourney_2")
+                            triggerArray: ["herosJourney_2"])
         case .eighthText:
             return Dialogue(descriptionText: "(eighthText) Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
                             firstCardText: "Tá zoando",
@@ -133,7 +133,7 @@ enum GameplayDialogues {
                             nextFirstDialogue: "",
                             nextSecondDialogue: "",
                             herosJourneysStage: "Teste",
-                            genericTrigger: "archetype_2")
+                            triggerArray: ["archetype_2"])
         case .ninthText:
             return Dialogue(descriptionText: "(ninthText) Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
                             firstCardText: "Tá zoando",

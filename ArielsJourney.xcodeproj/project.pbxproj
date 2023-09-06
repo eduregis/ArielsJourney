@@ -78,6 +78,7 @@
 		2EBE72B42AA7913A005E6010 /* AnimationTyping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE72B32AA7913A005E6010 /* AnimationTyping.swift */; };
 		2EBFD18F2AA6B77600308B0D /* GameplayDialogueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBFD18E2AA6B77600308B0D /* GameplayDialogueManager.swift */; };
 		2ECEEF342AA8F09900F15A7C /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECEEF332AA8F09900F15A7C /* AudioManager.swift */; };
+		2ED7D1312AA93DFC00F306DA /* RomanNumeral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED7D1302AA93DFC00F306DA /* RomanNumeral.swift */; };
 		2FA13BF89C9F4289D43A1CA2 /* Pods_ArielsJourneyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF4E32BF96B409B84703B49 /* Pods_ArielsJourneyTests.framework */; };
 		B9BEA4BED5CEFF252C1DC90E /* Pods_ArielsJourney_ArielsJourneyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 334888D2E0D69E3EE22615CE /* Pods_ArielsJourney_ArielsJourneyUITests.framework */; };
 /* End PBXBuildFile section */
@@ -178,6 +179,7 @@
 		2EBE72B32AA7913A005E6010 /* AnimationTyping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTyping.swift; sourceTree = "<group>"; };
 		2EBFD18E2AA6B77600308B0D /* GameplayDialogueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayDialogueManager.swift; sourceTree = "<group>"; };
 		2ECEEF332AA8F09900F15A7C /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		2ED7D1302AA93DFC00F306DA /* RomanNumeral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomanNumeral.swift; sourceTree = "<group>"; };
 		2F48B1E409AF8E12E9C77714 /* Pods-ArielsJourney.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArielsJourney.release.xcconfig"; path = "Target Support Files/Pods-ArielsJourney/Pods-ArielsJourney.release.xcconfig"; sourceTree = "<group>"; };
 		334888D2E0D69E3EE22615CE /* Pods_ArielsJourney_ArielsJourneyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArielsJourney_ArielsJourneyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B82745CC2ECA9191FCEB262 /* Pods-ArielsJourneyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArielsJourneyTests.debug.xcconfig"; path = "Target Support Files/Pods-ArielsJourneyTests/Pods-ArielsJourneyTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -399,6 +401,7 @@
 				2EBE72B32AA7913A005E6010 /* AnimationTyping.swift */,
 				2EAF95852AA401FC00B3FAC2 /* GradientLayer.swift */,
 				2E7D4FB72AA8BB5900930B69 /* UserDefaultsKeys.swift */,
+				2ED7D1302AA93DFC00F306DA /* RomanNumeral.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -818,6 +821,7 @@
 				2E7FAC562AA3B22300E1AF20 /* HerosJourneyScreenViewController.swift in Sources */,
 				2E3D74C72AA4F83B00CD00C8 /* ElementDetailsSheetViewController.swift in Sources */,
 				2EAF95792AA3EBE300B3FAC2 /* ConfigurationsSheetRouter.swift in Sources */,
+				2ED7D1312AA93DFC00F306DA /* RomanNumeral.swift in Sources */,
 				2E2C9DA52AA56B3600995D41 /* GameplayCardView.swift in Sources */,
 				2E7FAC5B2AA3B49700E1AF20 /* ArchetypesScreenRouter.swift in Sources */,
 				2E3D74C52AA4F7F300CD00C8 /* ElementDetailsSheetPresenter.swift in Sources */,
