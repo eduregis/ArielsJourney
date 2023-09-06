@@ -6,6 +6,10 @@
   
 */
 
+// MARK: - First Open Texts
+"FirstOpenTexts_firstOpen" = "Abrindo pela primeira vez";
+"FirstOpenTexts_notFirstOpen" = "Este app foi aberto pela primeira vez em ";
+
 // MARK: - Archetypes Screen Texts
 "ArchetypesScreenTexts_firstTitle" = "Herói";
 "ArchetypesScreenTexts_firstDesc" = "Lorem ipsum World sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";

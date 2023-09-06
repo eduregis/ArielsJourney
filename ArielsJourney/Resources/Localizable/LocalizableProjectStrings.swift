@@ -7,6 +7,11 @@
 
 import Foundation
 
+enum FirstOpenTexts: String, Localizable {
+    case firstOpen = "FirstOpenTexts_firstOpen"
+    case notFirstOpen = "FirstOpenTexts_notFirstOpen"
+}
+
 enum ArchetypesScreenTexts: String, Localizable {
     case firstTitle = "ArchetypesScreenTexts_firstTitle"
     case firstDesc = "ArchetypesScreenTexts_firstDesc"

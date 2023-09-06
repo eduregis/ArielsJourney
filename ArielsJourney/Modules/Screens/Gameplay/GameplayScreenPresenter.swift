@@ -43,7 +43,6 @@ class GameplayScreenPresenter {
         guard let dialogueModel = GameplayDialogueManager.shared.getDialogueByString(name: "MC_01") else { return }
         self.dialogue = dialogueModel
         self.delegate?.setDialogueAndCards()
-        
     }
     
     func didAppear() {

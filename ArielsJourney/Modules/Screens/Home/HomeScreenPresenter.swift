@@ -12,17 +12,20 @@ protocol HomeScreenPresenterDelegate: BasePresenterDelegate {
 
 class HomeScreenPresenter {
     
+    // MARK: - Properties
     weak var delegate: HomeScreenPresenterDelegate?
     let router: HomeScreenRouter
     
     var dateCells: [HomeEnum] = HomeEnum.allCases
     
+    // MARK: - Init
     init(delegate: HomeScreenPresenterDelegate, router: HomeScreenRouter) {
         
         self.delegate = delegate
         self.router = router
     }
     
+    // MARK: - Lifecycle
     func didLoad() {
     }
     
@@ -32,6 +35,9 @@ class HomeScreenPresenter {
     func didAppear() {
     }
     
+    //  MARK: - Methods
+    
+    // MARK: - Navigation
     func showConfigurations() {
         self.router.showConfigurations()
     }
