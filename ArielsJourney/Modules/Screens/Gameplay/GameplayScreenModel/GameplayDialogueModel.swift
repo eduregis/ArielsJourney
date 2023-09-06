@@ -10,6 +10,7 @@ import Foundation
 struct GameplayCardModel {
     let image: String
     let title: String
+    let nextDialogue: String
     var isFlipped: Bool
 }
 

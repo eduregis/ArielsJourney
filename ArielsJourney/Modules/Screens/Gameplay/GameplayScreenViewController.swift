@@ -7,12 +7,6 @@
 
 import UIKit
 
-enum GameplayAnimatedElements {
-    case aboveToScreen
-    case screenToBelow
-    case belowToAbove
-}
-
 class GameplayScreenViewController: BaseViewController {
     
     // MARK: - Outlets
@@ -57,7 +51,7 @@ class GameplayScreenViewController: BaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         presenter.willAppear()
-        animateElements(animatedDirection: .aboveToScreen)
+        presenter.startNewDialogue()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -71,7 +65,7 @@ class GameplayScreenViewController: BaseViewController {
 // MARK: - GameplayScreenPresenterDelegate
 extension GameplayScreenViewController: GameplayScreenPresenterDelegate {
     
-    func animateElements(animatedDirection: GameplayAnimatedElements) {
+    func animateElements(animatedDirection: GameplayAnimatedElements, completionHandler: @escaping () -> Void) {
         
         var movePoint: CGPoint = .zero
         
@@ -89,26 +83,16 @@ extension GameplayScreenViewController: GameplayScreenPresenterDelegate {
             self.firstCard.frame.origin = CGPoint(x: self.firstCard.frame.origin.x + movePoint.x, y: self.firstCard.frame.origin.y + movePoint.y)
             self.secondCard.frame.origin = CGPoint(x: self.secondCard.frame.origin.x - movePoint.x, y: self.secondCard.frame.origin.y + movePoint.y)
             self.letterContainer.frame.origin = CGPoint(x: self.letterContainer.frame.origin.x, y: self.letterContainer.frame.origin.y + movePoint.y)
-        }), completion: {_ in
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [self] in
-                switch animatedDirection {
-                case .aboveToScreen:
-                    startTypingText()
-                case .screenToBelow:
-                    firstCard.isHidden = true
-                    secondCard.isHidden = true
-                    letterContainer.isHidden = true
-                    animateElements(animatedDirection: .belowToAbove)
-                case .belowToAbove:
-                    flipCards()
-                    firstCard.isHidden = false
-                    secondCard.isHidden = false
-                    letterContainer.isHidden = false
-                    letterText.text = ""
-                    animateElements(animatedDirection: .aboveToScreen)
-                }
-            }
+        }), completion: { _ in
+            completionHandler()
         })
+    }
+    
+    func hideElements(isHidden: Bool) {
+        firstCard.isHidden = isHidden
+        secondCard.isHidden = isHidden
+        letterContainer.isHidden = isHidden
+        letterText.text = ""
     }
     
     func flipCards() {
@@ -118,8 +102,8 @@ extension GameplayScreenViewController: GameplayScreenPresenterDelegate {
     
     func setDialogueAndCards() {
         if let dialogue = presenter.dialogue {
-            self.firstCard.setupCard(cardInfo: GameplayCardModel(image: dialogue.firstCardImageName, title: dialogue.firstCardText, isFlipped: true))
-            self.secondCard.setupCard(cardInfo: GameplayCardModel(image: dialogue.secondCardImageName, title: dialogue.secondCardText, isFlipped: true))
+            self.firstCard.setupCard(cardInfo: GameplayCardModel(image: dialogue.firstCardImageName, title: dialogue.firstCardText, nextDialogue: dialogue.nextFirstDialogue ?? "", isFlipped: true))
+            self.secondCard.setupCard(cardInfo: GameplayCardModel(image: dialogue.secondCardImageName, title: dialogue.secondCardText, nextDialogue: dialogue.nextSecondDialogue ?? "", isFlipped: true))
         }
     }
     
@@ -131,7 +115,6 @@ extension GameplayScreenViewController: GameplayScreenPresenterDelegate {
                 }
             })
         }
-        
     }
 }
 
@@ -146,7 +129,8 @@ extension GameplayScreenViewController: StyledHeaderScreenViewDelegate {
 }
 
 extension GameplayScreenViewController: GameplayCardViewDelegate {
-    func didTapCard() {
-        animateElements(animatedDirection: .screenToBelow)
+    func didTapCard(nextDialogueName: String) {
+        presenter.goToNextDialogue(nextDialogueName: nextDialogueName)
     }
 }
+

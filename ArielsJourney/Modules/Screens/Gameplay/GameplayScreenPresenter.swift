@@ -7,8 +7,15 @@
 
 import Foundation
 
+enum GameplayAnimatedElements {
+    case aboveToScreen
+    case screenToBelow
+    case belowToAbove
+}
+
 protocol GameplayScreenPresenterDelegate: BasePresenterDelegate {
-    func animateElements(animatedDirection: GameplayAnimatedElements)
+    func animateElements(animatedDirection: GameplayAnimatedElements, completionHandler: @escaping () -> Void)
+    func hideElements(isHidden: Bool)
     func flipCards()
     func setDialogueAndCards()
     func startTypingText()
@@ -28,18 +35,50 @@ class GameplayScreenPresenter {
         self.router = router
     }
  
-    // MARK: - Lifecycle Methods
+    // MARK: - Lifecycle
     func didLoad() {   
     }
     
     func willAppear() {
-        guard let dialogue = GameplayDialogueManager.shared.getDialogueByString(name: "MC_01") else { return }
-        self.dialogue = dialogue
+        guard let dialogueModel = GameplayDialogueManager.shared.getDialogueByString(name: "MC_01") else { return }
+        self.dialogue = dialogueModel
         self.delegate?.setDialogueAndCards()
         
     }
     
     func didAppear() {
+    }
+    
+    //  MARK: - Methods
+    
+    func startNewDialogue() {
+        self.delegate?.animateElements(animatedDirection: .aboveToScreen, completionHandler: {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [self] in
+                delegate?.startTypingText()
+            }
+        })
+    }
+    
+    func goToNextDialogue(nextDialogueName: String) {
+        
+        self.delegate?.animateElements(animatedDirection: .screenToBelow, completionHandler: {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [self] in
+                delegate?.hideElements(isHidden: true)
+                guard let dialogueModel = GameplayDialogueManager.shared.getDialogueByString(name: nextDialogueName) else { return }
+                dialogue = dialogueModel
+                delegate?.setDialogueAndCards()
+                setInitialPosition()
+            }
+        })
+    }
+    
+    func setInitialPosition() {
+        delegate?.animateElements(animatedDirection: .belowToAbove, completionHandler: {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [self] in
+                delegate?.hideElements(isHidden: false)
+                startNewDialogue()
+            }
+        })
     }
     
     // MARK: - Navigation

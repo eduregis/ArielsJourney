@@ -8,7 +8,7 @@
 import UIKit
 
 protocol GameplayCardViewDelegate: AnyObject {
-    func didTapCard()
+    func didTapCard(nextDialogueName: String)
 }
 
 class GameplayCardView: UIView {
@@ -78,8 +78,8 @@ class GameplayCardView: UIView {
     }
     
     @objc func handleTap(_ sender: UITapGestureRecognizer) {
-        if let isFlipped = cardInfo?.isFlipped, !isFlipped {
-            delegate?.didTapCard()
+        if let cardInfo = cardInfo, !cardInfo.isFlipped {
+            delegate?.didTapCard(nextDialogueName: cardInfo.nextDialogue)
         }
     }
     
