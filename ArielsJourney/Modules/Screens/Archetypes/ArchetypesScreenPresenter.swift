@@ -15,6 +15,7 @@ class ArchetypesScreenPresenter {
     // MARK: - Properties
     weak var delegate: ArchetypesScreenPresenterDelegate?
     let router: ArchetypesScreenRouter
+    var activeArchetypes: Int = 0
     
     var dateCells: [ArchetypeModel] = []
     let cellSize: CGSize = CGSize(width: 142, height: 249)
@@ -23,6 +24,7 @@ class ArchetypesScreenPresenter {
     init(delegate: ArchetypesScreenPresenterDelegate, router: ArchetypesScreenRouter) {
         self.delegate = delegate
         self.router = router
+        self.activeArchetypes = UserDefaults.standard.integer(forKey: UserDefaults.Keys.activeArchetypes.description)
     }
     
     // MARK: - Lifecycle

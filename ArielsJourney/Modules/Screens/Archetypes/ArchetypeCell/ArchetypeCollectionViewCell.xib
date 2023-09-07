@@ -25,7 +25,7 @@
                                     <constraint firstAttribute="width" constant="119" id="rzi-pZ-7aH"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="archetypeCard_emptyIcon_hero" translatesAutoresizingMaskIntoConstraints="NO" id="mhm-hx-7D0" userLabel="ArchetypeEmptyIcon">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="archetypeCard_emptyIcon_01" translatesAutoresizingMaskIntoConstraints="NO" id="mhm-hx-7D0" userLabel="ArchetypeEmptyIcon">
                                 <rect key="frame" x="41" y="94.666666666666671" width="60" height="60.000000000000014"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="GAK-Uk-Xn3"/>
@@ -38,8 +38,8 @@
                                     <constraint firstAttribute="width" constant="119" id="3B9-1p-ia5"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axP-TG-6W6" userLabel="TitleLabel">
-                                <rect key="frame" x="50" y="220" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axP-TG-6W6" userLabel="TitleLabel">
+                                <rect key="frame" x="71" y="241" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -89,6 +89,6 @@
     </objects>
     <resources>
         <image name="archetypeCard_card_empty" width="119" height="249"/>
-        <image name="archetypeCard_emptyIcon_hero" width="27.333333969116211" height="61.333332061767578"/>
+        <image name="archetypeCard_emptyIcon_01" width="27.333333969116211" height="61.333332061767578"/>
     </resources>
 </document>
