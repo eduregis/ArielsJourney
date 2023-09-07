@@ -18,7 +18,6 @@ class SplashScreenPresenter {
     
     // MARK: - Init
     init(delegate: SplashScreenPresenterDelegate, router: SplashScreenRouter) {
-        
         self.delegate = delegate
         self.router = router
     }
