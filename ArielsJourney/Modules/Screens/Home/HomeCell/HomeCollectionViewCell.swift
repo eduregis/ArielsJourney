@@ -17,7 +17,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
         static let title = UIFont(name: "Macondo-Regular", size: 14)
     }
     
-    var dateCell: HomeEnum? {
+    var dataCell: HomeEnum? {
         didSet {
             configureDateCell()
         }
@@ -29,7 +29,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
     }
     
     private func configureDateCell() {
-        if let dateEnum = self.dateCell {
+        if let dateEnum = self.dataCell {
             let dateModel = dateEnum.homeModel
             self.imageView.image = UIImage(named: dateModel.imageName)
             self.titleLabel.text = dateModel.title

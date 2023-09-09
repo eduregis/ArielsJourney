@@ -71,7 +71,7 @@ enum GameplayDialogues {
                             nextFirstDialogue: "MC_01",
                             nextSecondDialogue: "fourthText",
                             herosJourneysStage: "teste",
-                            soundTrigger: "sliderButtonReleased",
+                            soundTrigger: "Ariel_soundEffect_sliderButtonReleased",
                             soundLoop: true) // aqui tem o parâmetro soundTrigger, onde vc coloca o nome do arquivo de som a ser tocado
         case .MC_01:
             return Dialogue(descriptionText: DialogueTexts.MC_01_text.localized(key: "dialogue"),

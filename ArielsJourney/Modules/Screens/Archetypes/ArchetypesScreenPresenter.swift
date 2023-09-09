@@ -17,7 +17,7 @@ class ArchetypesScreenPresenter {
     let router: ArchetypesScreenRouter
     var activeArchetypes: Int = 0
     
-    var dateCells: [ArchetypeModel] = []
+    var dataCells: [ArchetypeModel] = []
     let cellSize: CGSize = CGSize(width: 142, height: 249)
     
     // MARK: - Init
@@ -40,7 +40,7 @@ class ArchetypesScreenPresenter {
     //  MARK: - Methods
     func getArchetypes(completion: @escaping () -> Void) {
         for archetype in ArchetypesEnum.allCases {
-            dateCells.append(archetype.archetypesModel)
+            dataCells.append(archetype.archetypesModel)
         }
         completion()
     }
@@ -56,7 +56,7 @@ class ArchetypesScreenPresenter {
     }
     
     func showElementDetails(index: Int) {
-        let archetype = self.dateCells[index]
+        let archetype = self.dataCells[index]
         self.router.showElementDetails(archetype: archetype)
     }
 }

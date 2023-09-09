@@ -56,6 +56,12 @@
 		2E7FAC662AA3B68B00E1AF20 /* AchievementsScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7FAC652AA3B68B00E1AF20 /* AchievementsScreenPresenter.swift */; };
 		2E7FAC682AA3B6BC00E1AF20 /* AchievementsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7FAC672AA3B6BC00E1AF20 /* AchievementsScreenViewController.swift */; };
 		2E7FAC6A2AA3B6F700E1AF20 /* AchievementsScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7FAC692AA3B6F700E1AF20 /* AchievementsScreenViewController.xib */; };
+		2E86EA392AAC95040046300A /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E86EA382AAC95040046300A /* CustomSlider.swift */; };
+		2E86EA3C2AAC9EF30046300A /* Ariel_soundEffect_sliderButtonReleased.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E86EA3B2AAC9EF30046300A /* Ariel_soundEffect_sliderButtonReleased.mp3 */; };
+		2E86EA3E2AACAF3E0046300A /* ConfigurationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E86EA3D2AACAF3E0046300A /* ConfigurationsModel.swift */; };
+		2E9FB8262AACC26200BE2562 /* Ariel_music_01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E9FB8252AACC26200BE2562 /* Ariel_music_01.mp3 */; };
+		2E9FB8282AACC27000BE2562 /* Ariel_ambience_01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E9FB8272AACC27000BE2562 /* Ariel_ambience_01.mp3 */; };
+		2E9FB82A2AACC28700BE2562 /* Ariel_soundEffect_cardSideChoosen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E9FB8292AACC28700BE2562 /* Ariel_soundEffect_cardSideChoosen.mp3 */; };
 		2EAF95742AA3EABF00B3FAC2 /* OverlayPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF95732AA3EABF00B3FAC2 /* OverlayPresentation.swift */; };
 		2EAF95792AA3EBE300B3FAC2 /* ConfigurationsSheetRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF95782AA3EBE300B3FAC2 /* ConfigurationsSheetRouter.swift */; };
 		2EAF957B2AA3EC3800B3FAC2 /* ConfigurationsSheetPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF957A2AA3EC3800B3FAC2 /* ConfigurationsSheetPresenter.swift */; };
@@ -154,6 +160,12 @@
 		2E7FAC652AA3B68B00E1AF20 /* AchievementsScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsScreenPresenter.swift; sourceTree = "<group>"; };
 		2E7FAC672AA3B6BC00E1AF20 /* AchievementsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsScreenViewController.swift; sourceTree = "<group>"; };
 		2E7FAC692AA3B6F700E1AF20 /* AchievementsScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AchievementsScreenViewController.xib; sourceTree = "<group>"; };
+		2E86EA382AAC95040046300A /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
+		2E86EA3B2AAC9EF30046300A /* Ariel_soundEffect_sliderButtonReleased.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ariel_soundEffect_sliderButtonReleased.mp3; sourceTree = "<group>"; };
+		2E86EA3D2AACAF3E0046300A /* ConfigurationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationsModel.swift; sourceTree = "<group>"; };
+		2E9FB8252AACC26200BE2562 /* Ariel_music_01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ariel_music_01.mp3; sourceTree = "<group>"; };
+		2E9FB8272AACC27000BE2562 /* Ariel_ambience_01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ariel_ambience_01.mp3; sourceTree = "<group>"; };
+		2E9FB8292AACC28700BE2562 /* Ariel_soundEffect_cardSideChoosen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ariel_soundEffect_cardSideChoosen.mp3; sourceTree = "<group>"; };
 		2EAF95732AA3EABF00B3FAC2 /* OverlayPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayPresentation.swift; sourceTree = "<group>"; };
 		2EAF95782AA3EBE300B3FAC2 /* ConfigurationsSheetRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationsSheetRouter.swift; sourceTree = "<group>"; };
 		2EAF957A2AA3EC3800B3FAC2 /* ConfigurationsSheetPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationsSheetPresenter.swift; sourceTree = "<group>"; };
@@ -221,6 +233,8 @@
 		2E1CD4DB2AA2B50E00D90276 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2E86EA3A2AAC9DE90046300A /* Sounds */,
+				2E737F8A2AA2455F001F4EB4 /* Assets.xcassets */,
 				2EAF958C2AA40B4B00B3FAC2 /* Localizable */,
 				2E1CD4DC2AA2B52700D90276 /* Fonts */,
 			);
@@ -323,7 +337,6 @@
 				2E737FB52AA247FB001F4EB4 /* Modules */,
 				2E1CD4DB2AA2B50E00D90276 /* Resources */,
 				2E737FB62AA2481A001F4EB4 /* Utils */,
-				2E737F8A2AA2455F001F4EB4 /* Assets.xcassets */,
 				2E737F8F2AA2455F001F4EB4 /* Info.plist */,
 			);
 			path = ArielsJourney;
@@ -454,12 +467,48 @@
 			path = Achievements;
 			sourceTree = "<group>";
 		};
+		2E86EA3A2AAC9DE90046300A /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				2E9FB82C2AACC29700BE2562 /* Ambiences */,
+				2E9FB82B2AACC28C00BE2562 /* Musics */,
+				2E9FB82D2AACC2A500BE2562 /* SoundEffects */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		2E9FB82B2AACC28C00BE2562 /* Musics */ = {
+			isa = PBXGroup;
+			children = (
+				2E9FB8252AACC26200BE2562 /* Ariel_music_01.mp3 */,
+			);
+			path = Musics;
+			sourceTree = "<group>";
+		};
+		2E9FB82C2AACC29700BE2562 /* Ambiences */ = {
+			isa = PBXGroup;
+			children = (
+				2E9FB8272AACC27000BE2562 /* Ariel_ambience_01.mp3 */,
+			);
+			path = Ambiences;
+			sourceTree = "<group>";
+		};
+		2E9FB82D2AACC2A500BE2562 /* SoundEffects */ = {
+			isa = PBXGroup;
+			children = (
+				2E9FB8292AACC28700BE2562 /* Ariel_soundEffect_cardSideChoosen.mp3 */,
+				2E86EA3B2AAC9EF30046300A /* Ariel_soundEffect_sliderButtonReleased.mp3 */,
+			);
+			path = SoundEffects;
+			sourceTree = "<group>";
+		};
 		2EAF95722AA3EA9300B3FAC2 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				2EAF95732AA3EABF00B3FAC2 /* OverlayPresentation.swift */,
 				2E3D74B52AA4E19900CD00C8 /* ReusableCells.swift */,
 				2ECEEF332AA8F09900F15A7C /* AudioManager.swift */,
+				2E86EA382AAC95040046300A /* CustomSlider.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -489,6 +538,7 @@
 		2EAF95772AA3EB8B00B3FAC2 /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
+				2E86EA3D2AACAF3E0046300A /* ConfigurationsModel.swift */,
 				2EAF95782AA3EBE300B3FAC2 /* ConfigurationsSheetRouter.swift */,
 				2EAF957A2AA3EC3800B3FAC2 /* ConfigurationsSheetPresenter.swift */,
 				2EAF957C2AA3EC9C00B3FAC2 /* ConfigurationsSheetViewController.swift */,
@@ -686,17 +736,21 @@
 				2E3D74C02AA4E3DE00CD00C8 /* ArchetypeCollectionViewCell.xib in Resources */,
 				2EAF959C2AA40D2600B3FAC2 /* Dialogues.strings in Resources */,
 				2EAF95962AA40CF900B3FAC2 /* Localizable.strings in Resources */,
+				2E9FB82A2AACC28700BE2562 /* Ariel_soundEffect_cardSideChoosen.mp3 in Resources */,
 				2EB1695D2AA278AC00615060 /* HomeScreenViewController.xib in Resources */,
 				2E7FAC6A2AA3B6F700E1AF20 /* AchievementsScreenViewController.xib in Resources */,
 				2EAF957F2AA3ED7100B3FAC2 /* ConfigurationsSheetViewController.xib in Resources */,
 				2E737F8E2AA2455F001F4EB4 /* LaunchScreen.storyboard in Resources */,
 				2E6DEFD22AA2A50C00C02153 /* StyledHeaderScreenView.xib in Resources */,
+				2E9FB8282AACC27000BE2562 /* Ariel_ambience_01.mp3 in Resources */,
+				2E9FB8262AACC26200BE2562 /* Ariel_music_01.mp3 in Resources */,
 				2E737F8B2AA2455F001F4EB4 /* Assets.xcassets in Resources */,
 				2EAF95A42AA416EE00B3FAC2 /* HerosJourneyCardView.xib in Resources */,
 				2E3D74C92AA4F88600CD00C8 /* ElementDetailsSheetViewController.xib in Resources */,
 				2EAF95842AA3F1D000B3FAC2 /* StyledHeaderSheetView.xib in Resources */,
 				2E2C9DA02AA54CFB00995D41 /* HomeCollectionViewCell.xib in Resources */,
 				2E1CD4DE2AA2B53B00D90276 /* Macondo-Regular.ttf in Resources */,
+				2E86EA3C2AAC9EF30046300A /* Ariel_soundEffect_sliderButtonReleased.mp3 in Resources */,
 				2E2C9DA72AA56BD600995D41 /* GameplayCardView.xib in Resources */,
 				2E7FAC582AA3B22D00E1AF20 /* HerosJourneyScreenViewController.xib in Resources */,
 			);
@@ -805,6 +859,7 @@
 				2E7D4FB82AA8BB5900930B69 /* UserDefaultsKeys.swift in Sources */,
 				2EAF957D2AA3EC9C00B3FAC2 /* ConfigurationsSheetViewController.swift in Sources */,
 				2E7FAC5F2AA3B4FE00E1AF20 /* ArchetypesScreenViewController.swift in Sources */,
+				2E86EA3E2AACAF3E0046300A /* ConfigurationsModel.swift in Sources */,
 				2EAF95862AA401FC00B3FAC2 /* GradientLayer.swift in Sources */,
 				2E7FAC522AA3B18A00E1AF20 /* HerosJourneyScreenRouter.swift in Sources */,
 				2E2C9D9B2AA548E100995D41 /* HomeScreenModel.swift in Sources */,
@@ -813,6 +868,7 @@
 				2EAF95892AA40AF100B3FAC2 /* HerosJourneyScreenModel.swift in Sources */,
 				2EAF95902AA40B9500B3FAC2 /* LocalizableProjectStrings.swift in Sources */,
 				2E3D74B62AA4E19900CD00C8 /* ReusableCells.swift in Sources */,
+				2E86EA392AAC95040046300A /* CustomSlider.swift in Sources */,
 				2EAF95822AA3F12000B3FAC2 /* StyledHeaderSheetView.swift in Sources */,
 				2EAF95A22AA415DE00B3FAC2 /* HerosJourneyCardView.swift in Sources */,
 				2E2C9DA92AA56F7A00995D41 /* GameplayDialogueModel.swift in Sources */,

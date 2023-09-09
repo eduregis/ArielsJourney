@@ -16,7 +16,7 @@ class HomeScreenPresenter {
     weak var delegate: HomeScreenPresenterDelegate?
     let router: HomeScreenRouter
     
-    var dateCells: [HomeEnum] = []
+    var dataCells: [HomeEnum] = []
     var cellSize: CGSize = CGSize(width: 142, height: 275)
     
     // MARK: - Init
@@ -28,22 +28,23 @@ class HomeScreenPresenter {
     
     // MARK: - Lifecycle
     func didLoad() {
+        AudioManager.shared.playMusic(name: "Ariel_music_01")
+        AudioManager.shared.playAmbience(name: "Ariel_ambience_01")
     }
     
     func willAppear() {
-        dateCells = HomeEnum.allCases
+        dataCells = HomeEnum.allCases
     }
     
     func didAppear() {
         let userDefaults = UserDefaults.standard
-        print("Duchbag: \(userDefaults.integer(forKey: UserDefaults.Keys.duchbagCounter.description))")
-        print("Achievements: \(userDefaults.integer(forKey: UserDefaults.Keys.achievements.description))")
-        print("Hero`s Journey: \(userDefaults.integer(forKey: UserDefaults.Keys.activeHerosJourney.description))")
-        print("Archetypes: \(userDefaults.integer(forKey: UserDefaults.Keys.activeArchetypes.description))")
+        print("Music: \(userDefaults.float(forKey: UserDefaults.Keys.musicVolume.description))")
+        print("Ambience: \(userDefaults.float(forKey: UserDefaults.Keys.ambienceVolume.description))")
+        print("SoundEffects: \(userDefaults.float(forKey: UserDefaults.Keys.soundEffectVolume.description))")
     }
     
     func didDisappear() {
-        dateCells = []
+        dataCells = []
     }
     
     //  MARK: - Methods

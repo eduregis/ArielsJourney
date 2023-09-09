@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "Ariel_herosJourney_card_empty.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Ariel_herosJourney_card_empty@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Ariel_herosJourney_card_empty@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

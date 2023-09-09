@@ -59,3 +59,10 @@ enum HerosJourneyScreenTexts: String, Localizable {
     case twelfthDesc = "HerosJourneyScreenTexts_twelfthDesc"
     case back = "HerosJourneyScreenTexts_back"
 }
+
+enum ConfigScreenTexts: String, Localizable {
+    case title = "ConfigScreenTexts_title"
+    case soundEffect = "ConfigScreenTexts_soundEffect"
+    case ambience = "ConfigScreenTexts_ambience"
+    case music = "ConfigScreenTexts_music"
+}

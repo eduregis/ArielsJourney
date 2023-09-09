@@ -81,7 +81,7 @@ extension ArchetypesScreenViewController: StyledHeaderScreenViewDelegate {
 
 extension ArchetypesScreenViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return presenter.dateCells.count
+        return presenter.dataCells.count
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -91,7 +91,7 @@ extension ArchetypesScreenViewController: UICollectionViewDelegate, UICollection
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = ArchetypeCollectionViewCell.dequeueCell(from: collectionView, for: indexPath)
         cell.isActive = (indexPath.row < presenter.activeArchetypes)
-        cell.dateCell = presenter.dateCells[indexPath.row]
+        cell.dataCell = presenter.dataCells[indexPath.row]
         return cell
     }
     
