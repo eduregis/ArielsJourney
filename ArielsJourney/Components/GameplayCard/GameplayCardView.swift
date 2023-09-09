@@ -8,12 +8,12 @@
 import UIKit
 
 protocol GameplayCardViewDelegate: AnyObject {
-    func didTapCard(nextDialogueName: String)
+    func didTapCard(nextDialogueName: String, cardEnum: CardEnum)
 }
 
 class GameplayCardView: UIView {
     
-    // MARK: - Properties
+    // MARK: - UIOutlets
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     
@@ -23,6 +23,7 @@ class GameplayCardView: UIView {
     private var frontImageView = UIImageView()
     private var spinTimeInterval = 0.5
     var cardInfo: GameplayCardModel?
+    var cardEnum: CardEnum?
     
     private enum Strings {
         static let nibName = "GameplayCardView"
@@ -78,9 +79,9 @@ class GameplayCardView: UIView {
     }
     
     @objc func handleTap(_ sender: UITapGestureRecognizer) {
-        if let cardInfo = cardInfo, !cardInfo.isFlipped {
+        if let cardInfo = cardInfo, let cardEnum = cardEnum, !cardInfo.isFlipped {
             AudioManager.shared.playSoundEffect(name: "Ariel_soundEffect_cardSideChoosen")
-            delegate?.didTapCard(nextDialogueName: cardInfo.nextDialogue)
+            delegate?.didTapCard(nextDialogueName: cardInfo.nextDialogue, cardEnum: cardEnum)
         }
     }
     
