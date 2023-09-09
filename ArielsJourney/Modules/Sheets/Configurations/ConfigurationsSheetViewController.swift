@@ -36,7 +36,7 @@ class ConfigurationsSheetViewController: BaseViewController {
         super.viewDidLoad()
         presenter.didLoad()
         self.headerView.delegate = self
-        self.headerView.titleLabel.text = "Configurações"
+        self.headerView.titleLabel.text = ConfigScreenTexts.title.localized()
         self.view.backgroundColor = UIColor(named: "ArielBackground")
     }
     

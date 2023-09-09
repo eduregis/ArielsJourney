@@ -27,27 +27,16 @@ enum AchievementTexts: String, Localizable {
     case bestEnd = "AchievementTexts_bestEnd"
 }
 
-enum ArchetypesScreenTexts: String, Localizable {
-    case firstTitle = "ArchetypesScreenTexts_firstTitle"
-    case firstDesc = "ArchetypesScreenTexts_firstDesc"
-    case secondTitle = "ArchetypesScreenTexts_secondTitle"
-    case secondDesc = "ArchetypesScreenTexts_secondDesc"
-    case thirdTitle = "ArchetypesScreenTexts_thirdTitle"
-    case thirdDesc = "ArchetypesScreenTexts_thirdDesc"
-    case fourthTitle = "ArchetypesScreenTexts_fourthTitle"
-    case fourthDesc = "ArchetypesScreenTexts_fourthDesc"
-    case fifthTitle = "ArchetypesScreenTexts_fifthTitle"
-    case fifthDesc = "ArchetypesScreenTexts_fifthDesc"
-    case sixthTitle = "ArchetypesScreenTexts_sixthTitle"
-    case sixthDesc = "ArchetypesScreenTexts_sixthDesc"
-    case seventhTitle = "ArchetypesScreenTexts_seventhTitle"
-    case seventhDesc = "ArchetypesScreenTexts_seventhDesc"
-    case eighthTitle = "ArchetypesScreenTexts_eighthTitle"
-    case eighthDesc = "ArchetypesScreenTexts_eighthDesc"
-    case back = "ArchetypesScreenTexts_back"
+enum HomeScreenTexts: String, Localizable {
+    case gameplayNew = "HomeScreenTexts_gameplayNew"
+    case gameplayContinue = "HomeScreenTexts_gameplayContinue"
+    case herosJourney = "HomeScreenTexts_herosJourney"
+    case archetypes = "HomeScreenTexts_archetypes"
+    case achievements = "HomeScreenTexts_achievements"
 }
 
 enum HerosJourneyScreenTexts: String, Localizable {
+    case title = "HerosJourneyScreenTexts_title"
     case firstTitle = "HerosJourneyScreenTexts_firstTitle"
     case firstDesc = "HerosJourneyScreenTexts_firstDesc"
     case secondTitle = "HerosJourneyScreenTexts_secondTitle"
@@ -73,6 +62,31 @@ enum HerosJourneyScreenTexts: String, Localizable {
     case twelfthTitle = "HerosJourneyScreenTexts_twelfthTitle"
     case twelfthDesc = "HerosJourneyScreenTexts_twelfthDesc"
     case back = "HerosJourneyScreenTexts_back"
+}
+
+enum ArchetypesScreenTexts: String, Localizable {
+    case title = "ArchetypesScreenTexts_title"
+    case firstTitle = "ArchetypesScreenTexts_firstTitle"
+    case firstDesc = "ArchetypesScreenTexts_firstDesc"
+    case secondTitle = "ArchetypesScreenTexts_secondTitle"
+    case secondDesc = "ArchetypesScreenTexts_secondDesc"
+    case thirdTitle = "ArchetypesScreenTexts_thirdTitle"
+    case thirdDesc = "ArchetypesScreenTexts_thirdDesc"
+    case fourthTitle = "ArchetypesScreenTexts_fourthTitle"
+    case fourthDesc = "ArchetypesScreenTexts_fourthDesc"
+    case fifthTitle = "ArchetypesScreenTexts_fifthTitle"
+    case fifthDesc = "ArchetypesScreenTexts_fifthDesc"
+    case sixthTitle = "ArchetypesScreenTexts_sixthTitle"
+    case sixthDesc = "ArchetypesScreenTexts_sixthDesc"
+    case seventhTitle = "ArchetypesScreenTexts_seventhTitle"
+    case seventhDesc = "ArchetypesScreenTexts_seventhDesc"
+    case eighthTitle = "ArchetypesScreenTexts_eighthTitle"
+    case eighthDesc = "ArchetypesScreenTexts_eighthDesc"
+    case back = "ArchetypesScreenTexts_back"
+}
+
+enum AchievementsScreenTexts: String, Localizable {
+    case title = "AchievementsScreenTexts_title"
 }
 
 enum ConfigScreenTexts: String, Localizable {

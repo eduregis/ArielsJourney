@@ -41,14 +41,14 @@ class BaseViewController: UIViewController, BaseViewControllerMethods {
     }
     
     func showMessage(_ message: String, okAction: (() -> Void)?, cancelAction: (() -> Void)?) {
-        let alert = UIAlertController(title: "Alerta (loc)",
+        let alert = UIAlertController(title: AlertTexts.alert.localized(),
                                       message: message, preferredStyle: .alert)
-        let okActionBtn = UIAlertAction(title: "Ok (loc)", style: .default, handler: {_ in
+        let okActionBtn = UIAlertAction(title: AlertTexts.ok.localized(), style: .default, handler: {_ in
             guard let okAction = okAction else { return}
             okAction()
         })
         if let cancelAction = cancelAction {
-            let cancelActionBtn = UIAlertAction(title: "Cancelar (loc)", style: .default, handler: {_ in
+            let cancelActionBtn = UIAlertAction(title: AlertTexts.cancel.localized(), style: .default, handler: {_ in
                 cancelAction()
             })
             alert.addAction(cancelActionBtn)
