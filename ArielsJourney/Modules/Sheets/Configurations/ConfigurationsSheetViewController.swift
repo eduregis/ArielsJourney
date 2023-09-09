@@ -12,6 +12,9 @@ class ConfigurationsSheetViewController: BaseViewController {
     // MARK: - Outlets
     @IBOutlet weak var headerView: StyledHeaderSheetView!
     
+    @IBOutlet weak var musicSlider: CustomSlider!
+    
+    
     // MARK: - Properties
     var presenter: ConfigurationsSheetPresenter!
     

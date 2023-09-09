@@ -56,6 +56,7 @@
 		2E7FAC662AA3B68B00E1AF20 /* AchievementsScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7FAC652AA3B68B00E1AF20 /* AchievementsScreenPresenter.swift */; };
 		2E7FAC682AA3B6BC00E1AF20 /* AchievementsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7FAC672AA3B6BC00E1AF20 /* AchievementsScreenViewController.swift */; };
 		2E7FAC6A2AA3B6F700E1AF20 /* AchievementsScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7FAC692AA3B6F700E1AF20 /* AchievementsScreenViewController.xib */; };
+		2E86EA392AAC95040046300A /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E86EA382AAC95040046300A /* CustomSlider.swift */; };
 		2EAF95742AA3EABF00B3FAC2 /* OverlayPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF95732AA3EABF00B3FAC2 /* OverlayPresentation.swift */; };
 		2EAF95792AA3EBE300B3FAC2 /* ConfigurationsSheetRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF95782AA3EBE300B3FAC2 /* ConfigurationsSheetRouter.swift */; };
 		2EAF957B2AA3EC3800B3FAC2 /* ConfigurationsSheetPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF957A2AA3EC3800B3FAC2 /* ConfigurationsSheetPresenter.swift */; };
@@ -154,6 +155,7 @@
 		2E7FAC652AA3B68B00E1AF20 /* AchievementsScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsScreenPresenter.swift; sourceTree = "<group>"; };
 		2E7FAC672AA3B6BC00E1AF20 /* AchievementsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsScreenViewController.swift; sourceTree = "<group>"; };
 		2E7FAC692AA3B6F700E1AF20 /* AchievementsScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AchievementsScreenViewController.xib; sourceTree = "<group>"; };
+		2E86EA382AAC95040046300A /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
 		2EAF95732AA3EABF00B3FAC2 /* OverlayPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayPresentation.swift; sourceTree = "<group>"; };
 		2EAF95782AA3EBE300B3FAC2 /* ConfigurationsSheetRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationsSheetRouter.swift; sourceTree = "<group>"; };
 		2EAF957A2AA3EC3800B3FAC2 /* ConfigurationsSheetPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationsSheetPresenter.swift; sourceTree = "<group>"; };
@@ -460,6 +462,7 @@
 				2EAF95732AA3EABF00B3FAC2 /* OverlayPresentation.swift */,
 				2E3D74B52AA4E19900CD00C8 /* ReusableCells.swift */,
 				2ECEEF332AA8F09900F15A7C /* AudioManager.swift */,
+				2E86EA382AAC95040046300A /* CustomSlider.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -813,6 +816,7 @@
 				2EAF95892AA40AF100B3FAC2 /* HerosJourneyScreenModel.swift in Sources */,
 				2EAF95902AA40B9500B3FAC2 /* LocalizableProjectStrings.swift in Sources */,
 				2E3D74B62AA4E19900CD00C8 /* ReusableCells.swift in Sources */,
+				2E86EA392AAC95040046300A /* CustomSlider.swift in Sources */,
 				2EAF95822AA3F12000B3FAC2 /* StyledHeaderSheetView.swift in Sources */,
 				2EAF95A22AA415DE00B3FAC2 /* HerosJourneyCardView.swift in Sources */,
 				2E2C9DA92AA56F7A00995D41 /* GameplayDialogueModel.swift in Sources */,

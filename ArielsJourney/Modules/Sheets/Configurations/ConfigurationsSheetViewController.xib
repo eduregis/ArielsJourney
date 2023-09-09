@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfigurationsSheetViewController" customModule="ArielsJourney" customModuleProvider="target">
             <connections>
                 <outlet property="headerView" destination="tpN-ik-2aC" id="gin-ga-h0H"/>
+                <outlet property="musicSlider" destination="NaK-Cd-NbG" id="OOJ-hA-xn6"/>
                 <outlet property="view" destination="LiE-1L-QeB" id="RDI-hv-5XQ"/>
             </connections>
         </placeholder>
@@ -18,12 +19,6 @@
             <rect key="frame" x="0.0" y="0.0" width="454" height="393"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isM-gY-fYt">
-                    <rect key="frame" x="206" y="186" width="42" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tpN-ik-2aC" customClass="StyledHeaderSheetView" customModule="ArielsJourney" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="454" height="83"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -31,14 +26,21 @@
                         <constraint firstAttribute="height" constant="83" id="pv2-j3-lPO"/>
                     </constraints>
                 </view>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="NaK-Cd-NbG" customClass="CustomSlider" customModule="ArielsJourney" customModuleProvider="target">
+                    <rect key="frame" x="168" y="181.66666666666666" width="118" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="8cX-XJ-q08"/>
+                        <constraint firstAttribute="width" constant="114" id="cpM-nO-tEy"/>
+                    </constraints>
+                </slider>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="isM-gY-fYt" firstAttribute="centerX" secondItem="LiE-1L-QeB" secondAttribute="centerX" id="LmY-qf-Y9A"/>
+                <constraint firstItem="NaK-Cd-NbG" firstAttribute="centerY" secondItem="LiE-1L-QeB" secondAttribute="centerY" id="MV7-UX-LjR"/>
                 <constraint firstItem="tpN-ik-2aC" firstAttribute="leading" secondItem="LiE-1L-QeB" secondAttribute="leading" id="UqG-na-pwc"/>
                 <constraint firstAttribute="trailing" secondItem="tpN-ik-2aC" secondAttribute="trailing" id="e9E-pp-8Id"/>
+                <constraint firstItem="NaK-Cd-NbG" firstAttribute="centerX" secondItem="LiE-1L-QeB" secondAttribute="centerX" id="tAS-ec-cG8"/>
                 <constraint firstItem="tpN-ik-2aC" firstAttribute="top" secondItem="LiE-1L-QeB" secondAttribute="top" id="uT3-7Y-15h"/>
-                <constraint firstItem="isM-gY-fYt" firstAttribute="centerY" secondItem="LiE-1L-QeB" secondAttribute="centerY" id="yQS-GR-OI8"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="298" y="29"/>
