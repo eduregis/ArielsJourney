@@ -7,6 +7,11 @@
 
 import Foundation
 
+enum CardEnum {
+    case left
+    case right
+}
+
 struct GameplayCardModel {
     let image: String
     let title: String

@@ -42,6 +42,8 @@ class GameplayScreenViewController: BaseViewController {
         self.headerView.delegate = self
         self.firstCard.delegate = self
         self.secondCard.delegate = self
+        self.firstCard.cardEnum = .left
+        self.secondCard.cardEnum = .right
         self.headerView.hideBackground()
         self.blurBackground(backgroundName: "background_placeholder")
         self.letterText.font = Fonts.text
@@ -132,8 +134,18 @@ extension GameplayScreenViewController: StyledHeaderScreenViewDelegate {
 }
 
 extension GameplayScreenViewController: GameplayCardViewDelegate {
-    func didTapCard(nextDialogueName: String) {
-        presenter.goToNextDialogue(nextDialogueName: nextDialogueName)
+    func didTapCard(nextDialogueName: String, cardEnum: CardEnum) {
+        
+        switch cardEnum {
+        case .left:
+            firstCard.growAndShrink()
+        case .right:
+            secondCard.growAndShrink()
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [self] in
+            presenter.goToNextDialogue(nextDialogueName: nextDialogueName)
+        }
     }
 }
 
