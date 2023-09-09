@@ -12,6 +12,21 @@ enum FirstOpenTexts: String, Localizable {
     case notFirstOpen = "FirstOpenTexts_notFirstOpen"
 }
 
+enum AlertTexts: String, Localizable {
+    case alert = "AlertTexts_alert"
+    case ok = "AlertTexts_ok"
+    case cancel = "AlertTexts_cancel"
+}
+
+enum SnackbarTexts: String, Localizable {
+    case achievementUnlocked = "SnackbarTexts_achievementUnlocked"
+}
+
+enum AchievementTexts: String, Localizable {
+    case prodigy = "AchievementTexts_prodigy"
+    case bestEnd = "AchievementTexts_bestEnd"
+}
+
 enum ArchetypesScreenTexts: String, Localizable {
     case firstTitle = "ArchetypesScreenTexts_firstTitle"
     case firstDesc = "ArchetypesScreenTexts_firstDesc"

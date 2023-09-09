@@ -27,6 +27,8 @@
 		2E6DEFD02AA2A2A000C02153 /* StyledHeaderScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6DEFCF2AA2A2A000C02153 /* StyledHeaderScreenView.swift */; };
 		2E6DEFD22AA2A50C00C02153 /* StyledHeaderScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6DEFD12AA2A50C00C02153 /* StyledHeaderScreenView.xib */; };
 		2E6E67BA2AACF91D00543508 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6E67B92AACF91D00543508 /* Constants.swift */; };
+		2E6E67BC2AAD0B9800543508 /* Snackbars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6E67BB2AAD0B9800543508 /* Snackbars.swift */; };
+		2E6E67BE2AAD0DD300543508 /* AchievementManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6E67BD2AAD0DD300543508 /* AchievementManager.swift */; };
 		2E737F822AA2455D001F4EB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E737F812AA2455D001F4EB4 /* AppDelegate.swift */; };
 		2E737F8B2AA2455F001F4EB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E737F8A2AA2455F001F4EB4 /* Assets.xcassets */; };
 		2E737F8E2AA2455F001F4EB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E737F8C2AA2455F001F4EB4 /* LaunchScreen.storyboard */; };
@@ -128,6 +130,8 @@
 		2E6DEFCF2AA2A2A000C02153 /* StyledHeaderScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledHeaderScreenView.swift; sourceTree = "<group>"; };
 		2E6DEFD12AA2A50C00C02153 /* StyledHeaderScreenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StyledHeaderScreenView.xib; sourceTree = "<group>"; };
 		2E6E67B92AACF91D00543508 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2E6E67BB2AAD0B9800543508 /* Snackbars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snackbars.swift; sourceTree = "<group>"; };
+		2E6E67BD2AAD0DD300543508 /* AchievementManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementManager.swift; sourceTree = "<group>"; };
 		2E737F7E2AA2455D001F4EB4 /* ArielsJourney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArielsJourney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E737F812AA2455D001F4EB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E737F8A2AA2455F001F4EB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -507,11 +511,13 @@
 		2EAF95722AA3EA9300B3FAC2 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				2ECEEF332AA8F09900F15A7C /* AudioManager.swift */,
+				2E6E67B92AACF91D00543508 /* Constants.swift */,
+				2E86EA382AAC95040046300A /* CustomSlider.swift */,
 				2EAF95732AA3EABF00B3FAC2 /* OverlayPresentation.swift */,
 				2E3D74B52AA4E19900CD00C8 /* ReusableCells.swift */,
-				2ECEEF332AA8F09900F15A7C /* AudioManager.swift */,
-				2E86EA382AAC95040046300A /* CustomSlider.swift */,
-				2E6E67B92AACF91D00543508 /* Constants.swift */,
+				2E6E67BB2AAD0B9800543508 /* Snackbars.swift */,
+				2E6E67BD2AAD0DD300543508 /* AchievementManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -636,6 +642,7 @@
 				2E737F7A2AA2455D001F4EB4 /* Sources */,
 				2E737F7B2AA2455D001F4EB4 /* Frameworks */,
 				2E737F7C2AA2455D001F4EB4 /* Resources */,
+				CD63FAF3A25BECB49633E1F8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -673,6 +680,7 @@
 				2E737F9A2AA2455F001F4EB4 /* Sources */,
 				2E737F9B2AA2455F001F4EB4 /* Frameworks */,
 				2E737F9C2AA2455F001F4EB4 /* Resources */,
+				37C5BF9C7B7678E1C5913FC6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -798,6 +806,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		37C5BF9C7B7678E1C5913FC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArielsJourney-ArielsJourneyUITests/Pods-ArielsJourney-ArielsJourneyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArielsJourney-ArielsJourneyUITests/Pods-ArielsJourney-ArielsJourneyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ArielsJourney-ArielsJourneyUITests/Pods-ArielsJourney-ArielsJourneyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		51053F36D004746221A9803E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -842,6 +867,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CD63FAF3A25BECB49633E1F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArielsJourney/Pods-ArielsJourney-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArielsJourney/Pods-ArielsJourney-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ArielsJourney/Pods-ArielsJourney-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -867,6 +909,7 @@
 				2EAF95862AA401FC00B3FAC2 /* GradientLayer.swift in Sources */,
 				2E7FAC522AA3B18A00E1AF20 /* HerosJourneyScreenRouter.swift in Sources */,
 				2E2C9D9B2AA548E100995D41 /* HomeScreenModel.swift in Sources */,
+				2E6E67BC2AAD0B9800543508 /* Snackbars.swift in Sources */,
 				2E2C9DA22AA567A300995D41 /* LocalizableDialogueStrings.swift in Sources */,
 				2EAF95742AA3EABF00B3FAC2 /* OverlayPresentation.swift in Sources */,
 				2EAF95892AA40AF100B3FAC2 /* HerosJourneyScreenModel.swift in Sources */,
@@ -895,6 +938,7 @@
 				2E2C9D9E2AA54CB400995D41 /* HomeCollectionViewCell.swift in Sources */,
 				2EB169592AA2773600615060 /* HomeScreenPresenter.swift in Sources */,
 				2E7FAC682AA3B6BC00E1AF20 /* AchievementsScreenViewController.swift in Sources */,
+				2E6E67BE2AAD0DD300543508 /* AchievementManager.swift in Sources */,
 				2ECEEF342AA8F09900F15A7C /* AudioManager.swift in Sources */,
 				2EBE72B42AA7913A005E6010 /* AnimationTyping.swift in Sources */,
 				2E3D74BE2AA4E3D400CD00C8 /* ArchetypeCollectionViewCell.swift in Sources */,

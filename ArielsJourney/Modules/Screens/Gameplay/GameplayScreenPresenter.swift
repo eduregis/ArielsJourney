@@ -169,8 +169,13 @@ class GameplayScreenPresenter {
         
         if let achievementTrigger = dialogue.achievementTrigger, achievementTrigger != "" {
             var strings: [String] = userDefaults.stringArray(forKey: UserDefaults.Keys.achievements.description) ?? []
-            strings.append(achievementTrigger)
-            userDefaults.set(strings, forKey: UserDefaults.Keys.achievements.description)
+            if !strings.contains(achievementTrigger) {
+                strings.append(achievementTrigger)
+                userDefaults.set(strings, forKey: UserDefaults.Keys.achievements.description)
+                SnackBarHelper.shared.showSuccessMessage(
+                    title: SnackbarTexts.achievementUnlocked.localized(),
+                    message: AchievementManager.shared.getAchievementByString(name: achievementTrigger))
+            }
         }
         
         if let triggerArray = dialogue.triggerArray, triggerArray != [] {

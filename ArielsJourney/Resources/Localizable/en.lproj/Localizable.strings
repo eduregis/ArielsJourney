@@ -10,6 +10,18 @@
 "FirstOpenTexts_firstOpen" = "First Open!";
 "FirstOpenTexts_notFirstOpen" = "The app was first opened on ";
 
+// MARK: - Alert Texts
+"AlertTexts_alert" = "Alert!";
+"AlertTexts_ok" = "Ok";
+"AlertTexts_cancel" = "Cancel";
+
+// MARK: - Snackbar Texts
+"SnackbarTexts_achievementUnlocked" = "Achievement unlocked!";
+
+// MARK: - Achievement Texts
+"AchievementTexts_prodigy" = "Prodigy";
+"AchievementTexts_bestEnd" = "Best End!";
+
 // MARK: - Archetypes Screen Texts
 "ArchetypesScreenTexts_firstTitle" = "Hero";
 "ArchetypesScreenTexts_firstDesc" = "Lorem ipsum World sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
