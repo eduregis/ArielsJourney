@@ -23,15 +23,15 @@ enum HomeEnum: CaseIterable {
     var homeModel: HomeModel {
         switch self {
         case .gameplayNew:
-            return HomeModel(imageName: "stainedGlassNewGame", title: "Novo Jogo")
+            return HomeModel(imageName: "stainedGlassNewGame", title: HomeScreenTexts.gameplayNew.localized())
         case .gameplayContinue:
-            return HomeModel(imageName: "stainedGlassNewGame", title: "Continuar")
+            return HomeModel(imageName: "stainedGlassNewGame", title: HomeScreenTexts.gameplayContinue.localized())
         case .herosJourney:
-            return HomeModel(imageName: "stainedGlassNewGame", title: "Jornada do Herói")
+            return HomeModel(imageName: "stainedGlassNewGame", title: HomeScreenTexts.herosJourney.localized())
         case .archetypes:
-            return HomeModel(imageName: "stainedGlassNewGame", title: "Arquétipos")
+            return HomeModel(imageName: "stainedGlassNewGame", title: HomeScreenTexts.archetypes.localized())
         case .achievements:
-            return HomeModel(imageName: "stainedGlassNewGame", title: "Conquistas")
+            return HomeModel(imageName: "stainedGlassNewGame", title: HomeScreenTexts.achievements.localized())
         }
     }
 }

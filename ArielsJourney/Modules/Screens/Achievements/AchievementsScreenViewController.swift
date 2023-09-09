@@ -31,7 +31,7 @@ class AchievementsScreenViewController: BaseViewController {
         super.viewDidLoad()
         presenter.didLoad()
         self.headerView.delegate = self
-        self.headerView.titleLabel.text = "Conquistas"
+        self.headerView.titleLabel.text = AchievementsScreenTexts.title.localized()
         self.headerView.hideAdornments()
         self.view.backgroundColor = UIColor(named: "ArielBackground")
     }

@@ -10,26 +10,27 @@
 "FirstOpenTexts_firstOpen" = "First Open!";
 "FirstOpenTexts_notFirstOpen" = "The app was first opened on ";
 
-// MARK: - Archetypes Screen Texts
-"ArchetypesScreenTexts_firstTitle" = "Hero";
-"ArchetypesScreenTexts_firstDesc" = "Lorem ipsum World sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
-"ArchetypesScreenTexts_secondTitle" = "Mentor";
-"ArchetypesScreenTexts_secondDesc" = "Lorem ipsum World sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
-"ArchetypesScreenTexts_thirdTitle" = "Refusal Of The Call";
-"ArchetypesScreenTexts_thirdDesc" = "Lorem ipsum World sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
-"ArchetypesScreenTexts_fourthTitle" = "Meeting The Mentor";
-"ArchetypesScreenTexts_fourthDesc" = "Lorem ipsum World sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
-"ArchetypesScreenTexts_fifthTitle" = "Crossing The Threshold";
-"ArchetypesScreenTexts_fifthDesc" = "Lorem ipsum World sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
-"ArchetypesScreenTexts_sixthTitle" = "Tests, Allies, Enemies";
-"ArchetypesScreenTexts_sixthDesc" = "Lorem ipsum World sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
-"ArchetypesScreenTexts_seventhTitle" = "Approach To The Inmost Cave";
-"ArchetypesScreenTexts_seventhDesc" = "Lorem ipsum World sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
-"ArchetypesScreenTexts_eighthTitle" = "Ordeal";
-"ArchetypesScreenTexts_eighthDesc" = "Lorem ipsum World sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
-"ArchetypesScreenTexts_back" = "Back";
+// MARK: - Alert Texts
+"AlertTexts_alert" = "Alert!";
+"AlertTexts_ok" = "Ok";
+"AlertTexts_cancel" = "Cancel";
+
+// MARK: - Snackbar Texts
+"SnackbarTexts_achievementUnlocked" = "Achievement unlocked!";
+
+// MARK: - Achievement Texts
+"AchievementTexts_prodigy" = "Prodigy";
+"AchievementTexts_bestEnd" = "Best End!";
+
+// MARK: - Home Screen Texts
+"HomeScreenTexts_gameplayNew" = "New game";
+"HomeScreenTexts_gameplayContinue" = "Continue";
+"HomeScreenTexts_herosJourney" = "Hero`s Journey";
+"HomeScreenTexts_archetypes" = "Archetypes";
+"HomeScreenTexts_achievements" = "Achievements";
 
 // MARK: - Heros Journey Screen Texts
+"HerosJourneyScreenTexts_title" = "Hero`s Journey";
 "HerosJourneyScreenTexts_firstTitle" = "Ordinary World";
 "HerosJourneyScreenTexts_firstDesc" = "Lorem ipsum World sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 "HerosJourneyScreenTexts_secondTitle" = "Call To Adventure";
@@ -55,6 +56,29 @@
 "HerosJourneyScreenTexts_twelfthTitle" = "Return With The Elixir";
 "HerosJourneyScreenTexts_twelfthDesc" = "Lorem ipsum World sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 "HerosJourneyScreenTexts_back" = "Back";
+
+// MARK: - Archetypes Screen Texts
+"ArchetypesScreenTexts_title" = "Archetypes";
+"ArchetypesScreenTexts_firstTitle" = "Hero";
+"ArchetypesScreenTexts_firstDesc" = "Lorem ipsum World sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+"ArchetypesScreenTexts_secondTitle" = "Mentor";
+"ArchetypesScreenTexts_secondDesc" = "Lorem ipsum World sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+"ArchetypesScreenTexts_thirdTitle" = "Refusal Of The Call";
+"ArchetypesScreenTexts_thirdDesc" = "Lorem ipsum World sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+"ArchetypesScreenTexts_fourthTitle" = "Meeting The Mentor";
+"ArchetypesScreenTexts_fourthDesc" = "Lorem ipsum World sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+"ArchetypesScreenTexts_fifthTitle" = "Crossing The Threshold";
+"ArchetypesScreenTexts_fifthDesc" = "Lorem ipsum World sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+"ArchetypesScreenTexts_sixthTitle" = "Tests, Allies, Enemies";
+"ArchetypesScreenTexts_sixthDesc" = "Lorem ipsum World sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+"ArchetypesScreenTexts_seventhTitle" = "Approach To The Inmost Cave";
+"ArchetypesScreenTexts_seventhDesc" = "Lorem ipsum World sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+"ArchetypesScreenTexts_eighthTitle" = "Ordeal";
+"ArchetypesScreenTexts_eighthDesc" = "Lorem ipsum World sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+"ArchetypesScreenTexts_back" = "Back";
+
+// MARK: - Achievements Screen Texts
+"AchievementsScreenTexts_title" = "Achievements";
 
 // MARK: - Config Screen Texts
 "ConfigScreenTexts_title" = "Settings";

@@ -32,7 +32,7 @@ class ArchetypesScreenViewController: BaseViewController {
         super.viewDidLoad()
         presenter.didLoad()
         self.headerView.delegate = self
-        self.headerView.titleLabel.text = "Arquétipos"
+        self.headerView.titleLabel.text = ArchetypesScreenTexts.title.localized()
         self.headerView.hideAdornments()
         self.view.backgroundColor = UIColor(named: "ArielBackground")
         presenter.getArchetypes {

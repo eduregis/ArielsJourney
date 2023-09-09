@@ -38,9 +38,7 @@ class HomeScreenPresenter {
     
     func didAppear() {
         let userDefaults = UserDefaults.standard
-        print("Music: \(userDefaults.float(forKey: UserDefaults.Keys.musicVolume.description))")
-        print("Ambience: \(userDefaults.float(forKey: UserDefaults.Keys.ambienceVolume.description))")
-        print("SoundEffects: \(userDefaults.float(forKey: UserDefaults.Keys.soundEffectVolume.description))")
+        print("Achievements: \(userDefaults.stringArray(forKey: UserDefaults.Keys.achievements.description))")
     }
     
     func didDisappear() {
