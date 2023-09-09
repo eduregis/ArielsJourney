@@ -88,7 +88,7 @@ class GameplayCardView: UIView {
     func flip() {
         if var displayFlipItem = self.cardInfo {
             
-            // TODO: - Efeito de carta virando
+            AudioManager.shared.playSoundEffect(name: "Ariel_soundEffect_cardFlip")
             
             frontImageView.isHidden = !displayFlipItem.isFlipped
             backImageView.isHidden = displayFlipItem.isFlipped
