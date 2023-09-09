@@ -46,10 +46,10 @@ extension UILabel {
     }
     
     func setTypingAttributed(newText: NSMutableAttributedString, characterDelay: TimeInterval = 2.0, completion: @escaping () -> Void) {
-        setTypingAttributed(newText: newText, characterDelay: characterDelay, typeLetterCompletion: {}, beforeCompletion: completion)
+        setTypingAttributed(newText: newText, characterDelay: characterDelay, typeLetterCompletion: {}, endCompletion: completion)
     }
     
-    func setTypingAttributed(newText: NSMutableAttributedString, characterDelay: TimeInterval = 2.0, typeLetterCompletion: @escaping () -> Void, beforeCompletion: @escaping () -> Void) {
+    func setTypingAttributed(newText: NSMutableAttributedString, characterDelay: TimeInterval = 2.0, typeLetterCompletion: @escaping () -> Void, endCompletion: @escaping () -> Void) {
         
         self.typingMode = true
         
@@ -61,22 +61,12 @@ extension UILabel {
                         self?.attributedText = str
                         typeLetterCompletion()
                     }
-                    if (i + 1) == newText.length {
-                        DispatchQueue.main.async {
-                            self?.typingMode = false
-                            beforeCompletion()
-                        }
-                    }
                 } else {
-                    DispatchQueue.main.async {
-                        self?.attributedText = newText
-                        self?.typingMode = false
-                        beforeCompletion()
-                    }
-                    break
+                    return
                 }
                 Thread.sleep(forTimeInterval: characterDelay/100)
             }
+            endCompletion()
         }
         
         let queue: DispatchQueue = .init(label: "typespeed", qos: .userInteractive)

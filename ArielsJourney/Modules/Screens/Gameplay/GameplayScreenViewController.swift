@@ -63,9 +63,12 @@ class GameplayScreenViewController: BaseViewController {
     
     // MARK: - Methods
     @objc func stopTypingText(_ sender: UITapGestureRecognizer) {
-        if let dialogue = presenter.dialogue, letterText.typingMode {
+        if let descriptionText = presenter.descriptionText, letterText.typingMode {
             letterText.typingMode = false
-            letterText.text = dialogue.descriptionText
+            letterText.attributedText = descriptionText
+            DispatchQueue.main.async {
+                self.flipCards()
+            }
         }
     }
 }
@@ -101,14 +104,15 @@ extension GameplayScreenViewController: GameplayScreenPresenterDelegate {
     
     func setDialogueAndCards() {
         if let dialogue = presenter.dialogue {
+            presenter.setupDialogue(newDialogue: dialogue)
             self.firstCard.setupCard(cardInfo: GameplayCardModel(image: dialogue.firstCardImageName, title: dialogue.firstCardText, nextDialogue: dialogue.nextFirstDialogue ?? "", isFlipped: true))
             self.secondCard.setupCard(cardInfo: GameplayCardModel(image: dialogue.secondCardImageName, title: dialogue.secondCardText, nextDialogue: dialogue.nextSecondDialogue ?? "", isFlipped: true))
         }
     }
     
     func startTypingText() {
-        if let dialogue = presenter.dialogue {
-            letterText.setTyping(text: dialogue.descriptionText, completion: {
+        if let descriptionText = presenter.descriptionText {
+            letterText.setTypingAttributed(newText: descriptionText, completion: {
                 DispatchQueue.main.async {
                     self.flipCards()
                 }

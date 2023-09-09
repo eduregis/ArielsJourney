@@ -63,7 +63,7 @@ enum GameplayDialogues {
                             nextSecondDialogue: "MC_01",
                             herosJourneysStage: "teste") // se não possuir parâmetro soundTrigger, ele apenas não emitirá nenhum efeito
         case .secondText:
-            return Dialogue(descriptionText: "(secondText) Lorem ipsum World sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            return Dialogue(descriptionText: "(secondText) Lorem ipsum World sit amet, |consectetur% adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut |aliquip% ex ea commodo consequat.",
                             firstCardText: "Nada a ver",
                             secondCardText: "Pô, vdd",
                             firstCardImageName: "gameplayCard_MC_01",
@@ -84,7 +84,7 @@ enum GameplayDialogues {
                             herosJourneysStage: "Teste",
                             achievementTrigger: "prodigy") // caso chegar nesse Dialogue implique em ativar um achievement, é só colocar o nome do achievement nesse parâmetro. Caso não tenha achievement basta não colocar esse parâmetro
         case .fourthText:
-            return Dialogue(descriptionText: "(fourthText) Lorem ipsum World sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            return Dialogue(descriptionText: "(fourthText) Lorem ipsum [World] sit amet, consectetur |adipiscing elit%, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut &aliquip# ex ea commodo consequat.",
                             firstCardText: "Nada a ver",
                             secondCardText: "Pô, vdd",
                             firstCardImageName: "gameplayCard_MC_01",
@@ -94,7 +94,7 @@ enum GameplayDialogues {
                             herosJourneysStage: "Teste",
                             triggerArray: ["duchbag+1"]) // caso precise aumentar o indice de duchbag, só chamar esse parâmetro com "duchbag+1", o parâmetro assim como o achievementTrigger, é opcional
         case .fifthText:
-            return Dialogue(descriptionText: "(fifthText) Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+            return Dialogue(descriptionText: "(fifthText) Sed ut perspiciatis [unde] omnis iste natus error sit [voluptatem] accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi [architecto] beatae vitae dicta sunt explicabo.",
                             firstCardText: "Tá zoando",
                             secondCardText: "Pode crer",
                             firstCardImageName: "gameplayCard_MC_01",

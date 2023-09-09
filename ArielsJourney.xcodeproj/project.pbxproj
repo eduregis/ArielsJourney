@@ -26,6 +26,7 @@
 		2E3D74C92AA4F88600CD00C8 /* ElementDetailsSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3D74C82AA4F88600CD00C8 /* ElementDetailsSheetViewController.xib */; };
 		2E6DEFD02AA2A2A000C02153 /* StyledHeaderScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6DEFCF2AA2A2A000C02153 /* StyledHeaderScreenView.swift */; };
 		2E6DEFD22AA2A50C00C02153 /* StyledHeaderScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6DEFD12AA2A50C00C02153 /* StyledHeaderScreenView.xib */; };
+		2E6E67BA2AACF91D00543508 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6E67B92AACF91D00543508 /* Constants.swift */; };
 		2E737F822AA2455D001F4EB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E737F812AA2455D001F4EB4 /* AppDelegate.swift */; };
 		2E737F8B2AA2455F001F4EB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E737F8A2AA2455F001F4EB4 /* Assets.xcassets */; };
 		2E737F8E2AA2455F001F4EB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E737F8C2AA2455F001F4EB4 /* LaunchScreen.storyboard */; };
@@ -126,6 +127,7 @@
 		2E3D74C82AA4F88600CD00C8 /* ElementDetailsSheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ElementDetailsSheetViewController.xib; sourceTree = "<group>"; };
 		2E6DEFCF2AA2A2A000C02153 /* StyledHeaderScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledHeaderScreenView.swift; sourceTree = "<group>"; };
 		2E6DEFD12AA2A50C00C02153 /* StyledHeaderScreenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StyledHeaderScreenView.xib; sourceTree = "<group>"; };
+		2E6E67B92AACF91D00543508 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2E737F7E2AA2455D001F4EB4 /* ArielsJourney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArielsJourney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E737F812AA2455D001F4EB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E737F8A2AA2455F001F4EB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -509,6 +511,7 @@
 				2E3D74B52AA4E19900CD00C8 /* ReusableCells.swift */,
 				2ECEEF332AA8F09900F15A7C /* AudioManager.swift */,
 				2E86EA382AAC95040046300A /* CustomSlider.swift */,
+				2E6E67B92AACF91D00543508 /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -853,6 +856,7 @@
 				2EAF957B2AA3EC3800B3FAC2 /* ConfigurationsSheetPresenter.swift in Sources */,
 				2E7FAC4B2AA3A91F00E1AF20 /* GameplayScreenPresenter.swift in Sources */,
 				2E737FBB2AA24894001F4EB4 /* BaseViewController.swift in Sources */,
+				2E6E67BA2AACF91D00543508 /* Constants.swift in Sources */,
 				2E737FC32AA249E1001F4EB4 /* SplashScreenViewController.swift in Sources */,
 				2EB169572AA2766900615060 /* HomeScreenRouter.swift in Sources */,
 				2E737FB92AA2486E001F4EB4 /* BaseRouter.swift in Sources */,
