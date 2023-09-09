@@ -28,6 +28,8 @@ class HomeScreenPresenter {
     
     // MARK: - Lifecycle
     func didLoad() {
+        AudioManager.shared.playMusic(name: "Ariel_music_01")
+        AudioManager.shared.playAmbience(name: "Ariel_ambience_01")
     }
     
     func willAppear() {

@@ -79,12 +79,16 @@ class GameplayCardView: UIView {
     
     @objc func handleTap(_ sender: UITapGestureRecognizer) {
         if let cardInfo = cardInfo, !cardInfo.isFlipped {
+            AudioManager.shared.playSoundEffect(name: "Ariel_soundEffect_cardSideChoosen")
             delegate?.didTapCard(nextDialogueName: cardInfo.nextDialogue)
         }
     }
     
     func flip() {
         if var displayFlipItem = self.cardInfo {
+            
+            // TODO: - Efeito de carta virando
+            
             frontImageView.isHidden = !displayFlipItem.isFlipped
             backImageView.isHidden = displayFlipItem.isFlipped
             titleLabel.isHidden = !displayFlipItem.isFlipped
