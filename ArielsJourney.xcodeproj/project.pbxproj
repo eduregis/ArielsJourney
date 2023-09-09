@@ -39,6 +39,7 @@
 		2E737FBF2AA24928001F4EB4 /* SplashScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E737FBE2AA24928001F4EB4 /* SplashScreenPresenter.swift */; };
 		2E737FC12AA249A5001F4EB4 /* SplashScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E737FC02AA249A5001F4EB4 /* SplashScreenViewController.xib */; };
 		2E737FC32AA249E1001F4EB4 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E737FC22AA249E1001F4EB4 /* SplashScreenViewController.swift */; };
+		2E7D4FB82AA8BB5900930B69 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D4FB72AA8BB5900930B69 /* UserDefaultsKeys.swift */; };
 		2E7FAC492AA3A8AD00E1AF20 /* GameplayScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7FAC482AA3A8AD00E1AF20 /* GameplayScreenRouter.swift */; };
 		2E7FAC4B2AA3A91F00E1AF20 /* GameplayScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7FAC4A2AA3A91F00E1AF20 /* GameplayScreenPresenter.swift */; };
 		2E7FAC4D2AA3A9F800E1AF20 /* GameplayScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7FAC4C2AA3A9F800E1AF20 /* GameplayScreenViewController.swift */; };
@@ -76,6 +77,8 @@
 		2EB1695D2AA278AC00615060 /* HomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EB1695C2AA278AC00615060 /* HomeScreenViewController.xib */; };
 		2EBE72B42AA7913A005E6010 /* AnimationTyping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE72B32AA7913A005E6010 /* AnimationTyping.swift */; };
 		2EBFD18F2AA6B77600308B0D /* GameplayDialogueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBFD18E2AA6B77600308B0D /* GameplayDialogueManager.swift */; };
+		2ECEEF342AA8F09900F15A7C /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECEEF332AA8F09900F15A7C /* AudioManager.swift */; };
+		2ED7D1312AA93DFC00F306DA /* RomanNumeral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED7D1302AA93DFC00F306DA /* RomanNumeral.swift */; };
 		2FA13BF89C9F4289D43A1CA2 /* Pods_ArielsJourneyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF4E32BF96B409B84703B49 /* Pods_ArielsJourneyTests.framework */; };
 		B9BEA4BED5CEFF252C1DC90E /* Pods_ArielsJourney_ArielsJourneyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 334888D2E0D69E3EE22615CE /* Pods_ArielsJourney_ArielsJourneyUITests.framework */; };
 /* End PBXBuildFile section */
@@ -134,6 +137,7 @@
 		2E737FBE2AA24928001F4EB4 /* SplashScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenPresenter.swift; sourceTree = "<group>"; };
 		2E737FC02AA249A5001F4EB4 /* SplashScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenViewController.xib; sourceTree = "<group>"; };
 		2E737FC22AA249E1001F4EB4 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		2E7D4FB72AA8BB5900930B69 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
 		2E7FAC482AA3A8AD00E1AF20 /* GameplayScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayScreenRouter.swift; sourceTree = "<group>"; };
 		2E7FAC4A2AA3A91F00E1AF20 /* GameplayScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayScreenPresenter.swift; sourceTree = "<group>"; };
 		2E7FAC4C2AA3A9F800E1AF20 /* GameplayScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayScreenViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +178,8 @@
 		2EB1695C2AA278AC00615060 /* HomeScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenViewController.xib; sourceTree = "<group>"; };
 		2EBE72B32AA7913A005E6010 /* AnimationTyping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTyping.swift; sourceTree = "<group>"; };
 		2EBFD18E2AA6B77600308B0D /* GameplayDialogueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayDialogueManager.swift; sourceTree = "<group>"; };
+		2ECEEF332AA8F09900F15A7C /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		2ED7D1302AA93DFC00F306DA /* RomanNumeral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomanNumeral.swift; sourceTree = "<group>"; };
 		2F48B1E409AF8E12E9C77714 /* Pods-ArielsJourney.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArielsJourney.release.xcconfig"; path = "Target Support Files/Pods-ArielsJourney/Pods-ArielsJourney.release.xcconfig"; sourceTree = "<group>"; };
 		334888D2E0D69E3EE22615CE /* Pods_ArielsJourney_ArielsJourneyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArielsJourney_ArielsJourneyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B82745CC2ECA9191FCEB262 /* Pods-ArielsJourneyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArielsJourneyTests.debug.xcconfig"; path = "Target Support Files/Pods-ArielsJourneyTests/Pods-ArielsJourneyTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -372,6 +378,7 @@
 		2E737FB62AA2481A001F4EB4 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2E7D4FB62AA8BB4400930B69 /* Extensions */,
 				2EAF95722AA3EA9300B3FAC2 /* Helpers */,
 				2E737FB72AA24825001F4EB4 /* Bases */,
 			);
@@ -386,6 +393,17 @@
 				2E737FBC2AA248F7001F4EB4 /* BasePresenterDelegate.swift */,
 			);
 			path = Bases;
+			sourceTree = "<group>";
+		};
+		2E7D4FB62AA8BB4400930B69 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2EBE72B32AA7913A005E6010 /* AnimationTyping.swift */,
+				2EAF95852AA401FC00B3FAC2 /* GradientLayer.swift */,
+				2E7D4FB72AA8BB5900930B69 /* UserDefaultsKeys.swift */,
+				2ED7D1302AA93DFC00F306DA /* RomanNumeral.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		2E7FAC472AA3A89400E1AF20 /* Gameplay */ = {
@@ -440,9 +458,8 @@
 			isa = PBXGroup;
 			children = (
 				2EAF95732AA3EABF00B3FAC2 /* OverlayPresentation.swift */,
-				2EAF95852AA401FC00B3FAC2 /* GradientLayer.swift */,
 				2E3D74B52AA4E19900CD00C8 /* ReusableCells.swift */,
-				2EBE72B32AA7913A005E6010 /* AnimationTyping.swift */,
+				2ECEEF332AA8F09900F15A7C /* AudioManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -785,6 +802,7 @@
 				2E737FC32AA249E1001F4EB4 /* SplashScreenViewController.swift in Sources */,
 				2EB169572AA2766900615060 /* HomeScreenRouter.swift in Sources */,
 				2E737FB92AA2486E001F4EB4 /* BaseRouter.swift in Sources */,
+				2E7D4FB82AA8BB5900930B69 /* UserDefaultsKeys.swift in Sources */,
 				2EAF957D2AA3EC9C00B3FAC2 /* ConfigurationsSheetViewController.swift in Sources */,
 				2E7FAC5F2AA3B4FE00E1AF20 /* ArchetypesScreenViewController.swift in Sources */,
 				2EAF95862AA401FC00B3FAC2 /* GradientLayer.swift in Sources */,
@@ -803,6 +821,7 @@
 				2E7FAC562AA3B22300E1AF20 /* HerosJourneyScreenViewController.swift in Sources */,
 				2E3D74C72AA4F83B00CD00C8 /* ElementDetailsSheetViewController.swift in Sources */,
 				2EAF95792AA3EBE300B3FAC2 /* ConfigurationsSheetRouter.swift in Sources */,
+				2ED7D1312AA93DFC00F306DA /* RomanNumeral.swift in Sources */,
 				2E2C9DA52AA56B3600995D41 /* GameplayCardView.swift in Sources */,
 				2E7FAC5B2AA3B49700E1AF20 /* ArchetypesScreenRouter.swift in Sources */,
 				2E3D74C52AA4F7F300CD00C8 /* ElementDetailsSheetPresenter.swift in Sources */,
@@ -816,6 +835,7 @@
 				2E2C9D9E2AA54CB400995D41 /* HomeCollectionViewCell.swift in Sources */,
 				2EB169592AA2773600615060 /* HomeScreenPresenter.swift in Sources */,
 				2E7FAC682AA3B6BC00E1AF20 /* AchievementsScreenViewController.swift in Sources */,
+				2ECEEF342AA8F09900F15A7C /* AudioManager.swift in Sources */,
 				2EBE72B42AA7913A005E6010 /* AnimationTyping.swift in Sources */,
 				2E3D74BE2AA4E3D400CD00C8 /* ArchetypeCollectionViewCell.swift in Sources */,
 				2E737FBF2AA24928001F4EB4 /* SplashScreenPresenter.swift in Sources */,

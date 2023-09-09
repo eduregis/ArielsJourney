@@ -12,16 +12,22 @@ protocol ArchetypesScreenPresenterDelegate: BasePresenterDelegate {
 
 class ArchetypesScreenPresenter {
     
+    // MARK: - Properties
     weak var delegate: ArchetypesScreenPresenterDelegate?
     let router: ArchetypesScreenRouter
+    var activeArchetypes: Int = 0
     
     var dateCells: [ArchetypeModel] = []
+    let cellSize: CGSize = CGSize(width: 142, height: 249)
     
+    // MARK: - Init
     init(delegate: ArchetypesScreenPresenterDelegate, router: ArchetypesScreenRouter) {
         self.delegate = delegate
         self.router = router
+        self.activeArchetypes = UserDefaults.standard.integer(forKey: UserDefaults.Keys.activeArchetypes.description)
     }
     
+    // MARK: - Lifecycle
     func didLoad() {
     }
     
@@ -31,6 +37,7 @@ class ArchetypesScreenPresenter {
     func didAppear() {
     }
     
+    //  MARK: - Methods
     func getArchetypes(completion: @escaping () -> Void) {
         for archetype in ArchetypesEnum.allCases {
             dateCells.append(archetype.archetypesModel)
@@ -38,6 +45,7 @@ class ArchetypesScreenPresenter {
         completion()
     }
     
+    // MARK: - Navigation
     func showConfigurations() {
         self.router.showConfigurations()
     }

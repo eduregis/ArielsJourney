@@ -16,6 +16,7 @@ class HerosJourneyCardView: UIView {
     // MARK: - IBOutlets
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var emptyCardImage: UIImageView!
+    @IBOutlet weak var largeNumberLabel: UILabel!
     @IBOutlet weak var cardImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var numberLabel: UILabel!
@@ -35,6 +36,7 @@ class HerosJourneyCardView: UIView {
     private enum Fonts {
         static let title = UIFont(name: "Macondo-Regular", size: 11)
         static let number = UIFont(name: "Macondo-Regular", size: 13)
+        static let largeNumber = UIFont(name: "Macondo-Regular", size: 32)
     }
     
     // MARK: - View Lifecycle
@@ -57,6 +59,8 @@ class HerosJourneyCardView: UIView {
         self.titleLabel.textColor = UIColor(named: "ArielDark")
         self.numberLabel.font = Fonts.number
         self.numberLabel.textColor = UIColor(named: "ArielDark")
+        self.largeNumberLabel.font = Fonts.largeNumber
+        self.largeNumberLabel.textColor = UIColor(named: "ArielText")
         self.emptyCardImage.image = UIImage(named: "herosJourneyCard_empty")
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
         self.contentView.addGestureRecognizer(tap)
@@ -71,7 +75,10 @@ class HerosJourneyCardView: UIView {
     }
     
     @objc func handleTap(_ sender: UITapGestureRecognizer) {
-        delegate?.didTapCard(cardInfo: self.cardInfo ?? HerosJourneyEnum.ordinaryWorld.herosJourneyModel)
+        if let cardInfo = self.cardInfo {
+            delegate?.didTapCard(cardInfo: cardInfo)
+        }
+        
     }
     
     // MARK: - Actions

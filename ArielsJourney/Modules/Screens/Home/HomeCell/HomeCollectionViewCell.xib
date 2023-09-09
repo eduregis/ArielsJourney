@@ -75,6 +75,7 @@
             </collectionViewCellContentView>
             <connections>
                 <outlet property="imageView" destination="hiF-kZ-ZZ7" id="lgk-0A-w8x"/>
+                <outlet property="titleContainer" destination="ina-cm-URI" id="qAm-wz-dgh"/>
                 <outlet property="titleLabel" destination="MNk-g0-waV" id="qg3-EE-wCz"/>
             </connections>
             <point key="canvasLocation" x="339.69465648854958" y="43.309859154929576"/>

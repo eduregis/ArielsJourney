@@ -75,9 +75,9 @@ extension GameplayScreenViewController: GameplayScreenPresenterDelegate {
     
     func animateElements(animatedDirection: GameplayAnimatedElements, completionHandler: @escaping () -> Void) {
         
-        var movePoint: CGPoint = presenter.getMovePoint(animatedDirection: animatedDirection)
+        let movePoint: CGPoint = presenter.getMovePoint(animatedDirection: animatedDirection)
         
-        UIView.animate(withDuration: 1.0, delay: 0.5, options: .curveEaseIn,
+        UIView.animate(withDuration: 0.6, delay: 0.1, options: .curveEaseIn,
                        animations: ({ [self] in
             self.firstCard.frame.origin = CGPoint(x: self.firstCard.frame.origin.x + movePoint.x, y: self.firstCard.frame.origin.y + movePoint.y)
             self.secondCard.frame.origin = CGPoint(x: self.secondCard.frame.origin.x - movePoint.x, y: self.secondCard.frame.origin.y + movePoint.y)

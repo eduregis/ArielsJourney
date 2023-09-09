@@ -50,7 +50,12 @@ class HomeScreenViewController: BaseViewController {
         trailingGradientView.setOpecityGradientBackground(color: UIColor(named: "ArielBackground") ?? .clear, direction: .toLeft)
     }
     
-    // MARK: - Private Methods
+    override func viewDidDisappear(_ animated: Bool) {
+        presenter.didDisappear()
+        collectionView.reloadData()
+    }
+    
+    // MARK: - Methods
     private func configureCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -82,12 +87,18 @@ extension HomeScreenViewController: UICollectionViewDelegate, UICollectionViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 142, height: 275)
+        return presenter.cellSize
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = HomeCollectionViewCell.dequeueCell(from: collectionView, for: indexPath)
-        cell.dateCell = presenter.dateCells[indexPath.row]
+        let dateCell = presenter.dateCells[indexPath.row]
+        if dateCell == .gameplayContinue {
+            cell.isActive = UserDefaults.standard.bool(forKey: UserDefaults.Keys.gameInProgress.description)
+        } else {
+            cell.isActive = true
+        }
+        cell.dateCell = dateCell
         return cell
     }
     

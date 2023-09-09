@@ -26,7 +26,9 @@ class GameplayScreenPresenter {
     // MARK: - Properties
     weak var delegate: GameplayScreenPresenterDelegate?
     let router: GameplayScreenRouter
+    
     var dialogue: Dialogue?
+    var isNewGame: Bool?
     
     // MARK: - Init
     init(delegate: GameplayScreenPresenterDelegate, router: GameplayScreenRouter) {
@@ -40,10 +42,13 @@ class GameplayScreenPresenter {
     }
     
     func willAppear() {
-        guard let dialogueModel = GameplayDialogueManager.shared.getDialogueByString(name: "MC_01") else { return }
+        var lastDialogueSaved = UserDefaults.standard.string(forKey: UserDefaults.Keys.lastDialogueSaved.description)
+        if lastDialogueSaved == "" || isNewGame == true {
+            lastDialogueSaved = "MC_01"
+        }
+        guard let dialogueModel = GameplayDialogueManager.shared.getDialogueByString(name: lastDialogueSaved ?? "") else { return }
         self.dialogue = dialogueModel
         self.delegate?.setDialogueAndCards()
-        
     }
     
     func didAppear() {
@@ -73,10 +78,12 @@ class GameplayScreenPresenter {
     func goToNextDialogue(nextDialogueName: String) {
         
         self.delegate?.animateElements(animatedDirection: .screenToBelow, completionHandler: {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [self] in
+            DispatchQueue.main.async { [self] in
                 delegate?.hideElements(isHidden: true)
                 guard let dialogueModel = GameplayDialogueManager.shared.getDialogueByString(name: nextDialogueName) else { return }
+                UserDefaults.standard.set(nextDialogueName, forKey: UserDefaults.Keys.lastDialogueSaved.description)
                 dialogue = dialogueModel
+                getTriggers()
                 delegate?.setDialogueAndCards()
                 setInitialPosition()
             }
@@ -88,6 +95,41 @@ class GameplayScreenPresenter {
             self.delegate?.hideElements(isHidden: false)
             self.startNewDialogue()
         })
+    }
+    
+    func getTriggers() {
+        guard let dialogue = self.dialogue else { return }
+        let userDefaults = UserDefaults.standard
+        
+        if let soundTrigger = dialogue.soundTrigger, soundTrigger != "" {
+            AudioManager.shared.playSoundEffect(name: soundTrigger)
+        }
+        
+        if let achievementTrigger = dialogue.achievementTrigger, achievementTrigger != "" {
+            var strings: [String] = userDefaults.stringArray(forKey: UserDefaults.Keys.achievements.description) ?? []
+            strings.append(achievementTrigger)
+            userDefaults.set(strings, forKey: UserDefaults.Keys.achievements.description)
+        }
+        
+        if let triggerArray = dialogue.triggerArray, triggerArray != [] {
+            for trigger in triggerArray {
+                if trigger.contains("duchbag") {
+                    userDefaults.set(userDefaults.integer(forKey: UserDefaults.Keys.duchbagCounter.description) + 1, forKey: UserDefaults.Keys.duchbagCounter.description)
+                } else if trigger.contains("herosJourney") {
+                    let triggerSplited = trigger.components(separatedBy: "_")
+                    guard let herosJourneyIndex = Int(triggerSplited[1]) else { return }
+                    if herosJourneyIndex > userDefaults.integer(forKey: UserDefaults.Keys.activeHerosJourney.description) {
+                        userDefaults.set(herosJourneyIndex, forKey: UserDefaults.Keys.activeHerosJourney.description)
+                    }
+                } else if trigger.contains("archetype") {
+                    let triggerSplited = trigger.components(separatedBy: "_")
+                    guard let archetypeIndex = Int(triggerSplited[1]) else { return }
+                    if archetypeIndex > userDefaults.integer(forKey: UserDefaults.Keys.activeArchetypes.description) {
+                        userDefaults.set(archetypeIndex, forKey: UserDefaults.Keys.activeArchetypes.description)
+                    }
+                }
+            }
+        }
     }
     
     // MARK: - Navigation

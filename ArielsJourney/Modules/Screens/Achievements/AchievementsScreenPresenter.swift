@@ -12,15 +12,18 @@ protocol AchievementsScreenPresenterDelegate: BasePresenterDelegate {
 
 class AchievementsScreenPresenter {
     
+    // MARK: - Properties
     weak var delegate: AchievementsScreenPresenterDelegate?
     let router: AchievementsScreenRouter
     
+    // MARK: - Init
     init(delegate: AchievementsScreenPresenterDelegate, router: AchievementsScreenRouter) {
         
         self.delegate = delegate
         self.router = router
     }
     
+    // MARK: - Lifecycle
     func didLoad() {
     }
     
@@ -30,6 +33,9 @@ class AchievementsScreenPresenter {
     func didAppear() {
     }
     
+    //  MARK: - Methods
+    
+    // MARK: - Navigation
     func showConfigurations() {
         self.router.showConfigurations()
     }

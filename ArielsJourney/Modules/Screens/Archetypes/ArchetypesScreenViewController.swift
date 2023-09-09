@@ -85,16 +85,19 @@ extension ArchetypesScreenViewController: UICollectionViewDelegate, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 142, height: 249)
+        return presenter.cellSize
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = ArchetypeCollectionViewCell.dequeueCell(from: collectionView, for: indexPath)
+        cell.isActive = (indexPath.row < presenter.activeArchetypes)
         cell.dateCell = presenter.dateCells[indexPath.row]
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        presenter.showElementDetails(index: indexPath.row)
+        if (indexPath.row < presenter.activeArchetypes) {
+            presenter.showElementDetails(index: indexPath.row)
+        }
     }
 }

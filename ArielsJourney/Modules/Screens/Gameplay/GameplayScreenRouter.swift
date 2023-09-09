@@ -9,10 +9,11 @@ import UIKit
 
 class GameplayScreenRouter: BaseRouter {
     
-    static func makeModule() -> UIViewController {
+    static func makeModule(isNewGame: Bool) -> UIViewController {
         let viewController = GameplayScreenViewController()
         let router = GameplayScreenRouter(viewController: viewController)
         let presenter = GameplayScreenPresenter(delegate: viewController, router: router)
+        presenter.isNewGame = isNewGame
         viewController.presenter = presenter
         
         return viewController

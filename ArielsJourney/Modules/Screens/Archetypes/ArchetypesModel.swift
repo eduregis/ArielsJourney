@@ -27,35 +27,35 @@ enum ArchetypesEnum: CaseIterable {
         switch self {
         case .hero:
             return ArchetypeModel(descriptionText: ArchetypesScreenTexts.firstDesc.localized(),
-                            imageName: "hero",
+                            imageName: "01",
                             archetypeStage: ArchetypesScreenTexts.firstTitle.localized())
         case .mentor:
             return ArchetypeModel(descriptionText: ArchetypesScreenTexts.secondDesc.localized(),
-                            imageName: "hero",
+                            imageName: "02",
                             archetypeStage: ArchetypesScreenTexts.secondTitle.localized())
         case .refusalOfTheCall:
             return ArchetypeModel(descriptionText: ArchetypesScreenTexts.thirdDesc.localized(),
-                            imageName: "hero",
+                            imageName: "03",
                                   archetypeStage: ArchetypesScreenTexts.thirdTitle.localized())
         case .meetingTheMentor:
             return ArchetypeModel(descriptionText: ArchetypesScreenTexts.fourthDesc.localized(),
-                            imageName: "hero",
+                            imageName: "04",
                                   archetypeStage: ArchetypesScreenTexts.fourthTitle.localized())
         case .crossingTheThreshold:
             return ArchetypeModel(descriptionText: ArchetypesScreenTexts.fifthDesc.localized(),
-                            imageName: "hero",
+                            imageName: "05",
                                   archetypeStage: ArchetypesScreenTexts.fifthTitle.localized())
         case .testsAlliesEnemies:
             return ArchetypeModel(descriptionText: ArchetypesScreenTexts.sixthDesc.localized(),
-                            imageName: "hero",
+                            imageName: "06",
                                   archetypeStage: ArchetypesScreenTexts.sixthTitle.localized())
         case .approachToTheInmostCave:
             return ArchetypeModel(descriptionText: ArchetypesScreenTexts.seventhDesc.localized(),
-                            imageName: "hero",
+                            imageName: "07",
                                   archetypeStage: ArchetypesScreenTexts.seventhTitle.localized())
         case .ordeal:
             return ArchetypeModel(descriptionText: ArchetypesScreenTexts.eighthDesc.localized(),
-                            imageName: "hero",
+                            imageName: "08",
                                   archetypeStage: ArchetypesScreenTexts.eighthTitle.localized())
         }
     }
