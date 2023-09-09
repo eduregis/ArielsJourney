@@ -36,10 +36,9 @@ class HomeScreenPresenter {
     
     func didAppear() {
         let userDefaults = UserDefaults.standard
-        print("Duchbag: \(userDefaults.integer(forKey: UserDefaults.Keys.duchbagCounter.description))")
-        print("Achievements: \(userDefaults.integer(forKey: UserDefaults.Keys.achievements.description))")
-        print("Hero`s Journey: \(userDefaults.integer(forKey: UserDefaults.Keys.activeHerosJourney.description))")
-        print("Archetypes: \(userDefaults.integer(forKey: UserDefaults.Keys.activeArchetypes.description))")
+        print("Music: \(userDefaults.float(forKey: UserDefaults.Keys.musicVolume.description))")
+        print("Ambience: \(userDefaults.float(forKey: UserDefaults.Keys.ambienceVolume.description))")
+        print("SoundEffects: \(userDefaults.float(forKey: UserDefaults.Keys.soundEffectVolume.description))")
     }
     
     func didDisappear() {

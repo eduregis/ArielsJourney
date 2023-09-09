@@ -5,6 +5,8 @@
 //  Created by Eduardo Oliveira on 09/09/23.
 //
 
+// Based in https://gist.github.com/barisuyar/786482be37b3ec14635190e7887f762f
+
 import UIKit
 
 final class CustomSlider: UISlider {

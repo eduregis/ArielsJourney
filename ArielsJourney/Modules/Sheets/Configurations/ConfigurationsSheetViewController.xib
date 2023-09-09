@@ -6,11 +6,21 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Macondo-Regular.ttf">
+            <string>Macondo-Regular</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfigurationsSheetViewController" customModule="ArielsJourney" customModuleProvider="target">
             <connections>
+                <outlet property="ambienceLabel" destination="OlW-sR-5dv" id="ejX-zq-csL"/>
+                <outlet property="ambienceSlider" destination="6Us-ws-Hu3" id="HrH-SF-LHy"/>
                 <outlet property="headerView" destination="tpN-ik-2aC" id="gin-ga-h0H"/>
+                <outlet property="musicLabel" destination="wXI-fe-8dF" id="Sm2-qg-z9m"/>
                 <outlet property="musicSlider" destination="NaK-Cd-NbG" id="OOJ-hA-xn6"/>
+                <outlet property="soundEffectLabel" destination="Qya-ar-h3p" id="Rd7-Rm-lEo"/>
+                <outlet property="soundEffectSlider" destination="ibo-wR-v3t" id="7Yd-ta-oCz"/>
                 <outlet property="view" destination="LiE-1L-QeB" id="RDI-hv-5XQ"/>
             </connections>
         </placeholder>
@@ -26,20 +36,81 @@
                         <constraint firstAttribute="height" constant="83" id="pv2-j3-lPO"/>
                     </constraints>
                 </view>
-                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="NaK-Cd-NbG" customClass="CustomSlider" customModule="ArielsJourney" customModuleProvider="target">
-                    <rect key="frame" x="168" y="181.66666666666666" width="118" height="31"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="30" id="8cX-XJ-q08"/>
-                        <constraint firstAttribute="width" constant="114" id="cpM-nO-tEy"/>
-                    </constraints>
-                </slider>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="CnE-x1-l0S">
+                    <rect key="frame" x="62" y="121.66666666666669" width="330" height="150"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yCH-uf-JU9" userLabel="Music Stack">
+                            <rect key="frame" x="0.0" y="0.0" width="330" height="30"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vol. de música: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXI-fe-8dF">
+                                    <rect key="frame" x="0.0" y="0.0" width="170" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="170" id="ZZd-Ob-UdR"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Macondo-Regular" family="Macondo" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="NaK-Cd-NbG" customClass="CustomSlider" customModule="ArielsJourney" customModuleProvider="target">
+                                    <rect key="frame" x="168" y="0.0" width="164" height="31"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="8cX-XJ-q08"/>
+                                        <constraint firstAttribute="width" constant="160" id="cpM-nO-tEy"/>
+                                    </constraints>
+                                </slider>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="njI-1p-cNS" userLabel="Ambience Stack">
+                            <rect key="frame" x="0.0" y="59.999999999999986" width="330" height="30"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vol. de ambiente: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OlW-sR-5dv">
+                                    <rect key="frame" x="0.0" y="0.0" width="170" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="170" id="SDn-Hr-7Ab"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Macondo-Regular" family="Macondo" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Us-ws-Hu3" customClass="CustomSlider" customModule="ArielsJourney" customModuleProvider="target">
+                                    <rect key="frame" x="168" y="0.0" width="164" height="31"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="160" id="Tfk-fF-H5V"/>
+                                        <constraint firstAttribute="height" constant="30" id="gd7-io-jWV"/>
+                                    </constraints>
+                                </slider>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mka-OE-kik" userLabel="Sound Effect Stack">
+                            <rect key="frame" x="0.0" y="120" width="330" height="30"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vol. de efeitos: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qya-ar-h3p">
+                                    <rect key="frame" x="0.0" y="0.0" width="170" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="170" id="wgo-ot-1Rr"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Macondo-Regular" family="Macondo" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ibo-wR-v3t" customClass="CustomSlider" customModule="ArielsJourney" customModuleProvider="target">
+                                    <rect key="frame" x="168" y="0.0" width="164" height="31"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="160" id="CFr-E5-6Mx"/>
+                                        <constraint firstAttribute="height" constant="30" id="Mqj-I2-Omx"/>
+                                    </constraints>
+                                </slider>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="NaK-Cd-NbG" firstAttribute="centerY" secondItem="LiE-1L-QeB" secondAttribute="centerY" id="MV7-UX-LjR"/>
+                <constraint firstItem="CnE-x1-l0S" firstAttribute="centerY" secondItem="LiE-1L-QeB" secondAttribute="centerY" id="9fJ-Ge-T8B"/>
                 <constraint firstItem="tpN-ik-2aC" firstAttribute="leading" secondItem="LiE-1L-QeB" secondAttribute="leading" id="UqG-na-pwc"/>
                 <constraint firstAttribute="trailing" secondItem="tpN-ik-2aC" secondAttribute="trailing" id="e9E-pp-8Id"/>
-                <constraint firstItem="NaK-Cd-NbG" firstAttribute="centerX" secondItem="LiE-1L-QeB" secondAttribute="centerX" id="tAS-ec-cG8"/>
+                <constraint firstItem="CnE-x1-l0S" firstAttribute="centerX" secondItem="LiE-1L-QeB" secondAttribute="centerX" id="uII-e6-Ijf"/>
                 <constraint firstItem="tpN-ik-2aC" firstAttribute="top" secondItem="LiE-1L-QeB" secondAttribute="top" id="uT3-7Y-15h"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

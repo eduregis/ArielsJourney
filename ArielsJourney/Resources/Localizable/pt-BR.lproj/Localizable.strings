@@ -55,3 +55,9 @@
 "HerosJourneyScreenTexts_twelfthTitle" = "Retorno com o Elixir";
 "HerosJourneyScreenTexts_twelfthDesc" = "Lorem ipsum World sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comodo consequat.";
 "HerosJourneyScreenTexts_back" = "Voltar";
+
+// MARK: - Config Screen Texts
+"ConfigScreenTexts_title" = "Configurações";
+"ConfigScreenTexts_soundEffect" = "Efeitos Sonoros";
+"ConfigScreenTexts_ambience" = "Ambientação";
+"ConfigScreenTexts_music" = "Música";

@@ -29,4 +29,22 @@ class ConfigurationsSheetPresenter {
     
     func didAppear() {
     }
+    
+    func ajustVolume(tag: Int, value: Float) {
+        switch(tag) {
+        case 0:
+            UserDefaults.standard.set(value, forKey: UserDefaults.Keys.musicVolume.description)
+            AudioManager.shared.ajustMusicVolume()
+        case 1:
+            UserDefaults.standard.set(value, forKey: UserDefaults.Keys.ambienceVolume.description)
+            AudioManager.shared.ajustAmbienceVolume()
+        case 2:
+            UserDefaults.standard.set(value, forKey: UserDefaults.Keys.soundEffectVolume.description)
+            AudioManager.shared.ajustSoundEffectVolume()
+        default:
+            break
+        }
+        AudioManager.shared.playSoundEffect(name: "Ariel_soundEffect_sliderButtonReleased")
+       
+    }
 }
