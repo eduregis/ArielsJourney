@@ -14,14 +14,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfigurationsSheetViewController" customModule="ArielsJourney" customModuleProvider="target">
             <connections>
-                <outlet property="ambienceLabel" destination="OlW-sR-5dv" id="ejX-zq-csL"/>
-                <outlet property="ambienceSlider" destination="6Us-ws-Hu3" id="HrH-SF-LHy"/>
                 <outlet property="headerView" destination="tpN-ik-2aC" id="gin-ga-h0H"/>
-                <outlet property="musicLabel" destination="wXI-fe-8dF" id="Sm2-qg-z9m"/>
-                <outlet property="musicSlider" destination="NaK-Cd-NbG" id="OOJ-hA-xn6"/>
-                <outlet property="soundEffectLabel" destination="Qya-ar-h3p" id="Rd7-Rm-lEo"/>
-                <outlet property="soundEffectSlider" destination="ibo-wR-v3t" id="7Yd-ta-oCz"/>
                 <outlet property="view" destination="LiE-1L-QeB" id="RDI-hv-5XQ"/>
+                <outletCollection property="collectionOfSliders" destination="NaK-Cd-NbG" collectionClass="NSMutableArray" id="8NT-eo-032"/>
+                <outletCollection property="collectionOfSliders" destination="6Us-ws-Hu3" collectionClass="NSMutableArray" id="4oB-Gn-TtF"/>
+                <outletCollection property="collectionOfSliders" destination="ibo-wR-v3t" collectionClass="NSMutableArray" id="FEl-K7-qKB"/>
+                <outletCollection property="collectionOfLabels" destination="wXI-fe-8dF" collectionClass="NSMutableArray" id="aWE-mu-6sg"/>
+                <outletCollection property="collectionOfLabels" destination="OlW-sR-5dv" collectionClass="NSMutableArray" id="ilt-79-mW1"/>
+                <outletCollection property="collectionOfLabels" destination="Qya-ar-h3p" collectionClass="NSMutableArray" id="5iH-KF-KfM"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

@@ -58,6 +58,7 @@
 		2E7FAC6A2AA3B6F700E1AF20 /* AchievementsScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7FAC692AA3B6F700E1AF20 /* AchievementsScreenViewController.xib */; };
 		2E86EA392AAC95040046300A /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E86EA382AAC95040046300A /* CustomSlider.swift */; };
 		2E86EA3C2AAC9EF30046300A /* Ariel_soundEffect_sliderButtonReleased.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E86EA3B2AAC9EF30046300A /* Ariel_soundEffect_sliderButtonReleased.mp3 */; };
+		2E86EA3E2AACAF3E0046300A /* ConfigurationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E86EA3D2AACAF3E0046300A /* ConfigurationsModel.swift */; };
 		2EAF95742AA3EABF00B3FAC2 /* OverlayPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF95732AA3EABF00B3FAC2 /* OverlayPresentation.swift */; };
 		2EAF95792AA3EBE300B3FAC2 /* ConfigurationsSheetRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF95782AA3EBE300B3FAC2 /* ConfigurationsSheetRouter.swift */; };
 		2EAF957B2AA3EC3800B3FAC2 /* ConfigurationsSheetPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF957A2AA3EC3800B3FAC2 /* ConfigurationsSheetPresenter.swift */; };
@@ -158,6 +159,7 @@
 		2E7FAC692AA3B6F700E1AF20 /* AchievementsScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AchievementsScreenViewController.xib; sourceTree = "<group>"; };
 		2E86EA382AAC95040046300A /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
 		2E86EA3B2AAC9EF30046300A /* Ariel_soundEffect_sliderButtonReleased.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ariel_soundEffect_sliderButtonReleased.mp3; sourceTree = "<group>"; };
+		2E86EA3D2AACAF3E0046300A /* ConfigurationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationsModel.swift; sourceTree = "<group>"; };
 		2EAF95732AA3EABF00B3FAC2 /* OverlayPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayPresentation.swift; sourceTree = "<group>"; };
 		2EAF95782AA3EBE300B3FAC2 /* ConfigurationsSheetRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationsSheetRouter.swift; sourceTree = "<group>"; };
 		2EAF957A2AA3EC3800B3FAC2 /* ConfigurationsSheetPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationsSheetPresenter.swift; sourceTree = "<group>"; };
@@ -503,6 +505,7 @@
 		2EAF95772AA3EB8B00B3FAC2 /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
+				2E86EA3D2AACAF3E0046300A /* ConfigurationsModel.swift */,
 				2EAF95782AA3EBE300B3FAC2 /* ConfigurationsSheetRouter.swift */,
 				2EAF957A2AA3EC3800B3FAC2 /* ConfigurationsSheetPresenter.swift */,
 				2EAF957C2AA3EC9C00B3FAC2 /* ConfigurationsSheetViewController.swift */,
@@ -820,6 +823,7 @@
 				2E7D4FB82AA8BB5900930B69 /* UserDefaultsKeys.swift in Sources */,
 				2EAF957D2AA3EC9C00B3FAC2 /* ConfigurationsSheetViewController.swift in Sources */,
 				2E7FAC5F2AA3B4FE00E1AF20 /* ArchetypesScreenViewController.swift in Sources */,
+				2E86EA3E2AACAF3E0046300A /* ConfigurationsModel.swift in Sources */,
 				2EAF95862AA401FC00B3FAC2 /* GradientLayer.swift in Sources */,
 				2E7FAC522AA3B18A00E1AF20 /* HerosJourneyScreenRouter.swift in Sources */,
 				2E2C9D9B2AA548E100995D41 /* HomeScreenModel.swift in Sources */,

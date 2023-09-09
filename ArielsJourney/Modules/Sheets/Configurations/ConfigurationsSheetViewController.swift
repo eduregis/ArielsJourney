@@ -11,17 +11,16 @@ class ConfigurationsSheetViewController: BaseViewController {
     
     // MARK: - Outlets
     @IBOutlet weak var headerView: StyledHeaderSheetView!
-    
-    @IBOutlet weak var musicLabel: UILabel!
-    @IBOutlet weak var ambienceLabel: UILabel!
-    @IBOutlet weak var soundEffectLabel: UILabel!
-    
-    @IBOutlet weak var musicSlider: CustomSlider!
-    @IBOutlet weak var ambienceSlider: CustomSlider!
-    @IBOutlet weak var soundEffectSlider: CustomSlider!
+
+    @IBOutlet var collectionOfLabels: Array<UILabel>?
+    @IBOutlet var collectionOfSliders: Array<CustomSlider>?
     
     // MARK: - Properties
     var presenter: ConfigurationsSheetPresenter!
+    
+    private enum Fonts {
+        static let title = UIFont(name: "Macondo-Regular", size: 20)
+    }
     
     // MARK: - View Lifecycle
     
@@ -39,12 +38,12 @@ class ConfigurationsSheetViewController: BaseViewController {
         self.headerView.delegate = self
         self.headerView.titleLabel.text = "Configurações"
         self.view.backgroundColor = UIColor(named: "ArielBackground")
-        configureUI()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         presenter.willAppear()
+        configureUI()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -54,26 +53,31 @@ class ConfigurationsSheetViewController: BaseViewController {
     
     // MARK: - Methods
     func configureUI() {
-        musicLabel.text = ConfigScreenTexts.music.localized()
-        musicSlider.setValue(UserDefaults.standard.float(forKey: UserDefaults.Keys.musicVolume.description), animated: true)
-        musicSlider.addTarget(self, action: #selector(onSliderValChanged(slider:event:)), for: .valueChanged)
-        musicSlider.tag = 0
         
-        ambienceLabel.text = ConfigScreenTexts.ambience.localized()
-        ambienceSlider.setValue(UserDefaults.standard.float(forKey: UserDefaults.Keys.ambienceVolume.description), animated: true)
-        ambienceSlider.addTarget(self, action: #selector(onSliderValChanged(slider:event:)), for: .valueChanged)
-        ambienceSlider.tag = 1
-        
-        soundEffectLabel.text = ConfigScreenTexts.soundEffect.localized()
-        soundEffectSlider.setValue(UserDefaults.standard.float(forKey: UserDefaults.Keys.soundEffectVolume.description), animated: true)
-        soundEffectSlider.addTarget(self, action: #selector(onSliderValChanged(slider:event:)), for: .valueChanged)
-        soundEffectSlider.tag = 2
+        if let labels = collectionOfLabels, let sliders = collectionOfSliders {
+            for (index, label) in labels.enumerated() {
+                label.font = Fonts.title
+                label.textColor = UIColor(named: "ArielText")
+                label.text = presenter.dataSliders[index].volumeSlidersModel.titleLabel
+            }
+            
+            for (index, slider) in sliders.enumerated() {
+                let volumeModel = presenter.dataSliders[index]
+                let volumeKey = volumeModel.volumeSlidersModel.volumeKey
+                slider.setValue(UserDefaults.standard.float(forKey: volumeKey), animated: true)
+                slider.addTarget(self, action: #selector(onSliderValChanged(slider:event:)), for: .valueChanged)
+                slider.initialPercentage = CGFloat(UserDefaults.standard.float(forKey: volumeKey))
+                slider.volumeSliderEnum = volumeModel
+            }
+        }
     }
     
-    @objc func onSliderValChanged(slider: UISlider, event: UIEvent) {
+    @objc func onSliderValChanged(slider: CustomSlider, event: UIEvent) {
         if let touchEvent = event.allTouches?.first {
             if touchEvent.phase == .ended {
-                presenter.ajustVolume(tag: slider.tag, value: slider.value)
+                if let volumeSliderEnum = slider.volumeSliderEnum {
+                    presenter.ajustVolume(volumeSliderEnum: volumeSliderEnum, value: slider.value)
+                }
             }
         }
     }

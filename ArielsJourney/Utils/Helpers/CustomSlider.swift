@@ -11,8 +11,15 @@ import UIKit
 
 final class CustomSlider: UISlider {
 
-    private let baseLayer = CALayer() // Step 3
-    private let trackLayer = CAGradientLayer() // Step 7
+    private let baseLayer = CALayer()
+    private let trackLayer = CAGradientLayer()
+    var initialPercentage: CGFloat? {
+        didSet {
+            configureTrackLayer()
+        }
+    }
+    var volumeSliderEnum: VolumeSlidersEnum?
+    
     override func draw(_ rect: CGRect) {
         super.draw(rect)
         setup()
@@ -20,10 +27,9 @@ final class CustomSlider: UISlider {
 
     private func setup() {
         clear()
-        createBaseLayer() // Step 3
-        createThumbImageView() // Step 5
-        configureTrackLayer() // Step 7
-        addUserInteractions() // Step 8
+        createBaseLayer()
+        createThumbImageView()
+        addUserInteractions()
     }
 
     private func clear() {
@@ -33,7 +39,6 @@ final class CustomSlider: UISlider {
         thumbTintColor = .clear
     }
 
-    // Step 3
     private func createBaseLayer() {
         baseLayer.borderWidth = 1
         baseLayer.borderColor = UIColor(named: "ArielText")?.cgColor
@@ -44,38 +49,32 @@ final class CustomSlider: UISlider {
         layer.insertSublayer(baseLayer, at: 0)
     }
 
-    // Step 7
     private func configureTrackLayer() {
+        guard let fillPercentage = self.initialPercentage else { return }
         trackLayer.backgroundColor = UIColor(named: "ArielText")?.cgColor
-        trackLayer.frame = .init(x: 0, y: frame.height / 4, width: frame.width / 2, height: frame.height / 2)
+        trackLayer.frame = .init(x: 0, y: frame.height / 4, width: fillPercentage * frame.width, height: frame.height / 2)
         trackLayer.cornerRadius = trackLayer.frame.height / 2
         layer.insertSublayer(trackLayer, at: 1)
     }
 
-    // Step 8
     private func addUserInteractions() {
         addTarget(self, action: #selector(valueChanged(_:)), for: .valueChanged)
     }
 
     @objc private func valueChanged(_ sender: CustomSlider) {
-        // Step 10
         CATransaction.begin()
         CATransaction.setDisableActions(true)
-        // Step 9
         let thumbRectA = thumbRect(forBounds: bounds, trackRect: trackRect(forBounds: bounds), value: value)
         trackLayer.frame = .init(x: 0, y: frame.height / 4, width: thumbRectA.midX, height: frame.height / 2)
-        // Step 10
         CATransaction.commit()
     }
 
-    // Step 5
     private func createThumbImageView() {
         let thumbSize = (3 * frame.height) / 4
         let thumbView = ThumbView(frame: .init(x: 0, y: 0, width: thumbSize, height: thumbSize))
         thumbView.layer.cornerRadius = thumbSize / 2
         let thumbSnapshot = thumbView.snapshot
         setThumbImage(thumbSnapshot, for: .normal)
-        // Step 6
         setThumbImage(thumbSnapshot, for: .highlighted)
         setThumbImage(thumbSnapshot, for: .application)
         setThumbImage(thumbSnapshot, for: .disabled)
@@ -85,7 +84,6 @@ final class CustomSlider: UISlider {
     }
 }
 
-// Step 4
 final class ThumbView: UIView {
 
     override init(frame: CGRect) {
@@ -107,7 +105,6 @@ final class ThumbView: UIView {
     }
 }
 
-// Step 4
 extension UIView {
 
     var snapshot: UIImage {

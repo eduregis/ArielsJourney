@@ -19,7 +19,7 @@ class ArchetypeCollectionViewCell: UICollectionViewCell {
         static let title = UIFont(name: "Macondo-Regular", size: 11)
     }
     
-    var dateCell: ArchetypeModel? {
+    var dataCell: ArchetypeModel? {
         didSet {
             configureDateCell()
         }
@@ -31,12 +31,12 @@ class ArchetypeCollectionViewCell: UICollectionViewCell {
     }
     
     private func configureDateCell() {
-        if let dateCell = self.dateCell {
-            archetypeEmptyIcon.image = UIImage(named: "archetypeCard_emptyIcon_\(dateCell.imageName)")
+        if let dataCell = self.dataCell {
+            archetypeEmptyIcon.image = UIImage(named: "archetypeCard_emptyIcon_\(dataCell.imageName)")
             if isActive {
-                card.image = UIImage(named: "archetypeCard_card_\(dateCell.imageName)")
-                archetypeIcon.image = UIImage(named: "archetypeCard_icon_\(dateCell.imageName)")
-                titleLabel.text = dateCell.archetypeStage
+                card.image = UIImage(named: "archetypeCard_card_\(dataCell.imageName)")
+                archetypeIcon.image = UIImage(named: "archetypeCard_icon_\(dataCell.imageName)")
+                titleLabel.text = dataCell.archetypeStage
                 self.titleLabel.font = Fonts.title
                 self.titleLabel.textColor = UIColor(named: "ArielDark")
             }

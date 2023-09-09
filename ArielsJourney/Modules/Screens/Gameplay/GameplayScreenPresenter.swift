@@ -54,7 +54,7 @@ class GameplayScreenPresenter {
     func didAppear() {
     }
     
-    //  MARK: - Methods
+    // MARK: - Methods
     
     func getMovePoint(animatedDirection: GameplayAnimatedElements) -> CGPoint {
         switch animatedDirection {

@@ -83,7 +83,7 @@ extension HomeScreenViewController: StyledHeaderScreenViewDelegate {
 
 extension HomeScreenViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return presenter.dateCells.count
+        return presenter.dataCells.count
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -92,17 +92,17 @@ extension HomeScreenViewController: UICollectionViewDelegate, UICollectionViewDa
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = HomeCollectionViewCell.dequeueCell(from: collectionView, for: indexPath)
-        let dateCell = presenter.dateCells[indexPath.row]
-        if dateCell == .gameplayContinue {
+        let dataCell = presenter.dataCells[indexPath.row]
+        if dataCell == .gameplayContinue {
             cell.isActive = UserDefaults.standard.bool(forKey: UserDefaults.Keys.gameInProgress.description)
         } else {
             cell.isActive = true
         }
-        cell.dateCell = dateCell
+        cell.dataCell = dataCell
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        presenter.didTapButton(tag: presenter.dateCells[indexPath.row])
+        presenter.didTapButton(tag: presenter.dataCells[indexPath.row])
     }
 }

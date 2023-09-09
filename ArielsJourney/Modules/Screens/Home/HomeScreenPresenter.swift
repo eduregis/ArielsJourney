@@ -16,7 +16,7 @@ class HomeScreenPresenter {
     weak var delegate: HomeScreenPresenterDelegate?
     let router: HomeScreenRouter
     
-    var dateCells: [HomeEnum] = []
+    var dataCells: [HomeEnum] = []
     var cellSize: CGSize = CGSize(width: 142, height: 275)
     
     // MARK: - Init
@@ -31,7 +31,7 @@ class HomeScreenPresenter {
     }
     
     func willAppear() {
-        dateCells = HomeEnum.allCases
+        dataCells = HomeEnum.allCases
     }
     
     func didAppear() {
@@ -42,7 +42,7 @@ class HomeScreenPresenter {
     }
     
     func didDisappear() {
-        dateCells = []
+        dataCells = []
     }
     
     //  MARK: - Methods

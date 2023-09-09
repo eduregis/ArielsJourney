@@ -12,37 +12,42 @@ protocol ConfigurationsSheetPresenterDelegate: BasePresenterDelegate {
 
 class ConfigurationsSheetPresenter {
     
+    // MARK: - Properties
     weak var delegate: ConfigurationsSheetPresenterDelegate?
     let router: ConfigurationsSheetRouter
     
+    var dataSliders: [VolumeSlidersEnum] = []
+    
+    // MARK: - Init
     init(delegate: ConfigurationsSheetPresenterDelegate, router: ConfigurationsSheetRouter) {
         
         self.delegate = delegate
         self.router = router
     }
     
+    // MARK: - Lifecycles
     func didLoad() {
     }
     
     func willAppear() {
+        dataSliders = VolumeSlidersEnum.allCases
     }
     
     func didAppear() {
     }
     
-    func ajustVolume(tag: Int, value: Float) {
-        switch(tag) {
-        case 0:
+    // MARK: - Methods
+    func ajustVolume(volumeSliderEnum: VolumeSlidersEnum, value: Float) {
+        switch(volumeSliderEnum) {
+        case .musicVolume:
             UserDefaults.standard.set(value, forKey: UserDefaults.Keys.musicVolume.description)
             AudioManager.shared.ajustMusicVolume()
-        case 1:
+        case .ambienceVolume:
             UserDefaults.standard.set(value, forKey: UserDefaults.Keys.ambienceVolume.description)
             AudioManager.shared.ajustAmbienceVolume()
-        case 2:
+        case .soundEffectVolume:
             UserDefaults.standard.set(value, forKey: UserDefaults.Keys.soundEffectVolume.description)
             AudioManager.shared.ajustSoundEffectVolume()
-        default:
-            break
         }
         AudioManager.shared.playSoundEffect(name: "Ariel_soundEffect_sliderButtonReleased")
        
