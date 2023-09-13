@@ -18,23 +18,25 @@
             <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Splash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bjp-CF-k4T">
-                    <rect key="frame" x="400" y="198.66666666666666" width="52" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arielIcon" translatesAutoresizingMaskIntoConstraints="NO" id="xxt-ve-Ius">
+                    <rect key="frame" x="383.66666666666669" y="126" width="85" height="166"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="166" id="1Av-kx-IZp"/>
+                        <constraint firstAttribute="width" constant="85" id="1Vm-XN-kin"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="FJK-cl-Zoq"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="Bjp-CF-k4T" firstAttribute="centerX" secondItem="FJK-cl-Zoq" secondAttribute="centerX" id="1qR-4b-BKX"/>
-                <constraint firstItem="Bjp-CF-k4T" firstAttribute="centerY" secondItem="FJK-cl-Zoq" secondAttribute="centerY" id="M07-nV-87p"/>
+                <constraint firstItem="xxt-ve-Ius" firstAttribute="centerY" secondItem="FJK-cl-Zoq" secondAttribute="centerY" id="BFc-Xv-kay"/>
+                <constraint firstItem="xxt-ve-Ius" firstAttribute="centerX" secondItem="FJK-cl-Zoq" secondAttribute="centerX" id="gkq-94-RBk"/>
             </constraints>
             <point key="canvasLocation" x="231" y="4"/>
         </view>
     </objects>
     <resources>
+        <image name="arielIcon" width="28.333333969116211" height="55.333332061767578"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

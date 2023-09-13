@@ -28,7 +28,7 @@ class SplashScreenViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.didLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.view.backgroundColor = UIColor(named: "ArielBackground")
     }
     
     override func viewWillAppear(_ animated: Bool) {
